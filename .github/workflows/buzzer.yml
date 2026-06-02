@@ -51,8 +51,12 @@ jobs:
           SOURCES_FILE: config/sources_buzzer.yaml
           CLAUDE_MODEL: claude-sonnet-4-6
           TTS_PROVIDER: openai
-          TTS_MODEL: tts-1
-          TTS_VOICE: onyx
+          TTS_MODEL: gpt-4o-mini-tts
+          TTS_VOICE: ash
+          TTS_INSTRUCTIONS: >-
+            Lis le texte de facon fluide et continue, sans aucune emphase sur les mots,
+            comme un narrateur calme qui raconte une histoire. Debit constant,
+            pas de pauses, pas d accentuation, pas d intonation forcee.
           BRIEFING_DUREE_CIBLE: "5"
           BRIEFING_FENETRE_HEURES: "24"
           FEED_KEEP_DAYS: "7"
