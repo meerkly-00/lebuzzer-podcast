@@ -1,0 +1,23 @@
+name = "lebuzzer-audio-proxy"
+main = "audio-proxy.js"
+compatibility_date = "2026-06-01"
+workers_dev = false
+
+routes = [
+  { pattern = "lebuzzer.com/audio/*", zone_name = "lebuzzer.com" },
+  { pattern = "lebuzzer.com/clips/*", zone_name = "lebuzzer.com" },
+  { pattern = "lebuzzer.com/feed.xml", zone_name = "lebuzzer.com" },
+  { pattern = "lebuzzer.com/artwork.jpg", zone_name = "lebuzzer.com" },
+  { pattern = "lebuzzer.com/artwork.png", zone_name = "lebuzzer.com" },
+  { pattern = "lebuzzer.com/", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/audio/*", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/clips/*", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/feed.xml", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/artwork.jpg", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/artwork.png", zone_name = "lebuzzer.com" },
+  { pattern = "www.lebuzzer.com/", zone_name = "lebuzzer.com" },
+]
+
+# Cron desactive pour l'instant (pas de Twitter wired). A activer plus tard :
+# [triggers]
+# crons = ["0 12 * * *"]   # 8h EDT (UTC-4)

@@ -1,0 +1,215 @@
+feeds:
+
+  # =========================================================================
+  # MAINSTREAM RESULTATS + NEWS — la colonne vertebrale du podcast
+  # =========================================================================
+
+  # QC sport mainstream
+  - url: https://www.lapresse.ca/sports/rss
+    source: La Presse Sports
+    region: QC
+    theme: Sport
+    no_scrape: true
+
+  - url: https://www.lapresse.ca/sports/hockey/rss
+    source: La Presse Hockey
+    region: QC
+    theme: Hockey
+    no_scrape: true
+
+  - url: https://www.lapresse.ca/sports/football/rss
+    source: La Presse Football
+    region: QC
+    theme: Football
+    no_scrape: true
+
+  - url: https://www.lapresse.ca/sports/baseball/rss
+    source: La Presse Baseball
+    region: QC
+    theme: Baseball
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:rds.ca&hl=fr&gl=CA&ceid=CA:fr
+    source: RDS
+    region: QC
+    theme: Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:tvasports.ca&hl=fr&gl=CA&ceid=CA:fr
+    source: TVA Sports
+    region: QC
+    theme: Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:journaldemontreal.com+sport&hl=fr&gl=CA&ceid=CA:fr
+    source: Journal de Montreal Sports
+    region: QC
+    theme: Sport
+    no_scrape: true
+
+  # International FR
+  - url: https://dwh.lequipe.fr/api/edito/rss?path=/rss/actu_rss.xml
+    source: L'Equipe
+    region: International
+    theme: Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:lequipe.fr+football+OR+ligue1&hl=fr&gl=FR&ceid=FR:fr
+    source: L'Equipe Football
+    region: International
+    theme: Football
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:lequipe.fr+basket+OR+NBA&hl=fr&gl=FR&ceid=FR:fr
+    source: L'Equipe Basket
+    region: International
+    theme: Basket
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:lequipe.fr+F1&hl=fr&gl=FR&ceid=FR:fr
+    source: L'Equipe F1
+    region: International
+    theme: F1
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=Formule+1+OR+Verstappen+OR+Hamilton&hl=fr&gl=FR&ceid=FR:fr
+    source: F1 general FR
+    region: International
+    theme: F1
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:rmcsport.bfmtv.com&hl=fr&gl=FR&ceid=FR:fr
+    source: RMC Sport
+    region: International
+    theme: Sport
+    no_scrape: true
+
+  # Joueurs QC a l'etranger (pour le moment QC du podcast)
+  - url: https://news.google.com/rss/search?q=Canadiens+Montreal+OR+%22CF+Montreal%22&hl=fr&gl=CA&ceid=CA:fr
+    source: Canadiens / CF Montreal
+    region: QC
+    theme: Hockey
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=Bedard+OR+Suzuki+OR+Caufield+hockey&hl=en&gl=CA&ceid=CA:en
+    source: Joueurs QC NHL
+    region: QC
+    theme: Hockey
+    no_scrape: true
+
+  # International anglo
+  - url: https://news.google.com/rss/search?q=site:sportsnet.ca&hl=en&gl=CA&ceid=CA:en
+    source: Sportsnet
+    region: Canada
+    theme: Sport
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/news
+    source: ESPN
+    region: International
+    theme: Sport
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/nba/news
+    source: ESPN NBA
+    region: International
+    theme: Basket
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/nhl/news
+    source: ESPN NHL
+    region: International
+    theme: Hockey
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/soccer/news
+    source: ESPN Soccer
+    region: International
+    theme: Football
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/rpm/news
+    source: ESPN Motorsports
+    region: International
+    theme: F1
+    no_scrape: true
+
+  - url: https://www.espn.com/espn/rss/mma/news
+    source: ESPN MMA
+    region: International
+    theme: MMA
+    no_scrape: true
+
+  # =========================================================================
+  # ANALYSE PROFONDE — c'est ici qu'on prend de la hauteur, pas dans le clickbait
+  # =========================================================================
+
+  - url: https://news.google.com/rss/search?q=site:theathletic.com&hl=en&gl=CA&ceid=CA:en
+    source: The Athletic
+    region: International
+    theme: Analyse-Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:rds.ca+%22analyse%22&hl=fr&gl=CA&ceid=CA:fr
+    source: RDS Analyses
+    region: QC
+    theme: Analyse-Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:lequipe.fr+analyse&hl=fr&gl=FR&ceid=FR:fr
+    source: L'Equipe Analyses
+    region: International
+    theme: Analyse-Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:lapresse.ca+sport+%22chronique%22&hl=fr&gl=CA&ceid=CA:fr
+    source: La Presse Chroniques Sport
+    region: QC
+    theme: Analyse-Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=ESPN+%22insider%22+OR+%22sources%22&hl=en&gl=CA&ceid=CA:en
+    source: ESPN Insider
+    region: International
+    theme: Analyse-Sport
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:sportsnet.ca+%22Friedman%22+OR+%22sources%22&hl=en&gl=CA&ceid=CA:en
+    source: Sportsnet Insider
+    region: Canada
+    theme: Analyse-Sport
+    no_scrape: true
+
+  # =========================================================================
+  # POTINS / RUMEURS — uniquement insider-driven, JAMAIS clickbait
+  # Limite stricte : 3 sources, toutes "trade rumors" sourcees (Friedman, Dreger, etc.)
+  # =========================================================================
+
+  - url: https://news.google.com/rss/search?q=site:prohockeyrumors.com&hl=en&gl=CA&ceid=CA:en
+    source: Pro Hockey Rumors
+    region: International
+    theme: Trade-Hockey
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=site:nhltraderumors.me&hl=en&gl=CA&ceid=CA:en
+    source: NHL Trade Rumors
+    region: International
+    theme: Trade-Hockey
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=NBA+%22trade+rumor%22+OR+%22reportedly%22&hl=en&gl=CA&ceid=CA:en
+    source: Google News - Trade NBA
+    region: International
+    theme: Trade-NBA
+    no_scrape: true
+
+  - url: https://news.google.com/rss/search?q=mercato&hl=fr&gl=FR&ceid=FR:fr
+    source: Google News - Mercato Foot
+    region: International
+    theme: Trade-Foot
+    no_scrape: true
+
+min_text_length: 80
+# 4 articles par source x ~30 sources = ~120 max
+# Si rate limit hit en prod, baisser a 3.
+max_per_feed: 4

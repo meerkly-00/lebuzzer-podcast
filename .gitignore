@@ -1,0 +1,33 @@
+# Env
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Output artifacts (gitignored sauf scripts archive)
+output/audio/
+output/clips/
+output/*.tmp
+
+# Garder les scripts XML pour audit/contexte
+!output/scripts/
+
+# Data
+data/*.bak
+data/context.json.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Cloudflare
+.wrangler/

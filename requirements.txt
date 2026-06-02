@@ -1,0 +1,9 @@
+# LE BUZZER dépend de l'engine partagé media-factory.
+# Tous les deps du pipeline core (anthropic, openai, feedparser, etc.) sont
+# tirés transitivement depuis le pyproject.toml de l'engine.
+
+media-factory @ git+https://github.com/meerkly-00/media-factory-engine.git@main
+
+# Deps spécifiques au projet client (si besoin) :
+# python-dotenv est déjà transitif via media-factory mais on le pin ici pour run.py
+python-dotenv>=1.0.0
