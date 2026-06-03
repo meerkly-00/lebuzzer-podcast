@@ -34,6 +34,33 @@ export default {
       return proxyTo(request, `${RAW}/artwork/cover-v1.png`, "image/png", 86400);
     }
 
+    // Assets du site (polices, images) : /assets/<fichier>
+    const a = url.pathname.match(/^\/assets\/([A-Za-z0-9._-]+)$/);
+    if (a) {
+      const ct = a[1].endsWith(".woff2") ? "font/woff2"
+        : a[1].endsWith(".woff") ? "font/woff"
+        : a[1].endsWith(".png") ? "image/png"
+        : a[1].endsWith(".jpg") || a[1].endsWith(".jpeg") ? "image/jpeg"
+        : a[1].endsWith(".svg") ? "image/svg+xml"
+        : a[1].endsWith(".webp") ? "image/webp"
+        : null;
+      return proxyTo(request, `${RAW}/site/assets/${a[1]}`, ct, 86400);
+    }
+
+    // Fichiers SEO racine
+    if (url.pathname === "/sitemap.xml") {
+      return proxyTo(request, `${RAW}/site/sitemap.xml`, "application/xml; charset=utf-8", 3600);
+    }
+    if (url.pathname === "/robots.txt") {
+      return proxyTo(request, `${RAW}/site/robots.txt`, "text/plain; charset=utf-8", 3600);
+    }
+    if (url.pathname === "/site.webmanifest") {
+      return proxyTo(request, `${RAW}/site/site.webmanifest`, "application/manifest+json", 86400);
+    }
+    if (url.pathname === "/favicon.ico") {
+      return proxyTo(request, `${RAW}/site/assets/favicon.ico`, "image/x-icon", 86400);
+    }
+
     // Landing page â€” servie depuis site/index.html dans le repo
     if (url.pathname === "/" || url.pathname === "/index.html") {
       return proxyTo(request, `${RAW}/site/index.html`, "text/html; charset=utf-8", 300);
