@@ -21,6 +21,9 @@ output/*.tmp
 data/*.bak
 data/context.json.tmp
 
+# Probe temporaire (session agent) — peut être supprimé
+.sync_probe
+
 # OS
 .DS_Store
 Thumbs.db

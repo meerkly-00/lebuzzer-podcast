@@ -1,8 +1,8 @@
-﻿/**
- * Cloudflare Worker â€” LE BUZZER
+/**
+ * Cloudflare Worker — LE BUZZER
  *
  * fetch handler  : proxy audio MP3 + feed RSS depuis GitHub Releases
- *                  + landing page inline + artwork
+ *                  + landing page inline + artwork + fichiers SEO + 404 brandée
  */
 
 const REPO = "meerkly-00/lebuzzer-podcast";
@@ -17,7 +17,7 @@ export default {
       return proxyTo(request, `${RAW}/feed.xml`, "application/rss+xml; charset=utf-8", 300);
     }
 
-    // MP3 Ã©pisode : /audio/YYYY-MM-DD.mp3
+    // MP3 épisode : /audio/YYYY-MM-DD.mp3
     const m = url.pathname.match(/^\/audio\/(\d{4}-\d{2}-\d{2})\.mp3$/);
     if (m) {
       return proxyTo(request, `https://github.com/${REPO}/releases/download/${m[1]}/${m[1]}.mp3`);
@@ -29,7 +29,7 @@ export default {
       return proxyTo(request, `https://github.com/${REPO}/releases/download/${c[1]}/${c[1]}_clip_${c[2]}.mp4`);
     }
 
-    // Cover artwork â€” pointe vers cover-v1.png dans le repo
+    // Cover artwork — pointe vers cover-v1.png dans le repo
     if (url.pathname === "/artwork.jpg" || url.pathname === "/artwork.png") {
       return proxyTo(request, `${RAW}/artwork/cover-v1.png`, "image/png", 86400);
     }
@@ -42,6 +42,7 @@ export default {
         : a[1].endsWith(".png") ? "image/png"
         : a[1].endsWith(".jpg") || a[1].endsWith(".jpeg") ? "image/jpeg"
         : a[1].endsWith(".svg") ? "image/svg+xml"
+        : a[1].endsWith(".ico") ? "image/x-icon"
         : a[1].endsWith(".webp") ? "image/webp"
         : null;
       return proxyTo(request, `${RAW}/site/assets/${a[1]}`, ct, 86400);
@@ -61,18 +62,19 @@ export default {
       return proxyTo(request, `${RAW}/site/assets/favicon.ico`, "image/x-icon", 86400);
     }
 
-    // Landing page â€” servie depuis site/index.html dans le repo
+    // Landing page — servie depuis site/index.html dans le repo
     if (url.pathname === "/" || url.pathname === "/index.html") {
       return proxyTo(request, `${RAW}/site/index.html`, "text/html; charset=utf-8", 300);
     }
 
-    return new Response("Not found", { status: 404 });
+    // Page 404 brandée
+    return proxyTo(request, `${RAW}/site/404.html`, "text/html; charset=utf-8", 300, 404);
   },
 };
 
-// â”€â”€â”€ helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── helpers ──────────────────────────────────────────────────────────────
 
-async function proxyTo(request, target, contentType = null, maxAge = 86400) {
+async function proxyTo(request, target, contentType = null, maxAge = 86400, forceStatus = null) {
   const upstream = await fetch(target, {
     method: request.method,
     headers: { "User-Agent": "LeBuzzer-Proxy/1.0" },
@@ -83,7 +85,7 @@ async function proxyTo(request, target, contentType = null, maxAge = 86400) {
   headers.set("Access-Control-Allow-Origin", "*");
   if (contentType) headers.set("Content-Type", contentType);
   return new Response(upstream.body, {
-    status: upstream.status,
+    status: forceStatus || upstream.status,
     statusText: upstream.statusText,
     headers,
   });

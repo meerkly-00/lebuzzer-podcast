@@ -1,398 +1,77 @@
 <!DOCTYPE html>
-<html lang="fr"><head>
+<html lang="fr-CA"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LE BUZZER — Le podcast sport quotidien</title>
-<meta name="description" content="Le podcast sport quotidien du Québec. Tout le sport de la nuit — LNH, NBA, foot, F1, MMA — décortiqué chaque matin en 4 à 6 minutes. Avec un point de vue.">
+<title>LE BUZZER — Le podcast sport quotidien du Québec | LNH, NBA, F1, MMA</title>
+<meta name="description" content="Le podcast sport quotidien du Québec. Tout le sport de la nuit — Canadiens, LNH, NBA, foot européen, F1, MMA — décortiqué chaque matin en 5 minutes, avec un point de vue. Nouvel épisode chaque matin à 6h.">
+<link rel="canonical" href="https://www.lebuzzer.com/">
+<meta name="theme-color" content="#0F0E0C">
+<meta name="author" content="LE BUZZER">
+<meta name="robots" content="index, follow">
+
+<!-- Favicons / PWA -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LE BUZZER">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:title" content="LE BUZZER — Le podcast sport quotidien du Québec">
+<meta property="og:description" content="Tout le sport de la nuit — Canadiens, LNH, NBA, foot, F1, MMA — décortiqué chaque matin en 5 minutes, avec un point de vue.">
+<meta property="og:url" content="https://www.lebuzzer.com/">
+<meta property="og:image" content="https://www.lebuzzer.com/artwork.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LE BUZZER — Le podcast sport quotidien du Québec">
+<meta name="twitter:description" content="Tout le sport de la nuit — Canadiens, LNH, NBA, foot, F1, MMA — en 5 minutes chaque matin, avec un point de vue.">
+<meta name="twitter:image" content="https://www.lebuzzer.com/artwork.jpg">
+
+<!-- JSON-LD PodcastSeries -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "LE BUZZER",
+  "description": "Le podcast sport quotidien francophone québécois. Résultats, histoires et potins de la LNH, NBA, foot, F1 et MMA en 5 minutes, chaque matin.",
+  "url": "https://www.lebuzzer.com/",
+  "inLanguage": "fr-CA",
+  "image": "https://www.lebuzzer.com/artwork.jpg",
+  "webFeed": "https://www.lebuzzer.com/feed.xml",
+  "author": { "@type": "Organization", "name": "LE BUZZER" },
+  "publisher": { "@type": "Organization", "name": "LE BUZZER" }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<style>/* vietnamese */
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/782f0a94.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/0c956dfc.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/a9045229.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/0e40d992.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/69be8fdd.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/b2e2e362.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/0e40d992.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/69be8fdd.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: italic;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/b2e2e362.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/c0326edc.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/09451930.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/cea87283.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/c0326edc.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/09451930.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/cea87283.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/c0326edc.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/09451930.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/cea87283.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/c0326edc.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/09451930.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Archivo';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("assets/cea87283.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/b7edec34.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/446bf2d7.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/db573721.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/dad97f53.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/ad8df378.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/b7edec34.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/446bf2d7.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/db573721.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/dad97f53.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/ad8df378.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/b7edec34.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/446bf2d7.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/db573721.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/dad97f53.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/ad8df378.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/b7edec34.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/446bf2d7.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/db573721.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/dad97f53.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/ad8df378.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+<link rel="preload" href="/assets/a9045229.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/assets/ad8df378.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/assets/cea87283.woff2" as="font" type="font/woff2" crossorigin="">
+<style>
+/* latin — Anton (titres) */
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url("assets/a9045229.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url("assets/0c956dfc.woff2") format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+/* Oswald (corps condensé) */
+@font-face{font-family:'Oswald';font-style:normal;font-weight:400;font-display:swap;src:url("assets/ad8df378.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:500;font-display:swap;src:url("assets/ad8df378.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;src:url("assets/ad8df378.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;src:url("assets/ad8df378.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:400;font-display:swap;src:url("assets/dad97f53.woff2") format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;src:url("assets/dad97f53.woff2") format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+/* Archivo (body) */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url("assets/cea87283.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-stretch:100%;font-display:swap;src:url("assets/cea87283.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url("assets/cea87283.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url("assets/cea87283.woff2") format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url("assets/09451930.woff2") format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url("assets/09451930.woff2") format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
 </style>
 <style>
 :root{
@@ -442,7 +121,7 @@ img{max-width:100%;display:block}
 .tb-right{display:flex;align-items:center;gap:16px;white-space:nowrap}
 .tb-cd{font-family:var(--cond);font-weight:600;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
 .tb-cd b{font-family:var(--body);font-weight:700;color:var(--fg);font-variant-numeric:tabular-nums}
-.tb-listen{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:var(--cream);font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 14px;transition:background .15s}
+.tb-listen{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:var(--cream);font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 14px;transition:background .15s;cursor:pointer}
 .tb-listen:hover{background:var(--cream);color:var(--black)}
 @media(max-width:480px){.tb-cd .lbl{display:none}}
 
@@ -470,7 +149,7 @@ img{max-width:100%;display:block}
 .mh-act{display:flex;align-items:center;gap:16px;white-space:nowrap}
 .mh-cd{font-family:var(--cond);font-weight:600;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
 .mh-cd b{font-family:var(--body);font-weight:700;color:var(--fg);font-variant-numeric:tabular-nums}
-.mh-listen{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:var(--cream);font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;padding:9px 16px;transition:background .15s,color .15s}
+.mh-listen{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:var(--cream);font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;padding:9px 16px;transition:background .15s,color .15s;cursor:pointer}
 .mh-listen:hover{background:var(--cream);color:var(--black)}
 @media(max-width:760px){.mh-bar{flex-wrap:wrap;gap:12px}.mh-cd{display:none}}
 
@@ -489,7 +168,7 @@ img{max-width:100%;display:block}
 .btn-listen{
   display:inline-flex;align-items:center;gap:14px;background:var(--red);color:var(--cream);
   font-family:var(--display);font-size:clamp(1.05rem,1.7vw,1.4rem);letter-spacing:0.03em;
-  padding:15px 26px;transition:transform .16s,box-shadow .16s,background .16s;box-shadow:5px 5px 0 var(--cream);
+  padding:15px 26px;transition:transform .16s,box-shadow .16s,background .16s;box-shadow:5px 5px 0 var(--cream);cursor:pointer;
 }
 .btn-listen:hover{background:var(--cream);color:var(--black);transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--red)}
 .btn-listen:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--cream)}
@@ -536,8 +215,8 @@ img{max-width:100%;display:block}
 .ls-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--hair);padding-bottom:clamp(20px,2.6vw,30px);margin-bottom:clamp(26px,3vw,40px)}
 .ls-head h2{font-family:var(--display);font-size:clamp(1.9rem,4vw,3rem);line-height:0.92;color:var(--cream)}
 .ls-head .note{font-family:var(--cond);font-weight:500;font-size:14px;letter-spacing:0.03em;color:var(--muted);max-width:30ch;text-align:right}
-.ls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,18px)}
-.plat{display:flex;align-items:center;gap:14px;border:1px solid var(--hair);padding:clamp(16px,1.8vw,22px);transition:background .16s,color .16s,border-color .16s}
+.ls-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(12px,1.6vw,18px)}
+.plat{display:flex;align-items:center;gap:14px;border:1px solid var(--hair);padding:clamp(16px,1.8vw,22px);transition:background .16s,color .16s,border-color .16s;background:transparent;cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
 .plat svg{width:26px;height:26px;flex:none}
 .plat .pt .pl{display:block;font-family:var(--cond);font-weight:700;font-size:16px;letter-spacing:0.02em;white-space:nowrap}
 .plat .pt .ps{display:block;margin-top:2px;font-family:var(--cond);font-weight:500;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
@@ -545,7 +224,49 @@ img{max-width:100%;display:block}
 .plat:hover{background:var(--cream);color:var(--black);border-color:var(--cream)}
 .plat:hover .ps{color:#56564c}
 .plat:hover .arr{color:var(--red);transform:translateX(3px)}
+.plat.soon{cursor:default;opacity:.62}
+.plat.soon:hover{background:transparent;color:inherit;border-color:var(--hair)}
+.plat.soon:hover .ps{color:var(--muted)}
+.plat.soon:hover .arr{color:var(--muted);transform:none}
+.plat .ps.badge{color:var(--yellow)}
 @media(max-width:680px){.ls-grid{grid-template-columns:1fr}.ls-head .note{text-align:left}}
+
+/* ---------------- LECTEUR AUDIO STICKY ---------------- */
+.player{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;
+  background:var(--black);border-top:2px solid var(--yellow);
+  transform:translateY(110%);transition:transform .34s cubic-bezier(.2,.8,.2,1);
+  box-shadow:0 -10px 30px rgba(0,0,0,.45);
+}
+.player.show{transform:none}
+.player-inner{display:flex;align-items:center;gap:clamp(10px,1.6vw,18px);height:clamp(64px,9vw,78px)}
+.pl-btn{
+  flex:none;width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--red);color:var(--cream);display:flex;align-items:center;justify-content:center;
+  transition:transform .14s,background .14s;
+}
+.pl-btn:hover{background:var(--yellow);color:var(--black);transform:scale(1.06)}
+.pl-btn svg{width:20px;height:20px;display:block}
+.pl-btn .ico-pause{display:none}
+.player.playing .pl-btn .ico-play{display:none}
+.player.playing .pl-btn .ico-pause{display:block}
+.pl-meta{flex:none;min-width:0;max-width:30vw}
+.pl-meta .pl-k{font-family:var(--cond);font-weight:700;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow)}
+.pl-meta .pl-t{font-family:var(--cond);font-weight:600;font-size:14px;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl-prog{flex:1;display:flex;align-items:center;gap:10px;min-width:60px}
+.pl-time{font-family:var(--body);font-weight:600;font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);flex:none}
+.pl-bar{position:relative;flex:1;height:6px;border-radius:3px;background:rgba(241,250,238,0.18);cursor:pointer;overflow:hidden}
+.pl-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--yellow);border-radius:3px}
+.pl-seek{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.pl-sub{flex:none;display:inline-flex;align-items:center;gap:7px;background:transparent;border:1px solid var(--hair);color:var(--cream);font-family:var(--cond);font-weight:700;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;padding:8px 13px;transition:background .15s,color .15s}
+.pl-sub:hover{background:var(--yellow);color:var(--black);border-color:var(--yellow)}
+@media(max-width:640px){
+  .pl-meta{display:none}
+  .pl-sub .pl-sub-lbl{display:none}
+  .pl-sub{padding:9px 11px}
+}
+.copied-toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(12px);z-index:95;background:var(--yellow);color:var(--black);font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:11px 18px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.copied-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
 .app{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-top:clamp(30px,3.5vw,48px);padding-top:clamp(28px,3vw,40px);border-top:1px solid var(--hair)}
 .app .a-txt h3{font-family:var(--display);font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:0.96;max-width:20ch;color:var(--cream)}
@@ -565,6 +286,10 @@ img{max-width:100%;display:block}
 .footer .f-name{display:block;font-family:var(--display);font-size:clamp(2.1rem,5vw,3.7rem);line-height:0.85;letter-spacing:0.02em;white-space:nowrap;color:var(--cream)}
 .footer .f-name .z{color:var(--red)}
 .footer .f-tag{display:block;font-family:var(--cond);font-weight:500;font-size:12.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-top:13px}
+.f-social{display:flex;gap:10px;margin-top:14px}
+.f-social a{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--hair);color:var(--cream);transition:background .15s,color .15s,border-color .15s}
+.f-social a:hover{background:var(--yellow);color:var(--black);border-color:var(--yellow)}
+.f-social svg{width:19px;height:19px}
 .fnav{display:flex;gap:clamp(28px,5vw,64px);flex-wrap:wrap}
 .fnav .col h4{font-family:var(--cond);font-weight:700;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
 .fnav .col a{display:block;font-family:var(--cond);font-weight:500;font-size:14.5px;letter-spacing:0.04em;color:var(--muted);padding:4px 0;transition:color .15s;white-space:nowrap}
@@ -576,7 +301,7 @@ img{max-width:100%;display:block}
 @keyframes rise{from{transform:translateY(18px)}to{transform:none}}
 .rv{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
 .hero .lede-kick{animation-delay:.04s}.hero .headline{animation-delay:.1s}.hero .deck{animation-delay:.2s}.hero .hero-cta{animation-delay:.3s}
-@media(prefers-reduced-motion:reduce){.rv{animation:none}.eq i{animation:none}.topbar{transition:none}.mh-name .lamp .rays{animation:none;opacity:.85}}
+@media(prefers-reduced-motion:reduce){.rv{animation:none}.eq i{animation:none}.topbar{transition:none}.mh-name .lamp .rays{animation:none;opacity:.85}.player{transition:none}}
 </style>
 </head>
 <body>
@@ -587,10 +312,35 @@ img{max-width:100%;display:block}
     <a class="tb-logo" href="#top">LE BU<span class="z">Z</span>ZER</a>
     <div class="tb-right">
       <span class="tb-cd"><span class="lbl">Prochaine édition · </span><b id="cd2">6:00</b></span>
-      <a class="tb-listen" href="#ecouter">Écouter ▶</a>
+      <button class="tb-listen" type="button">Écouter ▶</button>
     </div>
   </div>
 </div>
+
+<!-- LECTEUR AUDIO STICKY -->
+<div class="player" id="player" role="region" aria-label="Lecteur de l'épisode">
+  <div class="wrap player-inner">
+    <button class="pl-btn" id="plToggle" aria-label="Lire l'épisode" aria-pressed="false">
+      <svg class="ico-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+      <svg class="ico-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"></path></svg>
+    </button>
+    <div class="pl-meta">
+      <span class="pl-k">Dernier épisode</span>
+      <span class="pl-t" id="plTitle">Chargement…</span>
+    </div>
+    <div class="pl-prog">
+      <span class="pl-time" id="plCur">0:00</span>
+      <div class="pl-bar" id="plBar">
+        <div class="pl-fill" id="plFill"></div>
+        <input class="pl-seek" id="plSeek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Position dans l'épisode">
+      </div>
+      <span class="pl-time" id="plDur">0:00</span>
+    </div>
+    <a class="pl-sub" href="#ecouter"><span aria-hidden="true">＋</span><span class="pl-sub-lbl">S'abonner</span></a>
+  </div>
+  <audio id="plAudio" preload="none"></audio>
+</div>
+<div class="copied-toast" id="copyToast" role="status" aria-live="polite">Flux RSS copié ✓</div>
 
 <main id="top">
 
@@ -613,7 +363,7 @@ img{max-width:100%;display:block}
         </nav>
         <div class="mh-act">
           <span class="mh-cd">Prochaine édition · <b id="cd">6:00</b></span>
-          <a class="mh-listen" href="#ecouter">Écouter ▶</a>
+          <button class="mh-listen" type="button">Écouter ▶</button>
         </div>
       </div>
     </div>
@@ -627,11 +377,11 @@ img{max-width:100%;display:block}
         <h1 class="headline rv">TOUT LE SPORT DE LA NUIT — ET CE QU'IL FAUT <span class="hl">EN PENSER.</span></h1>
         <p class="deck rv">LNH, NBA, foot européen, F1, MMA. Décortiqués chaque matin en 4 à 6 minutes par une voix qui a un point de vue.</p>
         <div class="hero-cta rv">
-          <a class="btn-listen" href="#ecouter">
+          <button class="btn-listen" type="button">
             ÉCOUTER
             <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
             <span aria-hidden="true">▶</span>
-          </a>
+          </button>
           <p class="cta-meta"><b>4–6 min</b><br>chaque matin · 6h00</p>
         </div>
       </div>
@@ -656,7 +406,7 @@ img{max-width:100%;display:block}
           <input type="email" id="newsEmail" placeholder="ton@courriel.com" required="" aria-label="Adresse courriel">
           <button type="submit">S'ABONNER</button>
         </div>
-        <p class="nf-note">Déjà 4 200+ abonnés au Québec, en France et en Belgique.</p>
+        <p class="nf-note">Reçois le brief chaque matin à 6h — Québec, France, Belgique.</p>
         <p class="nf-ok">✓ C'est noté — surveille ta boîte demain à 6h.</p>
       </form>
     </div>
@@ -670,21 +420,23 @@ img{max-width:100%;display:block}
         <p class="note">Abonne-toi une fois, reçois le brief chaque matin à 6h, heure de l'Est.</p>
       </div>
       <div class="ls-grid">
-        <a class="plat" href="#" aria-label="Spotify">
+        <span class="plat soon" aria-label="Spotify — bientôt disponible">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 100 24 12 12 0 000-24zm5.5 17.3a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.27a.94.94 0 01-1.29.31c-3.23-1.98-8.15-2.56-11.97-1.4a.94.94 0 11-.54-1.8c4.37-1.31 9.79-.66 13.5 1.6.44.27.58.85.3 1.29zm.13-3.4C15.73 8.27 9.1 8.05 5.4 9.17a1.12 1.12 0 11-.65-2.15c4.25-1.28 11.57-1.03 16.1 1.66a1.12 1.12 0 11-1.15 1.93z"></path></svg>
-          <span class="pt"><span class="pl">Spotify</span><span class="ps">Abonnement gratuit</span></span>
-          <span class="arr">→</span>
-        </a>
-        <a class="plat" href="#" aria-label="Apple Podcasts">
+          <span class="pt"><span class="pl">Spotify</span><span class="ps badge">Bientôt disponible</span></span>
+        </span>
+        <span class="plat soon" aria-label="Apple Podcasts — bientôt disponible">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0012 22.5 10.5 10.5 0 0012 1.5zm0 4.2a2.7 2.7 0 110 5.4 2.7 2.7 0 010-5.4zM7.6 15.1c0-2 2-3.1 4.4-3.1s4.4 1.1 4.4 3.1c0 1-.4 1.9-1 2.6-.7-.9-1.9-1.5-3.4-1.5s-2.7.6-3.4 1.5c-.6-.7-1-1.6-1-2.6zM12 18.2c1.4 0 2.4.7 2.4 1.9 0 1-.9 2.4-2.4 2.4s-2.4-1.4-2.4-2.4c0-1.2 1-1.9 2.4-1.9z"></path></svg>
-          <span class="pt"><span class="pl">Apple Podcasts</span><span class="ps">iPhone · iPad · Mac</span></span>
-          <span class="arr">→</span>
-        </a>
-        <a class="plat" href="#" aria-label="YouTube">
+          <span class="pt"><span class="pl">Apple Podcasts</span><span class="ps badge">Bientôt disponible</span></span>
+        </span>
+        <span class="plat soon" aria-label="YouTube — bientôt disponible">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.5v-7l6.3 3.5z"></path></svg>
-          <span class="pt"><span class="pl">YouTube</span><span class="ps">Version vidéo</span></span>
-          <span class="arr">→</span>
-        </a>
+          <span class="pt"><span class="pl">YouTube</span><span class="ps badge">Bientôt disponible</span></span>
+        </span>
+        <button class="plat" id="rssCopy" type="button" aria-label="Copier le flux RSS">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 17.82a2.18 2.18 0 100 4.36 2.18 2.18 0 000-4.36zM2 10.5v3.1c2.5 0 4.9 1 6.65 2.75A9.4 9.4 0 0111.4 23h3.1C14.5 16.1 8.9 10.5 2 10.5zm0-6v3.1C10.6 7.6 16.4 13.4 16.4 22h3.1C19.5 11.7 12.3 4.5 2 4.5z"></path></svg>
+          <span class="pt"><span class="pl">Flux RSS</span><span class="ps">Copier · pour toute app</span></span>
+          <span class="arr">⧉</span>
+        </button>
       </div>
     </div>
   </section>
@@ -693,19 +445,33 @@ img{max-width:100%;display:block}
   <footer class="footer">
     <div class="wrap">
       <div class="f-top">
-        <div class="f-brand"><span class="f-name">LE BU<span class="z">Z</span>ZER</span><span class="f-tag">Le podcast sport quotidien · Québec</span></div>
+        <div class="f-brand">
+          <span class="f-name">LE BU<span class="z">Z</span>ZER</span>
+          <span class="f-tag">Le podcast sport quotidien · Québec</span>
+          <div class="f-social">
+            <a href="https://www.instagram.com/le_buzzer_qc/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.9.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5 0-4.74.07-.89.04-1.37.19-1.69.31-.42.17-.73.36-1.05.68-.32.32-.51.63-.68 1.05-.12.32-.27.8-.31 1.69C3.5 8.5 3.5 8.85 3.5 12s0 3.5.07 4.74c.04.89.19 1.37.31 1.69.17.42.36.73.68 1.05.32.32.63.51 1.05.68.32.12.8.27 1.69.31 1.24.07 1.59.07 4.74.07s3.5 0 4.74-.07c.89-.04 1.37-.19 1.69-.31.42-.17.73-.36 1.05-.68.32-.32.51-.63.68-1.05.12-.32.27-.8.31-1.69.07-1.24.07-1.59.07-4.74s0-3.5-.07-4.74c-.04-.89-.19-1.37-.31-1.69a2.8 2.8 0 00-.68-1.05 2.8 2.8 0 00-1.05-.68c-.32-.12-.8-.27-1.69-.31C15.5 4 15.15 4 12 4zm0 3.06A4.94 4.94 0 1012 16.94 4.94 4.94 0 0012 7.06zm0 8.14A3.2 3.2 0 1112 8.8a3.2 3.2 0 010 6.4zm6.3-8.34a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"></path></svg>
+            </a>
+            <a href="https://www.tiktok.com/@le_buzzerqc" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 01-1.06-2.82h-3.06v12.3a2.6 2.6 0 11-1.86-2.49V9.66a5.66 5.66 0 00-.74-.05A5.65 5.65 0 1015.5 15.3V9.01a7.3 7.3 0 004.27 1.37V7.32a4.28 4.28 0 01-3.17-1.5z"></path></svg>
+            </a>
+            <a href="https://www.lebuzzer.com/feed.xml" target="_blank" rel="noopener" aria-label="Flux RSS">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 17.82a2.18 2.18 0 100 4.36 2.18 2.18 0 000-4.36zM2 10.5v3.1c2.5 0 4.9 1 6.65 2.75A9.4 9.4 0 0111.4 23h3.1C14.5 16.1 8.9 10.5 2 10.5zm0-6v3.1C10.6 7.6 16.4 13.4 16.4 22h3.1C19.5 11.7 12.3 4.5 2 4.5z"></path></svg>
+            </a>
+          </div>
+        </div>
         <nav class="fnav">
           <div class="col">
             <h4>Écouter</h4>
-            <a href="#">Spotify</a><a href="#">Apple Podcasts</a><a href="#">YouTube</a><a href="#">Flux RSS</a>
+            <a href="#ecouter">Spotify · bientôt</a><a href="#ecouter">Apple · bientôt</a><a href="#ecouter">YouTube · bientôt</a><a href="https://www.lebuzzer.com/feed.xml" target="_blank" rel="noopener">Flux RSS</a>
           </div>
           <div class="col">
             <h4>Suivre</h4>
-            <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">X / Twitter</a>
+            <a href="https://www.instagram.com/le_buzzer_qc/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@le_buzzerqc" target="_blank" rel="noopener">TikTok</a>
           </div>
           <div class="col">
             <h4>Contact</h4>
-            <a href="#">Annonceurs</a><a href="#">Presse</a><a href="#">Nous écrire</a>
+            <a href="mailto:lebuzzerpod@gmail.com">Annonceurs</a><a href="mailto:lebuzzerpod@gmail.com">Presse</a><a href="mailto:lebuzzerpod@gmail.com">Nous écrire</a>
           </div>
         </nav>
       </div>
@@ -720,6 +486,17 @@ img{max-width:100%;display:block}
 
 <script>
 (function(){
+  // ───────── CONFIG (le proprio remplit ces valeurs quand prêtes) ─────────
+  var LB = {
+    // URL d'embed Beehiiv (https://embeds.beehiiv.com/<uuid>). Vide = fallback courriel.
+    beehiivEmbedUrl: "",
+    feedUrl: "/feed.xml",
+    contactEmail: "lebuzzerpod@gmail.com"
+  };
+
+  function p(n){return (n<10?'0':'')+n;}
+  function fmt(sec){ if(!isFinite(sec)||sec<0)sec=0; var m=Math.floor(sec/60),s=Math.floor(sec%60); return m+':'+p(s); }
+
   // live date in masthead
   var dEl=document.getElementById('mh-date');
   try{
@@ -729,14 +506,13 @@ img{max-width:100%;display:block}
 
   // countdown to next 6:00
   var cd=document.getElementById('cd'),cd2=document.getElementById('cd2');
-  function p(n){return (n<10?'0':'')+n;}
   function tick(){
     var now=new Date(),next=new Date(now);
     next.setHours(6,0,0,0);
     if(now>=next) next.setDate(next.getDate()+1);
     var d=Math.max(0,next-now);
     var t=p(Math.floor(d/3.6e6))+':'+p(Math.floor((d%3.6e6)/6e4))+':'+p(Math.floor((d%6e4)/1e3));
-    cd.textContent=t; cd2.textContent=t;
+    if(cd) cd.textContent=t; if(cd2) cd2.textContent=t;
   }
   tick(); setInterval(tick,1000);
 
@@ -748,17 +524,99 @@ img{max-width:100%;display:block}
   }
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
-  // newsletter (front-end demo)
-  var f=document.getElementById('newsForm');
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var em=document.getElementById('newsEmail');
-    if(em.checkValidity()) f.classList.add('sent'); else em.reportValidity();
+  // ───────── LECTEUR AUDIO ─────────
+  var audio=document.getElementById('plAudio'),
+      player=document.getElementById('player'),
+      toggle=document.getElementById('plToggle'),
+      titleEl=document.getElementById('plTitle'),
+      curEl=document.getElementById('plCur'),
+      durEl=document.getElementById('plDur'),
+      fill=document.getElementById('plFill'),
+      seek=document.getElementById('plSeek');
+  var loaded=false, ready=false;
+
+  function todayMp3(){
+    var d=new Date(); return '/audio/'+d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'.mp3';
+  }
+  function setSource(src,title){
+    audio.src=src;
+    if(title) titleEl.textContent=title;
+    ready=true;
+  }
+  // Charge le dernier épisode depuis le flux RSS (auto à jour chaque matin)
+  function loadLatest(){
+    if(loaded) return; loaded=true;
+    fetch(LB.feedUrl,{cache:'no-store'}).then(function(r){return r.text();}).then(function(xml){
+      var doc=new DOMParser().parseFromString(xml,'application/xml');
+      var enc=doc.querySelector('item enclosure');
+      var ttl=doc.querySelector('item title');
+      var url=enc&&enc.getAttribute('url');
+      if(url){ setSource(url, ttl?ttl.textContent:'Dernier épisode'); }
+      else { setSource(todayMp3(),'Édition du jour'); }
+    }).catch(function(){ setSource(todayMp3(),'Édition du jour'); });
+  }
+
+  function showPlayer(){ player.classList.add('show'); document.body.style.paddingBottom='80px'; }
+  function play(){
+    loadLatest();
+    showPlayer();
+    var go=function(){ var pr=audio.play(); if(pr&&pr.catch) pr.catch(function(){}); };
+    if(ready) go(); else { var t=setInterval(function(){ if(ready){clearInterval(t);go();} },80); setTimeout(function(){clearInterval(t);},6000); }
+  }
+  function pause(){ audio.pause(); }
+
+  toggle.addEventListener('click',function(){ if(audio.paused) play(); else pause(); });
+  audio.addEventListener('play',function(){ player.classList.add('playing'); toggle.setAttribute('aria-pressed','true'); toggle.setAttribute('aria-label','Mettre en pause'); });
+  audio.addEventListener('pause',function(){ player.classList.remove('playing'); toggle.setAttribute('aria-pressed','false'); toggle.setAttribute('aria-label','Lire l\'épisode'); });
+  audio.addEventListener('loadedmetadata',function(){ durEl.textContent=fmt(audio.duration); });
+  audio.addEventListener('timeupdate',function(){
+    curEl.textContent=fmt(audio.currentTime);
+    if(audio.duration){ var pct=(audio.currentTime/audio.duration)*100; fill.style.width=pct+'%'; seek.value=pct; }
   });
+  audio.addEventListener('error',function(){
+    // si le flux échoue, tente le MP3 du jour
+    if(audio.src.indexOf('/audio/')===-1){ setSource(todayMp3(),'Édition du jour'); }
+  });
+  seek.addEventListener('input',function(){ if(audio.duration){ audio.currentTime=(seek.value/100)*audio.duration; } });
+
+  // Boutons "Écouter" → lancent la lecture
+  ['.btn-listen','.mh-listen','.tb-listen'].forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(b){
+      b.addEventListener('click',function(e){ e.preventDefault(); play(); });
+    });
+  });
+  // précharge le titre dès le repos
+  loadLatest();
+
+  // ───────── COPIER FLUX RSS ─────────
+  var rssBtn=document.getElementById('rssCopy'), toast=document.getElementById('copyToast');
+  if(rssBtn){
+    rssBtn.addEventListener('click',function(){
+      var rss='https://www.lebuzzer.com/feed.xml';
+      var done=function(){ toast.classList.add('show'); setTimeout(function(){toast.classList.remove('show');},1900); };
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(rss).then(done,done); }
+      else { var ta=document.createElement('textarea'); ta.value=rss; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(ta); done(); }
+    });
+  }
+
+  // ───────── INFOLETTRE ─────────
+  var f=document.getElementById('newsForm');
+  if(LB.beehiivEmbedUrl){
+    // Embed Beehiiv natif (collecte réelle, hébergée par Beehiiv)
+    f.innerHTML='<iframe src="'+LB.beehiivEmbedUrl+'" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius:0;background:transparent" title="Infolettre LE BUZZER"></iframe>';
+  } else {
+    // Fallback : collecte par courriel (fonctionne tout de suite, sans backend)
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var em=document.getElementById('newsEmail');
+      if(!em.checkValidity()){ em.reportValidity(); return; }
+      var subj=encodeURIComponent('Abonnement infolettre LE BUZZER');
+      var body=encodeURIComponent('Salut! Je veux m\'abonner a l\'infolettre LE BUZZER.\n\nCourriel : '+em.value+'\n\n— Envoye depuis lebuzzer.com');
+      window.location.href='mailto:'+LB.contactEmail+'?subject='+subj+'&body='+body;
+      f.classList.add('sent');
+    });
+  }
 })();
 </script>
-
-
-
 
 </body></html>
