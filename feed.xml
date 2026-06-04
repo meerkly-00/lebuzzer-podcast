@@ -2,7 +2,7 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>LE BUZZER</title>
-    <description>Le podcast sport quotidien francophone québécois. Résultats, histoires et potins de la LNH, NBA, foot, F1 et MMA en 5 minutes. Les épisodes restent disponibles 7 jours.</description>
+    <description>Le podcast sport quotidien francophone québécois. Résultats, histoires et potins de la LNH, NFL, NBA, foot, F1 et MMA en 5 minutes. Les épisodes restent disponibles 7 jours.</description>
     <language>fr-CA</language>
     <link>https://www.lebuzzer.com</link>
     <itunes:author>LE BUZZER</itunes:author>
@@ -29,7 +29,7 @@
       <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-06-03/2026-06-03.mp3" type="audio/mpeg" length="4357849"/>
       <itunes:duration>333</itunes:duration>
       <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
-      <itunes:episode>1</itunes:episode>
+      <itunes:episode>2</itunes:episode>
       <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
     </item>
     <item>
@@ -43,5 +43,5 @@
       <itunes:episode>1</itunes:episode>
       <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
     </item>
-    <item>
-      <tit
+  </channel>
+</rss>
