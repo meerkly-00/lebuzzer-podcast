@@ -3,7 +3,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LE BUZZER — Le podcast sport quotidien</title>
-<meta name="description" content="Le podcast sport quotidien du Québec. Tout le sport de la nuit — LNH, NBA, foot, F1, MMA — décortiqué chaque matin en 4 à 6 minutes. Avec un point de vue.">
+<meta name="description" content="Le podcast sport quotidien du Québec. Tout le sport de la nuit — LNH, NFL, NBA, foot, F1, MMA — décortiqué chaque matin en 4 à 6 minutes. Avec un point de vue.">
+
+<link rel="canonical" href="https://www.lebuzzer.com/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LE BUZZER">
+<meta name="theme-color" content="#0D0D0D">
+
+<!-- Favicons / PWA -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LE BUZZER">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:title" content="LE BUZZER — Le podcast sport quotidien du Québec">
+<meta property="og:description" content="LNH, NFL, NBA, foot, F1, MMA décortiqués chaque matin en 5 minutes — avec un point de vue.">
+<meta property="og:url" content="https://www.lebuzzer.com/">
+<meta property="og:image" content="https://www.lebuzzer.com/artwork.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LE BUZZER — Le podcast sport quotidien">
+<meta name="twitter:description" content="LNH, NFL, NBA, foot, F1, MMA en 5 minutes chaque matin — avec un point de vue.">
+<meta name="twitter:image" content="https://www.lebuzzer.com/artwork.jpg">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"PodcastSeries","name":"LE BUZZER","description":"Le podcast sport quotidien francophone. LNH, NFL, NBA, foot, F1, MMA décortiqués en 5 minutes chaque matin.","url":"https://www.lebuzzer.com/","inLanguage":"fr-CA","image":"https://www.lebuzzer.com/artwork.jpg","webFeed":"https://www.lebuzzer.com/feed.xml","author":{"@type":"Organization","name":"LE BUZZER"},"publisher":{"@type":"Organization","name":"LE BUZZER"}}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <style>/* vietnamese */
@@ -577,6 +611,33 @@ img{max-width:100%;display:block}
 .rv{animation:rise .7s cubic-bezier(.2,.8,.2,1) both}
 .hero .lede-kick{animation-delay:.04s}.hero .headline{animation-delay:.1s}.hero .deck{animation-delay:.2s}.hero .hero-cta{animation-delay:.3s}
 @media(prefers-reduced-motion:reduce){.rv{animation:none}.eq i{animation:none}.topbar{transition:none}.mh-name .lamp .rays{animation:none;opacity:.85}}
+
+/* ──────────── STICKY PLAYER ──────────── */
+.player{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#0D0D0D;border-top:3px solid #FFD60A;transform:translateY(110%);transition:transform .34s cubic-bezier(.2,.8,.2,1);box-shadow:0 -6px 24px rgba(0,0,0,.5)}
+.player.show{transform:none}
+.player-inner{display:flex;align-items:center;gap:clamp(8px,1.4vw,16px);height:68px;max-width:1240px;margin:0 auto;padding:0 clamp(14px,4vw,48px)}
+.pl-btn{flex:none;width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;background:#FFD60A;color:#0D0D0D;display:flex;align-items:center;justify-content:center;transition:transform .13s,background .13s}
+.pl-btn:hover{background:#F1FAEE;transform:scale(1.08)}
+.pl-btn svg{width:18px;height:18px}
+.pl-btn .ico-pause{display:none}
+.player.playing .pl-btn .ico-play{display:none}
+.player.playing .pl-btn .ico-pause{display:block}
+.pl-info{flex:none;min-width:0;max-width:28vw;overflow:hidden}
+.pl-label{font-family:'Oswald',sans-serif;font-weight:700;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#FFD60A}
+.pl-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;color:#F1FAEE;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl-prog{flex:1;display:flex;align-items:center;gap:8px;min-width:60px}
+.pl-time{font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;font-variant-numeric:tabular-nums;color:rgba(241,250,238,.55);flex:none}
+.pl-track{position:relative;flex:1;height:5px;border-radius:3px;background:rgba(241,250,238,.18);cursor:pointer}
+.pl-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:#FFD60A;border-radius:3px;transition:width .25s linear}
+.pl-seek{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;margin:0}
+.pl-close{flex:none;background:transparent;border:none;color:rgba(241,250,238,.4);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;transition:color .13s}
+.pl-close:hover{color:#F1FAEE}
+.toast-rss{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(12px);z-index:95;background:#FFD60A;color:#0D0D0D;font-family:'Oswald',sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.toast-rss.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:600px){.pl-info{display:none}.pl-time{display:none}}
+
+.plat-soon{opacity:.55;cursor:default;pointer-events:none}
+.ps-soon{color:#FFD60A !important}
 </style>
 </head>
 <body>
@@ -605,6 +666,7 @@ img{max-width:100%;display:block}
       <div class="mh-bar">
         <nav class="mh-sports">
           <span>LNH</span><span class="sep"></span>
+          <span>NFL</span><span class="sep"></span>
           <span>NBA</span><span class="sep"></span>
           <span>FOOT</span><span class="sep"></span>
           <span>F1</span><span class="sep"></span>
@@ -625,7 +687,7 @@ img{max-width:100%;display:block}
       <div>
         <div class="kick lede-kick rv">Le podcast sport quotidien</div>
         <h1 class="headline rv">TOUT LE SPORT DE LA NUIT — ET CE QU'IL FAUT <span class="hl">EN PENSER.</span></h1>
-        <p class="deck rv">LNH, NBA, foot européen, F1, MMA. Décortiqués chaque matin en 4 à 6 minutes par une voix qui a un point de vue.</p>
+        <p class="deck rv">LNH, NFL, NBA, foot, F1, MMA. Décortiqués chaque matin en 4 à 6 minutes par une voix qui a un point de vue.</p>
         <div class="hero-cta rv">
           <a class="btn-listen" href="#ecouter">
             ÉCOUTER
@@ -649,14 +711,14 @@ img{max-width:100%;display:block}
       <div>
         <div class="kick">L'infolettre</div>
         <h2>L'ÉDITION, DIRECTEMENT DANS <span class="hl">TA BOÎTE.</span></h2>
-        <p class="sub">Chaque matin à 6h : le brief audio du jour et les liens pour l'écouter où tu veux. Gratuit, et zéro spam.</p>
+        <p class="sub">5 minutes de sport chaque matin : le résumé écrit de l'épisode du jour + le lien pour écouter. Gratuit, zéro spam.</p>
       </div>
       <form class="news-form" id="newsForm">
         <div class="nf-row">
           <input type="email" id="newsEmail" placeholder="ton@courriel.com" required="" aria-label="Adresse courriel">
           <button type="submit">S'ABONNER</button>
         </div>
-        <p class="nf-note">Déjà 4 200+ abonnés au Québec, en France et en Belgique.</p>
+        <p class="nf-note">Gratuit. Un courriel par matin, le sport condensé en 5 minutes.</p>
         <p class="nf-ok">✓ C'est noté — surveille ta boîte demain à 6h.</p>
       </form>
     </div>
@@ -670,21 +732,21 @@ img{max-width:100%;display:block}
         <p class="note">Abonne-toi une fois, reçois le brief chaque matin à 6h, heure de l'Est.</p>
       </div>
       <div class="ls-grid">
-        <a class="plat" href="#" aria-label="Spotify">
+        <span class="plat plat-soon" aria-label="Spotify — bientôt disponible">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 100 24 12 12 0 000-24zm5.5 17.3a.75.75 0 01-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 11-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.27a.94.94 0 01-1.29.31c-3.23-1.98-8.15-2.56-11.97-1.4a.94.94 0 11-.54-1.8c4.37-1.31 9.79-.66 13.5 1.6.44.27.58.85.3 1.29zm.13-3.4C15.73 8.27 9.1 8.05 5.4 9.17a1.12 1.12 0 11-.65-2.15c4.25-1.28 11.57-1.03 16.1 1.66a1.12 1.12 0 11-1.15 1.93z"></path></svg>
-          <span class="pt"><span class="pl">Spotify</span><span class="ps">Abonnement gratuit</span></span>
-          <span class="arr">→</span>
-        </a>
-        <a class="plat" href="#" aria-label="Apple Podcasts">
+          <span class="pt"><span class="pl">Spotify</span><span class="ps ps-soon">Bientôt disponible</span></span>
+          <span class="arr">—</span>
+        </span>
+        <span class="plat plat-soon" aria-label="Apple Podcasts — bientôt disponible">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0012 22.5 10.5 10.5 0 0012 1.5zm0 4.2a2.7 2.7 0 110 5.4 2.7 2.7 0 010-5.4zM7.6 15.1c0-2 2-3.1 4.4-3.1s4.4 1.1 4.4 3.1c0 1-.4 1.9-1 2.6-.7-.9-1.9-1.5-3.4-1.5s-2.7.6-3.4 1.5c-.6-.7-1-1.6-1-2.6zM12 18.2c1.4 0 2.4.7 2.4 1.9 0 1-.9 2.4-2.4 2.4s-2.4-1.4-2.4-2.4c0-1.2 1-1.9 2.4-1.9z"></path></svg>
-          <span class="pt"><span class="pl">Apple Podcasts</span><span class="ps">iPhone · iPad · Mac</span></span>
-          <span class="arr">→</span>
-        </a>
-        <a class="plat" href="#" aria-label="YouTube">
+          <span class="pt"><span class="pl">Apple Podcasts</span><span class="ps ps-soon">Bientôt disponible</span></span>
+          <span class="arr">—</span>
+        </span>
+        <button class="plat" id="lb-rss" type="button" aria-label="Copier le flux RSS">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.5v-7l6.3 3.5z"></path></svg>
-          <span class="pt"><span class="pl">YouTube</span><span class="ps">Version vidéo</span></span>
-          <span class="arr">→</span>
-        </a>
+          <span class="pt"><span class="pl">Flux RSS</span><span class="ps">Copier · toute app</span></span>
+          <span class="arr">⧉</span>
+        </button>
       </div>
     </div>
   </section>
@@ -760,5 +822,102 @@ img{max-width:100%;display:block}
 
 
 
+
+
+<!-- STICKY PLAYER -->
+<div class="player" id="lb-player" role="region" aria-label="Lecteur audio">
+  <div class="player-inner">
+    <button class="pl-btn" id="lb-toggle" aria-label="Écouter l'épisode" aria-pressed="false">
+      <svg class="ico-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="ico-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+    </button>
+    <div class="pl-info">
+      <div class="pl-label">Dernier épisode</div>
+      <div class="pl-title" id="lb-title">Chargement…</div>
+    </div>
+    <div class="pl-prog">
+      <span class="pl-time" id="lb-cur">0:00</span>
+      <div class="pl-track">
+        <div class="pl-fill" id="lb-fill"></div>
+        <input class="pl-seek" id="lb-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Position">
+      </div>
+      <span class="pl-time" id="lb-dur">0:00</span>
+    </div>
+    <button class="pl-close" id="lb-close" aria-label="Fermer le lecteur">✕</button>
+  </div>
+  <audio id="lb-audio" preload="none"></audio>
+</div>
+<div class="toast-rss" id="lb-toast">Flux RSS copié ✓</div>
+
+<script>
+(function(){
+  var FEED='/feed.xml', TODAY_MP3=function(){var d=new Date();function p(n){return(n<10?'0':'')+n;}return'/audio/'+d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'.mp3';};
+  var audio=document.getElementById('lb-audio'),
+      player=document.getElementById('lb-player'),
+      toggle=document.getElementById('lb-toggle'),
+      titleEl=document.getElementById('lb-title'),
+      curEl=document.getElementById('lb-cur'),
+      durEl=document.getElementById('lb-dur'),
+      fill=document.getElementById('lb-fill'),
+      seek=document.getElementById('lb-seek'),
+      closeBtn=document.getElementById('lb-close'),
+      toast=document.getElementById('lb-toast');
+  var loaded=false,srcReady=false;
+
+  function p(n){return(n<10?'0':'')+n;}
+  function fmt(s){if(!isFinite(s)||s<0)s=0;return Math.floor(s/60)+':'+p(Math.floor(s%60));}
+
+  function loadFeed(){
+    if(loaded)return;loaded=true;
+    fetch(FEED,{cache:'no-store'}).then(function(r){return r.text();}).then(function(xml){
+      var doc=new DOMParser().parseFromString(xml,'application/xml');
+      var enc=doc.querySelector('item enclosure');
+      var ttl=doc.querySelector('item title');
+      if(enc&&enc.getAttribute('url')){
+        // Convert GitHub release URL to worker proxy URL
+        var ghUrl=enc.getAttribute('url');
+        var dateMatch=ghUrl.match(/(\d{4}-\d{2}-\d{2})\.mp3/);
+        audio.src=dateMatch?'/audio/'+dateMatch[1]+'.mp3':TODAY_MP3();
+        if(ttl)titleEl.textContent=ttl.textContent;
+      }else{audio.src=TODAY_MP3();}
+      srcReady=true;
+    }).catch(function(){audio.src=TODAY_MP3();srcReady=true;});
+  }
+  loadFeed();
+
+  function showPlayer(){player.classList.add('show');document.body.style.paddingBottom='72px';}
+  function doPlay(){
+    showPlayer();
+    var go=function(){audio.play().catch(function(){});};
+    if(srcReady)go();else{var t=setInterval(function(){if(srcReady){clearInterval(t);go();}},60);setTimeout(function(){clearInterval(t);},5000);}
+  }
+
+  toggle.addEventListener('click',function(){if(audio.paused)doPlay();else audio.pause();});
+  closeBtn.addEventListener('click',function(){audio.pause();player.classList.remove('show');document.body.style.paddingBottom='';});
+  audio.addEventListener('play',function(){player.classList.add('playing');toggle.setAttribute('aria-pressed','true');toggle.setAttribute('aria-label','Mettre en pause');});
+  audio.addEventListener('pause',function(){player.classList.remove('playing');toggle.setAttribute('aria-pressed','false');toggle.setAttribute('aria-label','Écouter l'épisode');});
+  audio.addEventListener('loadedmetadata',function(){durEl.textContent=fmt(audio.duration);});
+  audio.addEventListener('timeupdate',function(){
+    curEl.textContent=fmt(audio.currentTime);
+    if(audio.duration){var pct=(audio.currentTime/audio.duration)*100;fill.style.width=pct+'%';seek.value=pct;}
+  });
+  seek.addEventListener('input',function(){if(audio.duration)audio.currentTime=(seek.value/100)*audio.duration;});
+
+  // Wire all ÉCOUTER buttons
+  document.querySelectorAll('.btn-listen,.mh-listen,.tb-listen').forEach(function(el){
+    el.addEventListener('click',function(e){e.preventDefault();doPlay();});
+    if(el.tagName==='A'){el.href='#';}
+  });
+
+  // RSS copy
+  var rssBtn=document.getElementById('lb-rss');
+  if(rssBtn){rssBtn.addEventListener('click',function(){
+    var url='https://www.lebuzzer.com/feed.xml';
+    if(navigator.clipboard)navigator.clipboard.writeText(url).then(showToast,showToast);
+    else showToast();
+    function showToast(){toast.classList.add('show');setTimeout(function(){toast.classList.remove('show');},2000);}
+  });}
+})();
+</script>
 
 </body></html>
