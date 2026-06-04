@@ -81,6 +81,39 @@ async function proxyTo(request, target, contentType = null, maxAge = 86400, forc
     redirect: "follow",
   });
   const headers = new Headers(upstream.headers);
+
+  // GitHub raw (raw.githubusercontent.com) attaches a hostile CSP/security set
+  // to every response: `default-src 'none'; style-src 'unsafe-inline'; sandbox`.
+  // The `sandbox` directive + `default-src 'none'` block ALL fonts (incl. data:
+  // URIs), scripts, and downgrade rendering. We must strip those upstream
+  // headers and set our own permissive policy, otherwise the landing page can
+  // never load its embedded Anton / display fonts.
+  headers.delete("Content-Security-Policy");
+  headers.delete("Content-Security-Policy-Report-Only");
+  headers.delete("X-Frame-Options");
+  headers.delete("X-Content-Type-Options");
+  headers.delete("Cross-Origin-Resource-Policy");
+  headers.delete("Cross-Origin-Embedder-Policy");
+  headers.delete("Cross-Origin-Opener-Policy");
+
+  // Apply a sane CSP only to HTML pages; binary/asset responses don't need one.
+  const ct = (contentType || upstream.headers.get("Content-Type") || "").toLowerCase();
+  if (ct.includes("text/html")) {
+    headers.set(
+      "Content-Security-Policy",
+      "default-src 'self'; " +
+        "style-src 'unsafe-inline' https://fonts.googleapis.com; " +
+        "font-src 'self' data: https://fonts.gstatic.com; " +
+        "img-src 'self' data: https:; " +
+        "script-src 'unsafe-inline'; " +
+        "connect-src 'self' https:; " +
+        "media-src 'self' https:; " +
+        "frame-ancestors 'none'; " +
+        "form-action 'self' mailto:"
+    );
+    headers.set("X-Frame-Options", "DENY");
+  }
+
   headers.set("Cache-Control", `public, max-age=${maxAge}`);
   headers.set("Access-Control-Allow-Origin", "*");
   if (contentType) headers.set("Content-Type", contentType);
