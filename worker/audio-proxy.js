@@ -20,7 +20,7 @@ export default {
     // MP3 épisode : /audio/YYYY-MM-DD.mp3
     const m = url.pathname.match(/^\/audio\/(\d{4}-\d{2}-\d{2})\.mp3$/);
     if (m) {
-      return proxyTo(request, `https://github.com/${REPO}/releases/download/${m[1]}/${m[1]}.mp3`);
+      return proxyTo(request, `https://github.com/${REPO}/releases/download/${m[1]}/${m[1]}.mp3`, "audio/mpeg");
     }
 
     // Clips courts : /clips/YYYY-MM-DD_N.mp4
@@ -29,9 +29,9 @@ export default {
       return proxyTo(request, `https://github.com/${REPO}/releases/download/${c[1]}/${c[1]}_clip_${c[2]}.mp4`);
     }
 
-    // Cover artwork — pointe vers cover-v1.png dans le repo
+    // Cover artwork 3000×3000 pour Apple/Spotify
     if (url.pathname === "/artwork.jpg" || url.pathname === "/artwork.png") {
-      return proxyTo(request, `${RAW}/artwork/cover-v1.png`, "image/png", 86400);
+      return proxyTo(request, `${RAW}/artwork/cover-3000.jpg`, "image/jpeg", 86400);
     }
 
     // Assets du site (polices, images) : /assets/<fichier>

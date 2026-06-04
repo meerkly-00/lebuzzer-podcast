@@ -713,9 +713,9 @@ img{max-width:100%;display:block}
         <h2>L'ÉDITION, DIRECTEMENT DANS <span class="hl">TA BOÎTE.</span></h2>
         <p class="sub">5 minutes de sport chaque matin : le résumé écrit de l'épisode du jour + le lien pour écouter. Gratuit, zéro spam.</p>
       </div>
-      <form class="news-form" id="newsForm">
+      <form class="news-form" id="newsForm" action="https://formspree.io/f/REMPLACER_PAR_TON_ID" method="POST">
         <div class="nf-row">
-          <input type="email" id="newsEmail" placeholder="ton@courriel.com" required="" aria-label="Adresse courriel">
+          <input type="email" id="newsEmail" name="email" placeholder="ton@courriel.com" required="" aria-label="Adresse courriel">
           <button type="submit">S'ABONNER</button>
         </div>
         <p class="nf-note">Gratuit. Un courriel par matin, le sport condensé en 5 minutes.</p>
@@ -759,7 +759,7 @@ img{max-width:100%;display:block}
         <nav class="fnav">
           <div class="col">
             <h4>Écouter</h4>
-            <a href="#">Spotify</a><a href="#">Apple Podcasts</a><a href="#">YouTube</a><a href="#">Flux RSS</a>
+            <a href="#">Spotify</a><a href="#">Apple Podcasts</a><a href="#">YouTube</a><a href="/feed.xml">Flux RSS</a>
           </div>
           <div class="col">
             <h4>Suivre</h4>
@@ -767,7 +767,7 @@ img{max-width:100%;display:block}
           </div>
           <div class="col">
             <h4>Contact</h4>
-            <a href="#">Annonceurs</a><a href="#">Presse</a><a href="#">Nous écrire</a>
+            <a href="mailto:prestopodcast@gmail.com?subject=Annonceurs%20%E2%80%94%20LE%20BUZZER">Annonceurs</a><a href="mailto:prestopodcast@gmail.com?subject=Presse%20%E2%80%94%20LE%20BUZZER">Presse</a><a href="mailto:prestopodcast@gmail.com">Nous écrire</a>
           </div>
         </nav>
       </div>
@@ -810,12 +810,20 @@ img{max-width:100%;display:block}
   }
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
-  // newsletter (front-end demo)
+  // newsletter — envoi reel vers Formspree
   var f=document.getElementById('newsForm');
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var em=document.getElementById('newsEmail');
-    if(em.checkValidity()) f.classList.add('sent'); else em.reportValidity();
+    if(!em.checkValidity()){em.reportValidity();return;}
+    var btn=f.querySelector('button[type=submit]');
+    if(btn)btn.disabled=true;
+    fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){
+        if(r.ok){f.classList.add('sent');}
+        else{if(btn)btn.disabled=false;r.json().then(function(d){alert((d.errors&&d.errors[0]&&d.errors[0].message)||'Oups, reessaie.');}).catch(function(){alert('Oups, reessaie.');});}
+      })
+      .catch(function(){if(btn)btn.disabled=false;alert('Probleme reseau, reessaie.');});
   });
 })();
 </script>
@@ -895,7 +903,7 @@ img{max-width:100%;display:block}
   toggle.addEventListener('click',function(){if(audio.paused)doPlay();else audio.pause();});
   closeBtn.addEventListener('click',function(){audio.pause();player.classList.remove('show');document.body.style.paddingBottom='';});
   audio.addEventListener('play',function(){player.classList.add('playing');toggle.setAttribute('aria-pressed','true');toggle.setAttribute('aria-label','Mettre en pause');});
-  audio.addEventListener('pause',function(){player.classList.remove('playing');toggle.setAttribute('aria-pressed','false');toggle.setAttribute('aria-label','Écouter l'épisode');});
+  audio.addEventListener('pause',function(){player.classList.remove('playing');toggle.setAttribute('aria-pressed','false');toggle.setAttribute('aria-label',"Écouter l'épisode");});
   audio.addEventListener('loadedmetadata',function(){durEl.textContent=fmt(audio.duration);});
   audio.addEventListener('timeupdate',function(){
     curEl.textContent=fmt(audio.currentTime);
