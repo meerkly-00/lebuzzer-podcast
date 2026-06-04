@@ -43,7 +43,7 @@ jobs:
           PODCAST_TITLE: LE BUZZER
           PODCAST_DESCRIPTION: "Le podcast sport quotidien francophone québécois. Résultats, histoires et potins de la LNH, NBA, foot, F1 et MMA en 5 minutes. Les épisodes restent disponibles 7 jours."
           PODCAST_BASE_URL: https://www.lebuzzer.com
-          PODCAST_ARTWORK_URL: https://www.lebuzzer.com/artwork.jpg
+          PODCAST_ARTWORK_URL: https://www.lebuzzer.com/artwork.png
           PODCAST_AUTHOR: LE BUZZER
           PODCAST_OWNER_EMAIL: lebuzzerpod@gmail.com
           EPISODE_TITLE_PREFIX: "LE BUZZER — édition du"

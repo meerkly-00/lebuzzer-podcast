@@ -29,9 +29,9 @@ export default {
       return proxyTo(request, `https://github.com/${REPO}/releases/download/${c[1]}/${c[1]}_clip_${c[2]}.mp4`);
     }
 
-    // Cover artwork 3000×3000 pour Apple/Spotify
-    if (url.pathname === "/artwork.jpg" || url.pathname === "/artwork.png") {
-      return proxyTo(request, `${RAW}/artwork/cover-3000.jpg`, "image/jpeg", 86400);
+    // Cover artwork 3000×3000 pour Apple/Spotify (PNG)
+    if (url.pathname === "/artwork.png" || url.pathname === "/artwork.jpg") {
+      return proxyTo(request, `${RAW}/artwork/cover.png`, "image/png", 86400);
     }
 
     // Assets du site (polices, images) : /assets/<fichier>

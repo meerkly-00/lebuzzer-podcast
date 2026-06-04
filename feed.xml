@@ -8,16 +8,16 @@
     <itunes:author>LE BUZZER</itunes:author>
     <itunes:owner>
       <itunes:name>LE BUZZER</itunes:name>
-      <itunes:email>prestopodcast@gmail.com</itunes:email>
+      <itunes:email>lebuzzerpod@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>no</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:category text="News">
       <itunes:category text="Daily News"/>
     </itunes:category>
-    <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
+    <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
     <image>
-      <url>https://www.lebuzzer.com/artwork.jpg</url>
+      <url>https://www.lebuzzer.com/artwork.png</url>
       <title>LE BUZZER</title>
       <link>https://www.lebuzzer.com</link>
     </image>
@@ -30,7 +30,7 @@
       <itunes:duration>372</itunes:duration>
       <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
       <itunes:episode>1</itunes:episode>
-      <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
+      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
     </item>
     <item>
       <title>LE BUZZER — édition du 3 juin 2026</title>
@@ -41,7 +41,7 @@
       <itunes:duration>333</itunes:duration>
       <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
       <itunes:episode>2</itunes:episode>
-      <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
+      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
     </item>
     <item>
       <title>LE BUZZER — édition du 2 juin 2026</title>
@@ -52,7 +52,7 @@
       <itunes:duration>310</itunes:duration>
       <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
       <itunes:episode>1</itunes:episode>
-      <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
+      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
     </item>
   </channel>
 </rss>
