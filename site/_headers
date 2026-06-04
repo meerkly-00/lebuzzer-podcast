@@ -1,0 +1,2 @@
+/*
+  Content-Security-Policy: default-src 'self'; style-src 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; script-src 'unsafe-inline'; connect-src 'self' https:; form-action 'self' mailto:
