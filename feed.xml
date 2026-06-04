@@ -8,7 +8,7 @@
     <itunes:author>LE BUZZER</itunes:author>
     <itunes:owner>
       <itunes:name>LE BUZZER</itunes:name>
-      <itunes:email>lebuzzerpod@gmail.com</itunes:email>
+      <itunes:email>prestopodcast@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>no</itunes:explicit>
     <itunes:type>episodic</itunes:type>
@@ -44,15 +44,4 @@
       <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
     </item>
     <item>
-      <title>LE BUZZER — édition du 2 juin 2026</title>
-      <description>Au menu : Top international, Le moment QC, L'angle du jour</description>
-      <pubDate>Tue, 02 Jun 2026 02:23:48 +0000</pubDate>
-      <guid isPermaLink="false">https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-06-02/2026-06-02.mp3</guid>
-      <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-06-02/2026-06-02.mp3" type="audio/mpeg" length="3474486"/>
-      <itunes:duration>356</itunes:duration>
-      <itunes:summary>Au menu : Top international, Le moment QC, L'angle du jour</itunes:summary>
-      <itunes:episode>1</itunes:episode>
-      <itunes:image href="https://www.lebuzzer.com/artwork.jpg"/>
-    </item>
-  </channel>
-</rss>
+      <tit
