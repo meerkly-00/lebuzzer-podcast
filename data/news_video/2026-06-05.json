@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "Larkin demande un trade, Detroit en chaos",
-      "hl": "TRADE"
+      "text": "Jarvis en prolongation! Hurricanes égalisent la finale",
+      "hl": "4-3"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes dominent Hamilton en prolongation, 30-27",
+      "hl": "PROLONGATION"
     },
     {
       "tag": "NBA",
-      "text": "Wembanyama en finale NBA à 20 ans",
-      "hl": "20 ANS"
+      "text": "Wembanyama en finale à 22 ans, New York en contrôle",
+      "hl": "22 ANS"
     },
     {
-      "tag": "FOOT",
-      "text": "France se fait sortir par la Côte d'Ivoire",
-      "hl": "2-1"
+      "tag": "F1",
+      "text": "Leclerc plus rapide aux essais libres 1 à Monaco",
+      "hl": "MONACO"
     },
     {
-      "tag": "QC",
-      "text": "Crépeau gardien no 1 du Canada 2026",
-      "hl": "No 1"
-    },
-    {
-      "tag": "QC",
-      "text": "Méthot premier coach-chef québécois LPHF",
-      "hl": "PREMIER"
+      "tag": "LNH",
+      "text": "Knies presque trade aux Canadiens, deal capote",
+      "hl": "TRADE"
     }
   ]
 }
