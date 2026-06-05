@@ -1,0 +1,30 @@
+{
+  "date": "4 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Larkin demande un échange aux Red Wings",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Towns écrase Wembanyama, Knicks dominent",
+      "hl": "FINALS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France perd contre la Côte d'Ivoire 2-1",
+      "hl": "2-1"
+    },
+    {
+      "tag": "QC",
+      "text": "Crépeau gardien no 1 du Canada 2026",
+      "hl": "No 1"
+    },
+    {
+      "tag": "QC",
+      "text": "Méthot 1er entraîneur-chef QC au hockey fém",
+      "hl": "PREMIÈRE"
+    }
+  ]
+}
