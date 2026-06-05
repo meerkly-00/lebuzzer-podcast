@@ -71,11 +71,24 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Générer + publier le reel vidéo best-of (TikTok/Reels)
+        continue-on-error: true   # une vidéo ratée ne casse jamais le podcast
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+          python tools/news_video_data.py "output/scripts/$DATE.xml" "data/news_video/$DATE.json"
+          python tools/render_news_reel.py "data/news_video/$DATE.json" "output/clips/${DATE}_news.mp4"
+          gh release upload "$DATE" "output/clips/${DATE}_news.mp4" --clobber
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Sauvegarder feed.xml, contexte et script
         run: |
           git config user.name "Buzzer Bot"
           git config user.email "buzzer-bot@noreply"
           git add feed.xml data/context.json "output/scripts/$DATE.xml"
+          [ -f "data/news_video/$DATE.json" ] && git add "data/news_video/$DATE.json" || true
           git diff --cached --quiet || git commit -m "buzzer: $DATE [skip ci]"
           git pull --rebase origin main
           git push

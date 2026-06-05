@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LE BUZZER — Reel nouvelles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0D0D0D; --ink2:#201D19; --paper:#EFEDDF; --dim:#B6B3A4;
+    --muted:#7E7A6C; --red:#ED3A47; --gold:#F3C518;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ink);}
+  body{font-family:'Oswald',sans-serif;color:var(--paper);-webkit-font-smoothing:antialiased;}
+  #stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+    background:radial-gradient(120% 70% at 50% -6%,rgba(237,58,71,.18),transparent 55%),var(--ink);}
+
+  /* HEADER broadcast (toujours visible) */
+  #header{position:absolute;top:0;left:0;right:0;height:120px;display:flex;
+    align-items:center;justify-content:space-between;padding:0 60px;z-index:20;
+    font-family:'Spline Sans Mono',monospace;font-size:30px;letter-spacing:.14em;}
+  #header .l{color:var(--paper);font-weight:600;}
+  #header .l .qc{color:var(--dim);}
+  #header .r{display:flex;align-items:center;gap:14px;color:var(--paper);}
+  #header .dot{width:14px;height:14px;border-radius:50%;background:var(--red);
+    box-shadow:0 0 0 6px rgba(237,58,71,.25);animation:blink 1.6s ease-in-out infinite;}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+  /* SCENES */
+  .scene{position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;padding:0 90px;text-align:center;
+    opacity:0;transform:translateY(40px);
+    transition:opacity .5s ease,transform .5s cubic-bezier(.2,.7,.2,1);}
+  .scene.show{opacity:1;transform:translateY(0);}
+  .scene.gone{opacity:0;transform:translateY(-30px);transition:opacity .35s ease,transform .35s ease;}
+
+  .kick{font-family:'Spline Sans Mono',monospace;font-size:34px;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:34px;}
+  .display{font-family:'Anton',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;}
+
+  /* INTRO */
+  .bell-wrap{width:300px;height:300px;margin-bottom:50px;filter:drop-shadow(0 0 60px rgba(243,197,24,.35));}
+  .intro-title{font-size:150px;color:var(--paper);}
+  .intro-date{font-family:'Spline Sans Mono',monospace;font-size:40px;letter-spacing:.2em;
+    color:var(--dim);margin-top:30px;text-transform:uppercase;}
+
+  /* HEADLINE CARD */
+  .tag{display:inline-block;font-family:'Spline Sans Mono',monospace;font-size:36px;
+    font-weight:600;letter-spacing:.18em;color:var(--ink);background:var(--gold);
+    padding:10px 28px;border-radius:6px;margin-bottom:46px;}
+  .headline{font-size:108px;color:var(--paper);max-width:900px;}
+  .hl-chip{display:inline-block;margin-top:50px;font-family:'Anton',sans-serif;
+    text-transform:uppercase;font-size:88px;color:var(--ink);background:var(--red);
+    padding:6px 40px;transform:rotate(-2deg);}
+
+  /* OUTRO */
+  .lockup{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:150px;
+    color:var(--paper);line-height:.86;position:relative;}
+  .lockup .le{display:block;font-size:60px;letter-spacing:.28em;color:var(--dim);margin-bottom:18px;}
+  .lockup .z{color:var(--red);position:relative;display:inline-block;}
+  .lockup .bell{position:absolute;left:50%;bottom:72%;transform:translateX(-50%);width:.5em;height:.5em;}
+  .outro-sub{font-size:50px;color:var(--paper);margin-top:50px;font-weight:600;}
+  .outro-plat{font-family:'Spline Sans Mono',monospace;font-size:36px;letter-spacing:.16em;
+    color:var(--dim);margin-top:40px;text-transform:uppercase;}
+  .outro-cta{display:inline-block;margin-top:46px;background:var(--red);color:var(--paper);
+    font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:40px;letter-spacing:.06em;
+    padding:20px 50px;border-radius:60px;}
+
+  /* bottom ticker */
+  #ticker{position:absolute;bottom:70px;left:0;right:0;text-align:center;
+    font-family:'Spline Sans Mono',monospace;font-size:30px;letter-spacing:.2em;
+    color:var(--muted);text-transform:uppercase;z-index:20;}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="header">
+    <div class="l">LE BUZZER <span class="qc">· QC</span></div>
+    <div class="r"><span class="dot"></span><span id="clock">00:00</span> · EN DIRECT</div>
+  </div>
+  <div id="scenes"></div>
+  <div id="ticker">LNH · NFL · NBA · FOOT · F1 · MMA</div>
+</div>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="bell" viewBox="0 0 120 120">
+    <g><line x1="60" y1="22" x2="60" y2="9" stroke="#F3C518" stroke-width="5.5" stroke-linecap="round"/>
+    <line x1="48.5" y1="25.6" x2="41.6" y2="15" stroke="#F3C518" stroke-width="5.5" stroke-linecap="round"/>
+    <line x1="71.5" y1="25.6" x2="78.4" y2="15" stroke="#F3C518" stroke-width="5.5" stroke-linecap="round"/>
+    <line x1="41.2" y1="35.2" x2="29.5" y2="30.6" stroke="#F3C518" stroke-width="5.5" stroke-linecap="round"/>
+    <line x1="78.8" y1="35.2" x2="90.5" y2="30.6" stroke="#F3C518" stroke-width="5.5" stroke-linecap="round"/></g>
+    <g fill="#EFEDDF"><circle cx="60" cy="41" r="4"/>
+    <path d="M42 86 C42 62 48 45 60 45 C72 45 78 62 78 86 Z"/>
+    <rect x="36" y="86" width="48" height="8" rx="4"/><rect x="55" y="95" width="10" height="7" rx="3.5"/></g>
+  </symbol>
+</defs></svg>
+
+<script>
+const DEFAULT = {
+  date: "5 JUIN 2026",
+  headlines: [
+    {tag:"LNH",  text:"Dylan Larkin demande un trade", hl:"TRADE"},
+    {tag:"NBA",  text:"Wembanyama en finale à 20 ans", hl:"20 ANS"},
+    {tag:"FOOT", text:"La France tombe contre la Côte d'Ivoire", hl:"2-1"},
+    {tag:"QC",   text:"Crépeau, gardien no 1 du Canada au Mondial", hl:"No 1"},
+    {tag:"FOOT", text:"Liverpool nomme Iraola entraîneur-chef", hl:"LIVERPOOL"},
+  ],
+};
+const DATA = window.__REEL_DATA || DEFAULT;
+
+// durées (ms)
+const T_INTRO=2800, T_CARD=3400, T_OUTRO=3600, T_TRANS=500;
+const scenesEl = document.getElementById('scenes');
+
+function el(cls, html){const d=document.createElement('div'); d.className=cls; d.innerHTML=html; return d;}
+
+// build intro
+const intro = el('scene intro',
+  `<div class="bell-wrap"><svg viewBox="0 0 120 120" style="width:100%;height:100%"><use href="#bell"/></svg></div>
+   <div class="kick">Les grosses nouvelles</div>
+   <div class="display intro-title">DU JOUR</div>
+   <div class="intro-date">${DATA.date}</div>`);
+scenesEl.appendChild(intro);
+
+// build headline cards
+const cards = DATA.headlines.map(h => {
+  const chip = h.hl ? `<div class="hl-chip">${h.hl}</div>` : '';
+  return el('scene card',
+    `<div class="tag">${h.tag}</div>
+     <div class="display headline">${h.text}</div>${chip}`);
+});
+cards.forEach(c => scenesEl.appendChild(c));
+
+// build outro
+const outro = el('scene outro',
+  `<div class="lockup">BU<span class="z"><span class="bell"><svg viewBox="0 0 120 120" style="width:100%;height:100%"><use href="#bell"/></svg></span>Z</span>ER
+     <span class="le" style="position:absolute;top:-70px;left:0;right:0">LE</span></div>
+   <div class="outro-sub">Tout ça en 5 min, chaque matin.</div>
+   <div class="outro-plat">Spotify · Apple Podcasts · lebuzzer.com</div>
+   <div class="outro-cta">SUIS @le_buzzerqc</div>`);
+scenesEl.appendChild(outro);
+
+// schedule
+const seq = [intro, ...cards, outro];
+const durs = [T_INTRO, ...cards.map(()=>T_CARD), T_OUTRO];
+let starts=[], t=0;
+for(let i=0;i<seq.length;i++){ starts.push(t); t+=durs[i]; }
+const TOTAL = t;
+window.__DURATION_MS = TOTAL;
+
+function runTimeline(){
+  const t0 = performance.now();
+  seq.forEach((s,i)=>{
+    setTimeout(()=>{ s.classList.add('show'); }, starts[i]);
+    if(i < seq.length-1){
+      setTimeout(()=>{ s.classList.remove('show'); s.classList.add('gone'); }, starts[i]+durs[i]-T_TRANS);
+    }
+  });
+  // header clock
+  const clock = document.getElementById('clock');
+  function tick(){
+    const e = performance.now()-t0;
+    const s = Math.floor(e/1000);
+    clock.textContent = '00:'+String(s).padStart(2,'0');
+    if(e < TOTAL+200) requestAnimationFrame(tick);
+  }
+  tick();
+  window.__started = true;
+}
+
+// démarrer une fois les polices prêtes (rendu net pour la capture)
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve())
+  .then(()=> setTimeout(runTimeline, 150));
+</script>
+</body>
+</html>

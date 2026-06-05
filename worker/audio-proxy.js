@@ -29,6 +29,12 @@ export default {
       return proxyTo(request, `https://github.com/${REPO}/releases/download/${c[1]}/${c[1]}_clip_${c[2]}.mp4`);
     }
 
+    // Reel vidéo best-of du jour : /clips/YYYY-MM-DD_news.mp4
+    const n = url.pathname.match(/^\/clips\/(\d{4}-\d{2}-\d{2})_news\.mp4$/);
+    if (n) {
+      return proxyTo(request, `https://github.com/${REPO}/releases/download/${n[1]}/${n[1]}_news.mp4`, "video/mp4");
+    }
+
     // Cover artwork 3000×3000 pour Apple/Spotify (PNG)
     if (url.pathname === "/artwork.png" || url.pathname === "/artwork.jpg") {
       return proxyTo(request, `${RAW}/artwork/cover.png`, "image/png", 86400);

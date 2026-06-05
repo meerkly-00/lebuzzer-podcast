@@ -1,0 +1,30 @@
+{
+  "date": "5 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Larkin demande un trade, Detroit en chaos",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Wembanyama en finale NBA à 20 ans",
+      "hl": "20 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France se fait sortir par la Côte d'Ivoire",
+      "hl": "2-1"
+    },
+    {
+      "tag": "QC",
+      "text": "Crépeau gardien no 1 du Canada 2026",
+      "hl": "No 1"
+    },
+    {
+      "tag": "QC",
+      "text": "Méthot premier coach-chef québécois LPHF",
+      "hl": "PREMIER"
+    }
+  ]
+}
