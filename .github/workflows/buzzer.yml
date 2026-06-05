@@ -33,10 +33,11 @@ jobs:
 
       - name: Générer LE BUZZER du jour
         run: |
-          DATE=$(date +%Y-%m-%d)
+          # Date à l'heure du Québec (Est), pas UTC — sinon édition "du lendemain" le soir
+          DATE=$(TZ="America/Toronto" date +%Y-%m-%d)
           export AUDIO_BASE_URL="https://github.com/$GITHUB_REPOSITORY/releases/download/$DATE"
           echo "DATE=$DATE" >> $GITHUB_ENV
-          python run.py
+          python run.py --date "$DATE"
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
