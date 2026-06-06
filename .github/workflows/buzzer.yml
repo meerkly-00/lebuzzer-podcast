@@ -2,7 +2,7 @@ name: LE BUZZER — épisode quotidien
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # 7h00 EDT (UTC-4) — sortie matinale pour le commute
+    - cron: '0 8 * * *'   #vise ~7h EDT : 8h UTC + retard habituel de GitHub Actions (3-4h)
   workflow_dispatch:        # bouton Run manuel dans GitHub
 
 permissions:
