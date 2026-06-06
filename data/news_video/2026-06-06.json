@@ -1,0 +1,30 @@
+{
+  "date": "6 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Knicks dominent 2-0 en finale NBA",
+      "hl": "2-0"
+    },
+    {
+      "tag": "QC",
+      "text": "Suzuki gagne le Selke, Caufield le Lady Byng",
+      "hl": "2 TROPHÉES"
+    },
+    {
+      "tag": "LNH",
+      "text": "Trade Knies-Canadiens annulé par UNE minute",
+      "hl": "1 MINUTE"
+    },
+    {
+      "tag": "MMA",
+      "text": "Pereira affronte Gane à Washington le 14 juin",
+      "hl": "14 JUIN"
+    },
+    {
+      "tag": "F1",
+      "text": "Fred Vasseur de Ferrari hospitalisé à Monaco",
+      "hl": "HOSPITALISÉ"
+    }
+  ]
+}
