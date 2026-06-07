@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "Marner fait histoire à Vegas en triple but",
-      "hl": "PLUS RAPIDE"
-    },
-    {
-      "tag": "NBA",
-      "text": "Spurs au bord du gouffre, Knicks menent 2-0",
-      "hl": "2-0"
+      "text": "Vegas remonte de 4-0, gagne 5-4 en double prolongation",
+      "hl": "5-4"
     },
     {
       "tag": "QC",
-      "text": "Gallagher demande son échange après 19 ans",
-      "hl": "19 ANS"
+      "text": "Nick Suzuki remporte le trophée Selke",
+      "hl": "SELKE"
     },
     {
       "tag": "F1",
-      "text": "Antonelli en pole à Monaco à 19 ans seulement",
-      "hl": "19 ANS"
+      "text": "Antonelli en pole à Monaco, tour magique",
+      "hl": "POLE"
     },
     {
       "tag": "LNH",
-      "text": "Vegas gagne en double OT, mène 2-1",
-      "hl": "2-1"
+      "text": "Brendan Gallagher cherche un échange",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Robert Thomas : dossier en accélération pour le CH",
+      "hl": "THOMAS"
     }
   ]
 }
