@@ -22,6 +22,17 @@
       <link>https://www.lebuzzer.com</link>
     </image>
     <item>
+      <title>LE BUZZER — édition du 7 juin 2026</title>
+      <description>Au menu : Top international, Le moment QC, Le buzz du jour</description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-06-07/2026-06-07.mp3</guid>
+      <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-06-07/2026-06-07.mp3" type="audio/mpeg" length="2837442"/>
+      <itunes:duration>293</itunes:duration>
+      <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
+      <itunes:episode>1</itunes:episode>
+      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
+    </item>
+    <item>
       <title>LE BUZZER — édition du 6 juin 2026</title>
       <description>Au menu : Top international, Le moment QC, Le buzz du jour</description>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
