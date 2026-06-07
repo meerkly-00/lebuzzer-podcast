@@ -51,7 +51,10 @@ jobs:
           SYSTEM_PROMPT_FILE: prompts/system_buzzer_v1.md
           SOURCES_FILE: config/sources_buzzer.yaml
           CLAUDE_MODEL: claude-sonnet-4-6
-          # Voix québécoise authentique (edge-tts, gratuit). Antoine = accent fr-CA.
+          # Mode 2 voix (Felix animateur + Sébastien analyste) via ElevenLabs + jingles.
+          EPISODE_MODE: dialogue
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Fallback voix simple si le mode dialogue échoue (edge-tts, gratuit, accent fr-CA).
           TTS_PROVIDER: edge
           TTS_VOICE: fr-CA-AntoineNeural
           BRIEFING_DUREE_CIBLE: "5"
