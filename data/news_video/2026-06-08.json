@@ -2,29 +2,29 @@
   "date": "8 JUIN 2026",
   "headlines": [
     {
-      "tag": "F1",
-      "text": "Antonelli gagne à Monaco dans le chaos",
-      "hl": "CHAOS"
-    },
-    {
-      "tag": "NBA",
-      "text": "Knicks-Spurs Game 3 ce soir au MSG",
-      "hl": "FINALE"
+      "tag": "FOOT",
+      "text": "Antonelli domine Monaco et s'échappe",
+      "hl": "20 ANS"
     },
     {
       "tag": "QC",
-      "text": "Gallagher dit adieu à Montréal en larmes",
-      "hl": "14 ANS"
-    },
-    {
-      "tag": "LNH",
-      "text": "Suzuki remporte le Selke, meilleur défensif",
-      "hl": "SELKE"
+      "text": "Félix atteint son meilleur classement",
+      "hl": "No 4 MONDIAL"
     },
     {
       "tag": "LNH",
       "text": "Pavelski en entrevue chez les Leafs",
-      "hl": "COACH"
+      "hl": "ZÉRO EXPÉRIENCE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Knicks vs Spurs, billets absurdes",
+      "hl": "MSG"
+    },
+    {
+      "tag": "LNH",
+      "text": "McDavid égale une légende des Oilers",
+      "hl": "5 TROPHÉES"
     }
   ]
 }
