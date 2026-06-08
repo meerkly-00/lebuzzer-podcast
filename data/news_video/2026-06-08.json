@@ -1,0 +1,30 @@
+{
+  "date": "8 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "F1",
+      "text": "Antonelli gagne à Monaco dans le chaos",
+      "hl": "CHAOS"
+    },
+    {
+      "tag": "NBA",
+      "text": "Knicks-Spurs Game 3 ce soir au MSG",
+      "hl": "FINALE"
+    },
+    {
+      "tag": "QC",
+      "text": "Gallagher dit adieu à Montréal en larmes",
+      "hl": "14 ANS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Suzuki remporte le Selke, meilleur défensif",
+      "hl": "SELKE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Pavelski en entrevue chez les Leafs",
+      "hl": "COACH"
+    }
+  ]
+}
