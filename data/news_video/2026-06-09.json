@@ -1,0 +1,30 @@
+{
+  "date": "9 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Wembanyama 32 pts, Spurs électrisent MSG",
+      "hl": "32 PTS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Olise brille avec les Bleus avant la Coupe",
+      "hl": "TRIPLÉ"
+    },
+    {
+      "tag": "LNH",
+      "text": "Babcock près de signer avec Edmonton",
+      "hl": "BABCOCK"
+    },
+    {
+      "tag": "QC",
+      "text": "Gallagher en route vers Vancouver?",
+      "hl": "ÉCHANGE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Vegas menace Carolina 4-0 en finale",
+      "hl": "4-0"
+    }
+  ]
+}
