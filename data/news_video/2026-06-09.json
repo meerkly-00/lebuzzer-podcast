@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "NBA",
-      "text": "Wembanyama 32 pts, Spurs électrisent MSG",
-      "hl": "32 PTS"
-    },
-    {
-      "tag": "FOOT",
-      "text": "Olise brille avec les Bleus avant la Coupe",
-      "hl": "TRIPLÉ"
+      "text": "Wembanyama explose au Garden, 32 points",
+      "hl": "32 POINTS"
     },
     {
       "tag": "LNH",
-      "text": "Babcock près de signer avec Edmonton",
+      "text": "Babcock signé aux Oilers, c'est officieux",
       "hl": "BABCOCK"
     },
     {
       "tag": "QC",
-      "text": "Gallagher en route vers Vancouver?",
-      "hl": "ÉCHANGE"
+      "text": "Lawrence domine d'entrée pour les Als",
+      "hl": "No 1"
     },
     {
-      "tag": "LNH",
-      "text": "Vegas menace Carolina 4-0 en finale",
-      "hl": "4-0"
+      "tag": "F1",
+      "text": "FIA favorise Mercedes, pénalise Red Bull",
+      "hl": "2026"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Bayern ouvre la porte pour Olise, 200M",
+      "hl": "200M €"
     }
   ]
 }
