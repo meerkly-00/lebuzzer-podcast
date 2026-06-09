@@ -53,7 +53,9 @@ def test_is_audio_active():
     today = date(2026, 6, 8)
     assert ep.is_audio_active("2026-06-08", today=today) is True
     assert ep.is_audio_active("2026-06-02", today=today) is True   # 6 jours
-    assert ep.is_audio_active("2026-06-01", today=today) is False  # 7 jours
+    # Boundary is inclusive: exactly keep_days (7) days old is still active
+    assert ep.is_audio_active("2026-06-01", today=today) is True   # 7 jours — limite inclusive
+    assert ep.is_audio_active("2026-05-31", today=today) is False  # 8 jours — hors fenêtre
     assert ep.is_audio_active("2026-05-20", today=today) is False
 
 
@@ -172,3 +174,48 @@ def test_build_all(tmp_path):
     assert page.exists()
     assert "Top international" in page.read_text(encoding="utf-8")
     assert (site / "sitemap.xml").exists()
+
+
+def test_json_ld_injection_safety():
+    """Un audio_url contenant </script> ne doit pas s'échapper du bloc ld+json."""
+    malicious_url = "https://example.com/ep.mp3?x=</script><script>alert(1)</script>"
+    content = {
+        "date": "2026-06-08",
+        "intro": "Intro sans danger.",
+        "chapters": [{"titre": "Top", "paragraphs": ["Para."]}],
+        "outro": "À demain.",
+    }
+    meta = {
+        "title": "LE BUZZER — titre </script> dangereux",
+        "audio_url": malicious_url,
+        "duration_sec": 330,
+        "audio_active": True,
+    }
+    out = ep.render_episode_page(content, meta)
+    # The raw </script> from data must NOT appear unescaped inside a ld+json block
+    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', out, re.DOTALL)
+    assert len(blocks) == 2, f"Expected 2 ld+json blocks, got {len(blocks)}"
+    for block in blocks:
+        assert "</script>" not in block, "Raw </script> found unescaped in a ld+json block"
+        # The escaped form should be present instead
+        assert "<\\/" in block or "</" not in block
+
+
+def test_transcript_html_escaping():
+    """Les caractères HTML dans les paragraphes doivent être échappés dans le rendu."""
+    content = {
+        "date": "2026-06-08",
+        "intro": "Intro.",
+        "chapters": [{"titre": "Top", "paragraphs": ['<b>x</b> & "q"']}],
+        "outro": "À demain.",
+    }
+    meta = {
+        "title": "LE BUZZER — édition du 8 juin 2026",
+        "audio_url": None,
+        "duration_sec": None,
+        "audio_active": False,
+    }
+    out = ep.render_episode_page(content, meta)
+    assert "&lt;b&gt;" in out, "Les balises <b> doivent être échappées en &lt;b&gt;"
+    assert "&amp;" in out, "& doit être échappé en &amp;"
+    assert "<b>x</b>" not in out, "Les balises HTML brutes ne doivent pas apparaître dans le transcript"

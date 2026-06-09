@@ -1,6 +1,7 @@
 """Génère une page HTML par épisode de Le Buzzer (archive permanente + SEO/AEO)."""
 
 import html
+import json
 import re
 from datetime import date as date_cls, datetime, timedelta
 from pathlib import Path
@@ -19,20 +20,20 @@ MOIS_FR = ["", "janvier", "février", "mars", "avril", "mai", "juin",
 def parse_script(path):
     """Parse un script .xml en dict {date, intro, chapters:[{titre,paragraphs}], outro}."""
     raw = Path(path).read_text(encoding="utf-8")
-    m = re.search(r"<script>(.*)</script>", raw, re.DOTALL)
+    m = re.search(r"<script>(.*?)</script>", raw, re.DOTALL)
     if not m:
         raise ValueError(f"Aucun bloc <script> trouvé dans {path}")
     body = m.group(1)
 
     def _tag(name):
         t = re.search(rf"<{name}>(.*?)</{name}>", body, re.DOTALL)
-        return t.group(1).strip() if t else ""
+        return html.unescape(t.group(1).strip()) if t else ""
 
     chapters = []
     for cm in re.finditer(r'<chapitre titre="([^"]+)">(.*?)</chapitre>', body, re.DOTALL):
         text = cm.group(2).strip()
-        paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-        chapters.append({"titre": cm.group(1).strip(), "paragraphs": paragraphs})
+        paragraphs = [html.unescape(p.strip()) for p in re.split(r"\n\s*\n", text) if p.strip()]
+        chapters.append({"titre": html.unescape(cm.group(1).strip()), "paragraphs": paragraphs})
 
     return {
         "date": Path(path).stem,
@@ -50,7 +51,8 @@ def french_date(iso):
 def is_audio_active(iso, today=None, keep_days=KEEP_DAYS):
     today = today or date_cls.today()
     ep_date = datetime.strptime(iso, "%Y-%m-%d").date()
-    return ep_date > today - timedelta(days=keep_days)
+    # Inclusive: an episode exactly keep_days old is still "en ligne 7 jours"
+    return ep_date >= today - timedelta(days=keep_days)
 
 
 def iso_duration(seconds):
@@ -71,7 +73,13 @@ def meta_description(intro, limit=155):
     text = " ".join(intro.split())
     if len(text) <= limit:
         return text
-    return text[:limit].rsplit(" ", 1)[0] + "…"
+    truncated = text[:limit].rsplit(" ", 1)[0] or text[:limit]
+    return truncated + "…"
+
+
+def _json_ld(obj):
+    """Sérialise en JSON sûr pour insertion dans <script> (neutralise </script>)."""
+    return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
 
 
 _ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
@@ -181,9 +189,8 @@ def render_episode_page(content, meta):
             {"@type": "ListItem", "position": 3, "name": fdate, "item": url},
         ],
     }
-    import json as _json
-    ld = (f'<script type="application/ld+json">{_json.dumps(podcast_ld, ensure_ascii=False)}</script>\n'
-          f'<script type="application/ld+json">{_json.dumps(breadcrumb_ld, ensure_ascii=False)}</script>')
+    ld = (f'<script type="application/ld+json">{_json_ld(podcast_ld)}</script>\n'
+          f'<script type="application/ld+json">{_json_ld(breadcrumb_ld)}</script>')
 
     return f"""<!DOCTYPE html>
 <html lang="fr-CA"><head>
