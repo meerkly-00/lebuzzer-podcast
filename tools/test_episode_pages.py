@@ -155,3 +155,20 @@ def test_build_sitemap(tmp_path):
     assert "https://www.lebuzzer.com/episodes/2026-06-08/" in xml
     assert "https://www.lebuzzer.com/episodes/2026-06-07/" in xml
     assert xml.count("<url>") == 4  # home + feed + 2 épisodes
+
+
+def test_build_all(tmp_path):
+    scripts = tmp_path / "scripts"
+    scripts.mkdir()
+    (scripts / "2026-06-08.xml").write_text(SAMPLE, encoding="utf-8")
+    (scripts / "2026-06-07.xml").write_text(SAMPLE.replace("06-08", "06-07"), encoding="utf-8")
+    feed = tmp_path / "feed.xml"
+    feed.write_text(FEED_SAMPLE, encoding="utf-8")
+    site = tmp_path / "site"
+    site.mkdir()
+    n = ep.build_all(scripts, site, feed, today=date(2026, 6, 8))
+    assert n == 2
+    page = site / "episodes" / "2026-06-08" / "index.html"
+    assert page.exists()
+    assert "Top international" in page.read_text(encoding="utf-8")
+    assert (site / "sitemap.xml").exists()

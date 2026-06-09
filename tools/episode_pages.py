@@ -229,3 +229,29 @@ def build_sitemap(dates, site_dir):
         lines.append(f"  <url>\n    <loc>{u}</loc>\n    <changefreq>{changefreq}</changefreq>\n  </url>")
     lines.append("</urlset>\n")
     (Path(site_dir) / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
+
+
+def build_all(scripts_dir, site_dir, feed_path, today=None):
+    """Génère une page par script + le sitemap. Retourne le nombre de pages écrites."""
+    scripts_dir, site_dir = Path(scripts_dir), Path(site_dir)
+    dates = []
+    for script in sorted(scripts_dir.glob("*.xml")):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", script.stem):
+            continue
+        content = parse_script(script)
+        if not content["chapters"]:
+            continue
+        meta = episode_metadata(content["date"], feed_path, today=today)
+        html_out = render_episode_page(content, meta)
+        out_dir = site_dir / "episodes" / content["date"]
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "index.html").write_text(html_out, encoding="utf-8")
+        dates.append(content["date"])
+    build_sitemap(dates, site_dir)
+    return len(dates)
+
+
+if __name__ == "__main__":
+    repo = Path(__file__).resolve().parent.parent
+    count = build_all(repo / "output" / "scripts", repo / "site", repo / "feed.xml")
+    print(f"{count} page(s) d'épisode générée(s) dans site/episodes/ + sitemap.xml")
