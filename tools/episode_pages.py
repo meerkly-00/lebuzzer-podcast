@@ -40,3 +40,35 @@ def parse_script(path):
         "chapters": chapters,
         "outro": _tag("outro"),
     }
+
+
+def french_date(iso):
+    d = datetime.strptime(iso, "%Y-%m-%d").date()
+    return f"{d.day} {MOIS_FR[d.month]} {d.year}"
+
+
+def is_audio_active(iso, today=None, keep_days=KEEP_DAYS):
+    today = today or date_cls.today()
+    ep_date = datetime.strptime(iso, "%Y-%m-%d").date()
+    return ep_date > today - timedelta(days=keep_days)
+
+
+def iso_duration(seconds):
+    seconds = int(seconds)
+    h, rem = divmod(seconds, 3600)
+    m, s = divmod(rem, 60)
+    out = "PT"
+    if h:
+        out += f"{h}H"
+    if m:
+        out += f"{m}M"
+    if s or out == "PT":
+        out += f"{s}S"
+    return out
+
+
+def meta_description(intro, limit=155):
+    text = " ".join(intro.split())
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0] + "…"
