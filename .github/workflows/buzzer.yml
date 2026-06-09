@@ -61,6 +61,9 @@ jobs:
           BRIEFING_FENETRE_HEURES: "24"
           FEED_KEEP_DAYS: "7"
 
+      - name: Générer les pages par épisode + sitemap
+        run: python tools/episode_pages.py
+
       - name: Publier le MP3
         run: |
           if gh release view "$DATE" > /dev/null 2>&1; then
@@ -90,7 +93,7 @@ jobs:
         run: |
           git config user.name "Buzzer Bot"
           git config user.email "buzzer-bot@noreply"
-          git add feed.xml data/context.json "output/scripts/$DATE.xml"
+          git add feed.xml data/context.json "output/scripts/$DATE.xml" site/episodes site/sitemap.xml
           [ -f "data/news_video/$DATE.json" ] && git add "data/news_video/$DATE.json" || true
           git diff --cached --quiet || git commit -m "buzzer: $DATE [skip ci]"
           git pull --rebase origin main
