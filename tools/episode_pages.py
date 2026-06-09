@@ -104,3 +104,115 @@ def episode_metadata(iso, feed_path, today=None):
             meta["audio_active"] = True
             break
     return meta
+
+
+_CSS = """
+:root{--bg:#0D0D0D;--panel:#16140F;--fg:#F1FAEE;--muted:rgba(241,250,238,.6);
+--hair:rgba(241,250,238,.15);--yellow:#FFD60A;--red:#E63946}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:'Archivo',system-ui,sans-serif;line-height:1.65;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+a{color:var(--yellow)}
+.crumb{font:600 13px/1.4 'Oswald',sans-serif;text-transform:uppercase;
+letter-spacing:.04em;color:var(--muted);margin-bottom:24px}
+.crumb a{color:var(--muted);text-decoration:none}
+h1{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(30px,7vw,52px);
+line-height:1.02;text-transform:uppercase;margin:0 0 8px}
+h1 .hl{color:var(--red)}
+.date{font:600 14px 'Oswald',sans-serif;text-transform:uppercase;
+letter-spacing:.05em;color:var(--yellow);margin-bottom:24px}
+.lede{font-size:1.12rem;color:var(--fg);border-left:3px solid var(--yellow);
+padding-left:16px;margin:0 0 28px}
+audio{width:100%;margin:0 0 28px}
+.archived{background:var(--panel);border:1px solid var(--hair);border-radius:10px;
+padding:16px 18px;margin:0 0 28px;color:var(--muted);font-size:.95rem}
+h2{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+letter-spacing:.02em;font-size:1.35rem;margin:36px 0 10px;
+padding-top:18px;border-top:1px solid var(--hair)}
+p{margin:0 0 16px}
+.listen{margin-top:40px;padding-top:24px;border-top:1px solid var(--hair);
+font:600 14px 'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.listen a{margin-right:18px}
+"""
+
+
+def render_episode_page(content, meta):
+    iso = content["date"]
+    fdate = french_date(iso)
+    url = f"{BASE_URL}/episodes/{iso}/"
+    desc = meta_description(content["intro"])
+    title_tag = f"{meta['title']} — transcript & résumé"
+
+    if meta["audio_active"] and meta["audio_url"]:
+        player = f'<audio controls preload="none" src="{html.escape(meta["audio_url"])}"></audio>'
+    else:
+        player = ('<div class="archived">Épisode archivé — l\'audio n\'est plus '
+                  'disponible (les épisodes restent en ligne 7 jours). '
+                  f'<a href="{BASE_URL}/">Écouter l\'édition du jour →</a></div>')
+
+    chapters_html = ""
+    for ch in content["chapters"]:
+        paras = "\n".join(f"<p>{html.escape(p)}</p>" for p in ch["paragraphs"])
+        chapters_html += f'<h2>{html.escape(ch["titre"])}</h2>\n{paras}\n'
+
+    podcast_ld = {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        "name": meta["title"],
+        "datePublished": iso,
+        "url": url,
+        "description": desc,
+        "inLanguage": "fr-CA",
+        "partOfSeries": {"@type": "PodcastSeries", "name": SERIES_NAME, "url": BASE_URL + "/"},
+    }
+    if meta["duration_sec"]:
+        podcast_ld["timeRequired"] = iso_duration(meta["duration_sec"])
+    if meta["audio_active"] and meta["audio_url"]:
+        podcast_ld["associatedMedia"] = {"@type": "AudioObject", "contentUrl": meta["audio_url"]}
+
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": BASE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Épisodes", "item": BASE_URL + "/episodes/"},
+            {"@type": "ListItem", "position": 3, "name": fdate, "item": url},
+        ],
+    }
+    import json as _json
+    ld = (f'<script type="application/ld+json">{_json.dumps(podcast_ld, ensure_ascii=False)}</script>\n'
+          f'<script type="application/ld+json">{_json.dumps(breadcrumb_ld, ensure_ascii=False)}</script>')
+
+    return f"""<!DOCTYPE html>
+<html lang="fr-CA"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{html.escape(title_tag)}</title>
+<meta name="description" content="{html.escape(desc)}">
+<link rel="canonical" href="{url}">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0D0D0D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{html.escape(meta['title'])}">
+<meta property="og:description" content="{html.escape(desc)}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{ARTWORK_URL}">
+<meta property="og:locale" content="fr_CA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+<style>{_CSS}</style>
+{ld}
+</head><body>
+<div class="wrap">
+<nav class="crumb"><a href="{BASE_URL}/">Accueil</a> › Épisodes › {fdate}</nav>
+<h1>{html.escape(meta['title'])}</h1>
+<div class="date">{fdate}</div>
+<p class="lede">{html.escape(content['intro'])}</p>
+{player}
+{chapters_html}<div class="listen">Écouter : <a href="{SPOTIFY_URL}">Spotify</a><a href="{APPLE_URL}">Apple Podcasts</a></div>
+</div>
+</body></html>
+"""

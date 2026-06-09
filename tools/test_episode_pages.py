@@ -1,3 +1,4 @@
+import re
 import textwrap
 from pathlib import Path
 import tools.episode_pages as ep
@@ -102,3 +103,43 @@ def test_episode_metadata_not_in_feed(tmp_path):
     assert meta["title"] == "LE BUZZER — édition du 20 mai 2026"
     assert meta["audio_url"] is None
     assert meta["audio_active"] is False
+
+
+import json
+
+
+def _render(date_iso, audio_active):
+    content = {
+        "date": date_iso,
+        "intro": "Résumé de l'épisode.",
+        "chapters": [{"titre": "Top international", "paragraphs": ["Para un.", "Para deux."]}],
+        "outro": "À demain.",
+    }
+    meta = {
+        "title": f"LE BUZZER — édition du {ep.french_date(date_iso)}",
+        "audio_url": "https://github.com/x/2026-06-08.mp3" if audio_active else None,
+        "duration_sec": 330 if audio_active else None,
+        "audio_active": audio_active,
+    }
+    return ep.render_episode_page(content, meta)
+
+
+def test_render_active_episode():
+    out = _render("2026-06-08", True)
+    assert '<html lang="fr-CA">' in out
+    assert "<h1" in out and "8 juin 2026" in out
+    assert "Top international" in out and "Para un." in out and "Para deux." in out
+    assert "<audio" in out and "2026-06-08.mp3" in out
+    assert 'rel="canonical" href="https://www.lebuzzer.com/episodes/2026-06-08/"' in out
+    # JSON-LD valide contenant PodcastEpisode + BreadcrumbList
+    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', out, re.DOTALL)
+    assert blocks, "aucun bloc JSON-LD"
+    types = [json.loads(b)["@type"] for b in blocks]
+    assert "PodcastEpisode" in types
+    assert "BreadcrumbList" in types
+
+
+def test_render_archived_episode():
+    out = _render("2026-05-20", False)
+    assert "<audio" not in out
+    assert "archivé" in out.lower()
