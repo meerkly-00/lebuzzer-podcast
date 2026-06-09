@@ -73,6 +73,12 @@ export default {
       return proxyTo(request, `${RAW}/site/index.html`, "text/html; charset=utf-8", 300);
     }
 
+    // Pages par épisode (archive) : /episodes/YYYY-MM-DD[/ | /index.html]
+    const ep = url.pathname.match(/^\/episodes\/(\d{4}-\d{2}-\d{2})(?:\/(?:index\.html)?)?$/);
+    if (ep) {
+      return proxyTo(request, `${RAW}/site/episodes/${ep[1]}/index.html`, "text/html; charset=utf-8", 3600);
+    }
+
     // Page 404 brandée
     return proxyTo(request, `${RAW}/site/404.html`, "text/html; charset=utf-8", 300, 404);
   },
