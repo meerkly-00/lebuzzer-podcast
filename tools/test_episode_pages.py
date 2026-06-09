@@ -143,3 +143,15 @@ def test_render_archived_episode():
     out = _render("2026-05-20", False)
     assert "<audio" not in out
     assert "archivé" in out.lower()
+
+
+def test_build_sitemap(tmp_path):
+    site = tmp_path / "site"
+    site.mkdir()
+    ep.build_sitemap(["2026-06-08", "2026-06-07"], site)
+    xml = (site / "sitemap.xml").read_text(encoding="utf-8")
+    assert "https://www.lebuzzer.com/" in xml
+    assert "https://www.lebuzzer.com/feed.xml" in xml
+    assert "https://www.lebuzzer.com/episodes/2026-06-08/" in xml
+    assert "https://www.lebuzzer.com/episodes/2026-06-07/" in xml
+    assert xml.count("<url>") == 4  # home + feed + 2 épisodes

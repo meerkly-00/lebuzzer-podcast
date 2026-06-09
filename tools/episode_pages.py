@@ -216,3 +216,16 @@ def render_episode_page(content, meta):
 </div>
 </body></html>
 """
+
+
+def build_sitemap(dates, site_dir):
+    """Écrit site/sitemap.xml : home + feed + une URL par épisode (dates triées desc)."""
+    urls = [f"{BASE_URL}/", f"{BASE_URL}/feed.xml"]
+    urls += [f"{BASE_URL}/episodes/{d}/" for d in sorted(set(dates), reverse=True)]
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        changefreq = "daily" if u.endswith("/") and "/episodes/" not in u else "monthly"
+        lines.append(f"  <url>\n    <loc>{u}</loc>\n    <changefreq>{changefreq}</changefreq>\n  </url>")
+    lines.append("</urlset>\n")
+    (Path(site_dir) / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
