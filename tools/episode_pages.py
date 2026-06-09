@@ -72,3 +72,35 @@ def meta_description(intro, limit=155):
     if len(text) <= limit:
         return text
     return text[:limit].rsplit(" ", 1)[0] + "…"
+
+
+_ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
+
+
+def episode_metadata(iso, feed_path, today=None):
+    """Métadonnées d'un épisode. Lit feed.xml si l'item y est ; sinon mode archivé."""
+    title = f"{SERIES_NAME} — édition du {french_date(iso)}"
+    meta = {
+        "title": title,
+        "audio_url": None,
+        "duration_sec": None,
+        "audio_active": is_audio_active(iso, today=today),
+    }
+    feed_path = Path(feed_path)
+    if not feed_path.exists():
+        return meta
+    root = parse_xml(feed_path).getroot()
+    for item in root.iter("item"):
+        enc = item.find("enclosure")
+        url = enc.get("url") if enc is not None else ""
+        if iso in url:
+            t = item.find("title")
+            if t is not None and t.text:
+                meta["title"] = t.text
+            meta["audio_url"] = url
+            dur = item.find(f"{_ITUNES}duration")
+            if dur is not None and dur.text and dur.text.isdigit():
+                meta["duration_sec"] = int(dur.text)
+            meta["audio_active"] = True
+            break
+    return meta

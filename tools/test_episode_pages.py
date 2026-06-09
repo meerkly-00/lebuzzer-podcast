@@ -69,3 +69,36 @@ def test_meta_description():
     out = ep.meta_description(long)
     assert len(out) <= 156
     assert out.endswith("…")
+
+
+FEED_SAMPLE = '''<?xml version="1.0" ?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>LE BUZZER</title>
+    <item>
+      <title>LE BUZZER — édition du 8 juin 2026</title>
+      <guid isPermaLink="false">https://github.com/x/releases/download/2026-06-08/2026-06-08.mp3</guid>
+      <enclosure url="https://github.com/x/releases/download/2026-06-08/2026-06-08.mp3" type="audio/mpeg" length="5714749"/>
+      <itunes:duration>330</itunes:duration>
+    </item>
+  </channel>
+</rss>'''
+
+
+def test_episode_metadata_in_feed(tmp_path):
+    feed = tmp_path / "feed.xml"
+    feed.write_text(FEED_SAMPLE, encoding="utf-8")
+    meta = ep.episode_metadata("2026-06-08", feed, today=date(2026, 6, 8))
+    assert meta["title"] == "LE BUZZER — édition du 8 juin 2026"
+    assert meta["audio_url"].endswith("2026-06-08.mp3")
+    assert meta["duration_sec"] == 330
+    assert meta["audio_active"] is True
+
+
+def test_episode_metadata_not_in_feed(tmp_path):
+    feed = tmp_path / "feed.xml"
+    feed.write_text(FEED_SAMPLE, encoding="utf-8")
+    meta = ep.episode_metadata("2026-05-20", feed, today=date(2026, 6, 8))
+    assert meta["title"] == "LE BUZZER — édition du 20 mai 2026"
+    assert meta["audio_url"] is None
+    assert meta["audio_active"] is False
