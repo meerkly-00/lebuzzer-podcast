@@ -3,18 +3,13 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "NHLPA bloque Babcock aux Oilers",
-      "hl": "BLOQUE"
-    },
-    {
-      "tag": "LNH",
-      "text": "Hurricanes égalent la finale 2-2",
+      "text": "Hurricanes-Golden Knights égalisent 2-2",
       "hl": "2-2"
     },
     {
-      "tag": "FOOT",
-      "text": "Real Madrid offre 150M pour Alvarez",
-      "hl": "150M"
+      "tag": "LNH",
+      "text": "NHLPA bloque l'embauche de Babcock",
+      "hl": "ENQUÊTE"
     },
     {
       "tag": "QC",
@@ -22,9 +17,14 @@
       "hl": "6 ANS"
     },
     {
-      "tag": "F1",
-      "text": "Hamilton : « Je dois rappeler qui je suis »",
-      "hl": "RAPPELER"
+      "tag": "FOOT",
+      "text": "Coupe du monde débute, Canada vendredi",
+      "hl": "VENDREDI"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes blessées après victoire d'ouverture",
+      "hl": "BLESSURES"
     }
   ]
 }
