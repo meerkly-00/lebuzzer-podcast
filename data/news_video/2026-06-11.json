@@ -1,0 +1,30 @@
+{
+  "date": "11 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Knicks effacent 29 points de retard en finale",
+      "hl": "29 POINTS"
+    },
+    {
+      "tag": "NFL",
+      "text": "Mahomes signe pour plus d'un demi-milliard",
+      "hl": "504M$"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Coupe du monde 2026 s'ouvre ce soir au Mexique",
+      "hl": "DEBUT"
+    },
+    {
+      "tag": "QC",
+      "text": "Canadien plus intéressé par Mantha que Lafrenière",
+      "hl": "MANTHA"
+    },
+    {
+      "tag": "LNH",
+      "text": "NHLPA demande enquête sur Babcock avant réembauche",
+      "hl": "ENQUETE"
+    }
+  ]
+}
