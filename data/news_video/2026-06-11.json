@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "NBA",
-      "text": "Knicks effacent 29 points de retard en finale",
+      "text": "Knicks effacent 29 points, plus grand comeback final",
       "hl": "29 POINTS"
     },
     {
       "tag": "NFL",
-      "text": "Mahomes signe pour plus d'un demi-milliard",
-      "hl": "504M$"
-    },
-    {
-      "tag": "FOOT",
-      "text": "Coupe du monde 2026 s'ouvre ce soir au Mexique",
-      "hl": "DEBUT"
-    },
-    {
-      "tag": "QC",
-      "text": "Canadien plus intéressé par Mantha que Lafrenière",
-      "hl": "MANTHA"
+      "text": "Mahomes dépasse 500M$ en contrat, première fois",
+      "hl": "500M$"
     },
     {
       "tag": "LNH",
-      "text": "NHLPA demande enquête sur Babcock avant réembauche",
-      "hl": "ENQUETE"
+      "text": "Babcock : NHLPA demande enquête officielle",
+      "hl": "ENQUÊTE"
+    },
+    {
+      "tag": "QC",
+      "text": "Sylvain Rodrigue devient coach gardiens Minnesota",
+      "hl": "RÊVE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Finale Stanley : Vegas et Carolina à égalité 2-2",
+      "hl": "2-2"
     }
   ]
 }
