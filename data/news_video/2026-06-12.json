@@ -1,0 +1,30 @@
+{
+  "date": "12 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Hurricanes à 1 victoire de la Coupe Stanley",
+      "hl": "3-2"
+    },
+    {
+      "tag": "QC",
+      "text": "Darnell Nurse demande son échange d'Edmonton",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Knicks remontent 29 points en finale NBA",
+      "hl": "29 PTS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Coupe du monde 2026 officiellement lancée",
+      "hl": "2026"
+    },
+    {
+      "tag": "QC",
+      "text": "Mathieu et Beaudoin champions à Québec",
+      "hl": "2 TITRES"
+    }
+  ]
+}
