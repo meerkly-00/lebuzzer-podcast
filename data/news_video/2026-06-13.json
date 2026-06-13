@@ -2,29 +2,29 @@
   "date": "13 JUIN 2026",
   "headlines": [
     {
-      "tag": "LNH",
-      "text": "Demidov et Dobes brillent dans l'équipe recrues",
-      "hl": "RECRUES"
-    },
-    {
-      "tag": "LNH",
-      "text": "Hurricanes à 2 matchs de la Coupe Stanley",
-      "hl": "3-2"
-    },
-    {
       "tag": "NBA",
-      "text": "Knicks au bord du titre face aux Spurs ce soir",
-      "hl": "3-1"
+      "text": "Knicks-Spurs, match 5 ce soir",
+      "hl": "DÉCISIF"
     },
     {
-      "tag": "FOOT",
-      "text": "Canada nul 1-1 contre la Bosnie à domicile",
-      "hl": "1-1"
+      "tag": "LNH",
+      "text": "Cole Caufield rejoint l'élite",
+      "hl": "ÉTOILES"
     },
     {
       "tag": "QC",
-      "text": "Alouettes explosent Toronto 37-30 en ouverture",
-      "hl": "37-30"
+      "text": "Alouettes écrasent Toronto 37-30",
+      "hl": "CLINIQUE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Hurricanes à un match de la Coupe",
+      "hl": "MATCH 6"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Canada accroche la Bosnie 1-1",
+      "hl": "1-1"
     }
   ]
 }
