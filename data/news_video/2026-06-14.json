@@ -1,0 +1,30 @@
+{
+  "date": "14 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Knicks champions après 53 ans d'attente",
+      "hl": "53 ANS"
+    },
+    {
+      "tag": "F1",
+      "text": "Russell en pole à Barcelone devant Hamilton",
+      "hl": "POLE"
+    },
+    {
+      "tag": "QC",
+      "text": "Carolina à un match de la Coupe Stanley",
+      "hl": "FINALE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Rielly remet une liste de trade aux Leafs",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Brésil nul contre le Maroc en Coupe du monde",
+      "hl": "1-1"
+    }
+  ]
+}
