@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "Hurricanes soulèvent la Coupe Stanley",
-      "hl": "COUPE"
+      "text": "Hurricanes champions, Vegas blanchie 3-0",
+      "hl": "COUPE STANLEY"
     },
     {
       "tag": "F1",
-      "text": "Hamilton gagne ENFIN avec Ferrari",
-      "hl": "FERRARI"
+      "text": "Hamilton gagne sa 1re avec Ferrari à 41 ans",
+      "hl": "PREMIÈRE"
     },
     {
       "tag": "QC",
-      "text": "Théo Rochette signe en LNH",
-      "hl": "ROCHETTE"
+      "text": "Théo Rochette signe dans la LNH",
+      "hl": "LNH"
     },
     {
       "tag": "FOOT",
-      "text": "Suède écrase Tunisie 5-1 à la Coupe",
-      "hl": "5-1"
+      "text": "Real Madrid officialise Cucurella",
+      "hl": "TRANSFERT"
     },
     {
       "tag": "LNH",
-      "text": "Taylor Hall: 16 ans avant la Coupe",
-      "hl": "16 ANS"
+      "text": "Bussi, recrue de 27 ans, soulève la Coupe",
+      "hl": "27 ANS"
     }
   ]
 }
