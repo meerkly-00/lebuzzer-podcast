@@ -1,0 +1,30 @@
+{
+  "date": "15 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Hurricanes soulèvent la Coupe Stanley",
+      "hl": "COUPE"
+    },
+    {
+      "tag": "F1",
+      "text": "Hamilton gagne ENFIN avec Ferrari",
+      "hl": "FERRARI"
+    },
+    {
+      "tag": "QC",
+      "text": "Théo Rochette signe en LNH",
+      "hl": "ROCHETTE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Suède écrase Tunisie 5-1 à la Coupe",
+      "hl": "5-1"
+    },
+    {
+      "tag": "LNH",
+      "text": "Taylor Hall: 16 ans avant la Coupe",
+      "hl": "16 ANS"
+    }
+  ]
+}
