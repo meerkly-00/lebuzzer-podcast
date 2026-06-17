@@ -1,0 +1,30 @@
+{
+  "date": "17 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Messi triplé, 16e but en Coupe du monde",
+      "hl": "TRIPLÉ"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Mbappé meilleur buteur français all-time",
+      "hl": "ALL-TIME"
+    },
+    {
+      "tag": "NBA",
+      "text": "Knicks champions, 24.5M téléspectateurs",
+      "hl": "53 ANS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Maple Leafs échangent Woll à Philadelphie",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Hockey Night in Canada quitte CBC après 75 ans",
+      "hl": "75 ANS"
+    }
+  ]
+}
