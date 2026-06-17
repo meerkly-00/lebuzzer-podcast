@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Messi triplé, 16e but en Coupe du monde",
-      "hl": "TRIPLÉ"
+      "text": "Messi égale le record absolu en Coupe du monde",
+      "hl": "16 BUTS"
     },
     {
-      "tag": "FOOT",
-      "text": "Mbappé meilleur buteur français all-time",
-      "hl": "ALL-TIME"
+      "tag": "QC",
+      "text": "Hockey Night in Canada disparait après 75 ans",
+      "hl": "75 ANS"
     },
     {
       "tag": "NBA",
-      "text": "Knicks champions, 24.5M téléspectateurs",
+      "text": "Knicks champions pour la première fois en 53 ans",
       "hl": "53 ANS"
     },
     {
       "tag": "LNH",
-      "text": "Maple Leafs échangent Woll à Philadelphie",
-      "hl": "TRADE"
+      "text": "Tortorella repart malgré la finale de Vegas",
+      "hl": "FINAL"
     },
     {
-      "tag": "QC",
-      "text": "Hockey Night in Canada quitte CBC après 75 ans",
-      "hl": "75 ANS"
+      "tag": "MMA",
+      "text": "McGregor confirme son retour en juillet",
+      "hl": "5 ANS"
     }
   ]
 }
