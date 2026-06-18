@@ -2,29 +2,29 @@
   "date": "18 JUIN 2026",
   "headlines": [
     {
-      "tag": "LNH",
-      "text": "Maple Leafs nomment Jim Hiller entraîneur-chef",
-      "hl": "HILLER"
+      "tag": "NBA",
+      "text": "Trae Young refuse 49M$ et devient free agent",
+      "hl": "49M$"
     },
     {
-      "tag": "NBA",
-      "text": "Knicks champions défilent à New York",
-      "hl": "10K FLICS"
+      "tag": "LNH",
+      "text": "Toronto choisit Hiller plutôt que Roy",
+      "hl": "ROY"
     },
     {
       "tag": "FOOT",
-      "text": "Ronaldo critiqué par Henry en Coupe du monde",
-      "hl": "1-1"
+      "text": "Ronaldo en question, le Portugal fait match nul",
+      "hl": "41 ANS"
     },
     {
       "tag": "QC",
-      "text": "Davies de retour pour le Canada jeudi",
-      "hl": "DAVIES"
+      "text": "Abby Roque re-signée 2 ans avec la Victoire",
+      "hl": "2 ANS"
     },
     {
-      "tag": "LNH",
-      "text": "Patrick Roy toujours à la recherche d'un poste",
-      "hl": "LIBRE"
+      "tag": "FOOT",
+      "text": "Wahi interdit au Canada pour affaire de paris",
+      "hl": "CORRUPTION"
     }
   ]
 }
