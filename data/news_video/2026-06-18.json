@@ -1,0 +1,30 @@
+{
+  "date": "18 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Maple Leafs nomment Jim Hiller entraîneur-chef",
+      "hl": "HILLER"
+    },
+    {
+      "tag": "NBA",
+      "text": "Knicks champions défilent à New York",
+      "hl": "10K FLICS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Ronaldo critiqué par Henry en Coupe du monde",
+      "hl": "1-1"
+    },
+    {
+      "tag": "QC",
+      "text": "Davies de retour pour le Canada jeudi",
+      "hl": "DAVIES"
+    },
+    {
+      "tag": "LNH",
+      "text": "Patrick Roy toujours à la recherche d'un poste",
+      "hl": "LIBRE"
+    }
+  ]
+}
