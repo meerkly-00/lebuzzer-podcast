@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Canada 6, Qatar 0 — Hat trick historique",
+      "text": "Canada 6, Qatar 0 : première victoire en Coupe du monde",
+      "hl": "PREMIÈRE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Jonathan David : hat trick historique pour le Canada",
       "hl": "HAT TRICK"
     },
     {
       "tag": "QC",
-      "text": "Bergeron au plafond du TD Garden",
-      "hl": "No 17"
+      "text": "Ismaël Koné : fracture à la jambe, Coupe du monde terminée",
+      "hl": "FRACTURE"
     },
     {
       "tag": "LNH",
-      "text": "Babcock autorisé à revenir en LNH",
-      "hl": "RETOUR"
+      "text": "Babcock autorisé à revenir : Edmonton intéressé",
+      "hl": "McDAVID"
     },
     {
-      "tag": "QC",
-      "text": "Roy sans contrat au Canadien",
-      "hl": "INQUIÉTANT"
-    },
-    {
-      "tag": "FOOT",
-      "text": "Koné fracture la jambe et quitte le Mondial",
-      "hl": "CIVIÈRE"
+      "tag": "LNH",
+      "text": "Joshua Roy sans contrat du Canadien au 1er juillet",
+      "hl": "VIDE"
     }
   ]
 }
