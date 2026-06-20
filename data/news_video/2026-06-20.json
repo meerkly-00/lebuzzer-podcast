@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "QC",
-      "text": "Jonathan Toews raccroche après 16 ans",
-      "hl": "RETRAITE"
+      "text": "Toews raccroche après 16 ans et 3 Coupes",
+      "hl": "3 COUPES"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes en quête d'un 14e gain de suite",
+      "hl": "14 GAINS"
     },
     {
       "tag": "FOOT",
-      "text": "Turquie éliminée malgré supériorité numérique",
-      "hl": "CHOC"
+      "text": "Brésil écrase Haïti 3-0, Vinicius brille",
+      "hl": "3-0"
     },
     {
-      "tag": "QC",
-      "text": "Montembeault vers un trade avant le 1er juillet",
+      "tag": "LNH",
+      "text": "Montembeault vers un échange avant le 1er juillet",
       "hl": "TRADE"
     },
     {
-      "tag": "QC",
-      "text": "Davis Alexander vise 14e gain consécutif",
-      "hl": "14e GAIN"
-    },
-    {
-      "tag": "NBA",
-      "text": "Caldwell-Pope reste avec Memphis 21.6M$",
-      "hl": "21.6M$"
+      "tag": "F1",
+      "text": "Ai Ogura signe sa première pole à Brno",
+      "hl": "POLE"
     }
   ]
 }
