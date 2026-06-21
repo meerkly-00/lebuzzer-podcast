@@ -1,0 +1,30 @@
+{
+  "date": "21 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "QC",
+      "text": "LeBrun confirme: l'avenir de St-Louis à Montréal",
+      "hl": "CONFIRMÉ"
+    },
+    {
+      "tag": "LNH",
+      "text": "Hurricanes défilent avec la Coupe à Raleigh",
+      "hl": "COUPE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "L'Allemagne arrache sa qualification au Mondial",
+      "hl": "QUALIFIÉE"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes perdent en prolongation contre Edmonton",
+      "hl": "29-32"
+    },
+    {
+      "tag": "NFL",
+      "text": "Fajardo donne la victoire aux Elks en OT",
+      "hl": "6 VERGES"
+    }
+  ]
+}
