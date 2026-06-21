@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "QC",
-      "text": "LeBrun confirme: l'avenir de St-Louis à Montréal",
-      "hl": "CONFIRMÉ"
-    },
-    {
-      "tag": "LNH",
-      "text": "Hurricanes défilent avec la Coupe à Raleigh",
-      "hl": "COUPE"
-    },
-    {
-      "tag": "FOOT",
-      "text": "L'Allemagne arrache sa qualification au Mondial",
-      "hl": "QUALIFIÉE"
+      "text": "Roy snobé à Toronto, St-Louis en question",
+      "hl": "RUMEUR"
     },
     {
       "tag": "QC",
-      "text": "Alouettes perdent en prolongation contre Edmonton",
+      "text": "Alouettes perdent en OT, premiers démons",
       "hl": "29-32"
     },
     {
-      "tag": "NFL",
-      "text": "Fajardo donne la victoire aux Elks en OT",
-      "hl": "6 VERGES"
+      "tag": "FOOT",
+      "text": "L'Allemagne s'arache vs Côte d'Ivoire",
+      "hl": "16es"
+    },
+    {
+      "tag": "LNH",
+      "text": "Deslauriers gagne la Coupe et re-signe",
+      "hl": "2 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Japon écrase Tunisie 4-0, Renard débute mal",
+      "hl": "4-0"
     }
   ]
 }
