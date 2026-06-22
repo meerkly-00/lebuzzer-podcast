@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "Brady Tkachuk rejoint son frère à Florida",
+      "text": "Brady Tkachuk rejoint son frère à la Floride",
       "hl": "TRADE"
     },
     {
+      "tag": "NBA",
+      "text": "Giannis entre Heat et Celtics, saga finale",
+      "hl": "2 CHOIX"
+    },
+    {
       "tag": "QC",
-      "text": "Patrik Laine : LeBrun confirme négociations",
-      "hl": "LAINE"
+      "text": "LPHF attire ses premiers gros investissements",
+      "hl": "DOLLARS"
     },
     {
       "tag": "FOOT",
-      "text": "France vs Irak : risque météo extrême",
+      "text": "France-Irak ce soir sous menace d'orages",
       "hl": "MÉTÉO"
     },
     {
-      "tag": "FOOT",
-      "text": "Cap-Vert accroche l'Uruguay, belle histoire",
-      "hl": "1ère FOIS"
-    },
-    {
       "tag": "F1",
-      "text": "Wyndham Clark domine l'Omnium États-Unis",
-      "hl": "4 JOURS"
+      "text": "Hamilton prudent avant l'Autriche",
+      "hl": "TITRE"
     }
   ]
 }
