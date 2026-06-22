@@ -1,0 +1,30 @@
+{
+  "date": "22 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Brady Tkachuk rejoint son frère à Florida",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Patrik Laine : LeBrun confirme négociations",
+      "hl": "LAINE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France vs Irak : risque météo extrême",
+      "hl": "MÉTÉO"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Cap-Vert accroche l'Uruguay, belle histoire",
+      "hl": "1ère FOIS"
+    },
+    {
+      "tag": "F1",
+      "text": "Wyndham Clark domine l'Omnium États-Unis",
+      "hl": "4 JOURS"
+    }
+  ]
+}
