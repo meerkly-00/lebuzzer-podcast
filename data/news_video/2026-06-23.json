@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "NBA",
-      "text": "Giannis échangé aux Heat, fin d'ère Milwaukee",
+      "text": "Giannis échangé aux Heat, fin d'ère à Milwaukee",
       "hl": "TRADE"
     },
     {
       "tag": "QC",
-      "text": "Price et Bergeron au Temple en 2026",
-      "hl": "2 LÉGENDES"
+      "text": "Price et Bergeron au Temple de la renommée",
+      "hl": "2026"
     },
     {
       "tag": "FOOT",
-      "text": "Messi devient meilleur buteur Coupe du monde",
-      "hl": "HISTOIRE"
-    },
-    {
-      "tag": "FOOT",
-      "text": "Olise fait monter les enchères, PSG s'active",
-      "hl": "MERCATO"
+      "text": "Mbappé doublé, la France écrase l'Irak",
+      "hl": "DOUBLÉ"
     },
     {
       "tag": "LNH",
-      "text": "Canadiens repêchent vendredi, défense en chantier",
-      "hl": "DRAFT"
+      "text": "Larkin demande un trade aux Stars",
+      "hl": "RUMEUR"
+    },
+    {
+      "tag": "F1",
+      "text": "Ferrari en mode bataille technique cet été",
+      "hl": "MOTEUR"
     }
   ]
 }
