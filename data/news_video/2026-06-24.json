@@ -2,29 +2,29 @@
   "date": "24 JUIN 2026",
   "headlines": [
     {
-      "tag": "FOOT",
-      "text": "Ronaldo sort un doublé à 40 ans au Mondial",
-      "hl": "40 ANS"
-    },
-    {
-      "tag": "QC",
-      "text": "Babcock embauché par les Oilers d'Edmonton",
-      "hl": "BABCOCK"
-    },
-    {
       "tag": "NBA",
-      "text": "Dybantsa au premier rang, Raptors prennent Graves",
+      "text": "Dybantsa No 1 aux Wizards, Wilson se compare à Jordan",
       "hl": "No 1"
     },
     {
+      "tag": "FOOT",
+      "text": "Ronaldo marque à 6 Coupes du monde, record absolu",
+      "hl": "6 COUPES"
+    },
+    {
       "tag": "LNH",
-      "text": "Kyrou échangé aux Capitals, trois trades majeurs",
+      "text": "Bettman confirme : expansion LNH au Texas en route",
+      "hl": "TEXAS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Blackhawks trade top-4 pick : équipe en mode NOW",
       "hl": "TRADE"
     },
     {
-      "tag": "FOOT",
-      "text": "Canada affronte la Suisse ce soir au Mondial",
-      "hl": "CANADA"
+      "tag": "QC",
+      "text": "Saliba de Montréal au cœur de la prépa mondiale",
+      "hl": ""
     }
   ]
 }
