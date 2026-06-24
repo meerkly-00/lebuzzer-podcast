@@ -1,0 +1,30 @@
+{
+  "date": "24 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Ronaldo sort un doublé à 40 ans au Mondial",
+      "hl": "40 ANS"
+    },
+    {
+      "tag": "QC",
+      "text": "Babcock embauché par les Oilers d'Edmonton",
+      "hl": "BABCOCK"
+    },
+    {
+      "tag": "NBA",
+      "text": "Dybantsa au premier rang, Raptors prennent Graves",
+      "hl": "No 1"
+    },
+    {
+      "tag": "LNH",
+      "text": "Kyrou échangé aux Capitals, trois trades majeurs",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Canada affronte la Suisse ce soir au Mondial",
+      "hl": "CANADA"
+    }
+  ]
+}
