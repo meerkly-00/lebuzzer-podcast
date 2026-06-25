@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "NBA",
-      "text": "Austin Reaves prolonge 185M$ aux Lakers",
-      "hl": "185M$"
-    },
-    {
-      "tag": "NBA",
-      "text": "LaMelo Ball sur le marché, discussions actives",
+      "text": "Giannis rejoint le Heat de Miami",
       "hl": "TRADE"
     },
     {
+      "tag": "QC",
+      "text": "Zachary L'Heureux échangé à Denver",
+      "hl": "AVALANCHE"
+    },
+    {
+      "tag": "NBA",
+      "text": "LaMelo Ball en demande, Raptors intéressés",
+      "hl": "RAPTORS"
+    },
+    {
       "tag": "FOOT",
-      "text": "Afrique du Sud sort de la phase de groupe",
-      "hl": "HISTORIQUE"
+      "text": "Brésil écrase l'Écosse 3-0, Neymar revient",
+      "hl": "3-0"
     },
     {
       "tag": "QC",
-      "text": "Brendan Gallagher citoyen d'honneur MTL",
+      "text": "Brendan Gallagher, citoyen d'honneur MTL",
       "hl": "19 ANS"
-    },
-    {
-      "tag": "F1",
-      "text": "Verstappen aurait une clause de départ RBR",
-      "hl": "2027"
     }
   ]
 }
