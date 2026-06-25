@@ -1,0 +1,30 @@
+{
+  "date": "25 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Austin Reaves prolonge 185M$ aux Lakers",
+      "hl": "185M$"
+    },
+    {
+      "tag": "NBA",
+      "text": "LaMelo Ball sur le marché, discussions actives",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Afrique du Sud sort de la phase de groupe",
+      "hl": "HISTORIQUE"
+    },
+    {
+      "tag": "QC",
+      "text": "Brendan Gallagher citoyen d'honneur MTL",
+      "hl": "19 ANS"
+    },
+    {
+      "tag": "F1",
+      "text": "Verstappen aurait une clause de départ RBR",
+      "hl": "2027"
+    }
+  ]
+}
