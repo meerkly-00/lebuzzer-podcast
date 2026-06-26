@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Équateur sort l'Allemagne 2-1, jour férié!",
+      "text": "Équateur élimine l'Allemagne 2-1",
       "hl": "2-1"
     },
     {
       "tag": "NBA",
-      "text": "LaMelo Ball échangé aux Timberwolves",
+      "text": "LaMelo Ball rejoint les Timberwolves",
       "hl": "TRADE"
     },
     {
-      "tag": "QC",
-      "text": "Gallagher citoyen d'honneur de Montréal",
-      "hl": "19 ANS"
-    },
-    {
       "tag": "LNH",
-      "text": "Robertson refuse Seattle, marché s'ouvre",
+      "text": "Robertson refuse l'offre du Kraken",
       "hl": "REFUS"
     },
     {
+      "tag": "QC",
+      "text": "Gallagher citoyen d'honneur de MTL",
+      "hl": "19 ANS"
+    },
+    {
       "tag": "F1",
-      "text": "Leclerc dominé par Hamilton chez Ferrari",
-      "hl": "LECLERC"
+      "text": "Hamilton chasse Antonelli en Autriche",
+      "hl": "RATTRAPAGE"
     }
   ]
 }
