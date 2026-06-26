@@ -1,0 +1,30 @@
+{
+  "date": "26 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Équateur sort l'Allemagne 2-1, jour férié!",
+      "hl": "2-1"
+    },
+    {
+      "tag": "NBA",
+      "text": "LaMelo Ball échangé aux Timberwolves",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Gallagher citoyen d'honneur de Montréal",
+      "hl": "19 ANS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Robertson refuse Seattle, marché s'ouvre",
+      "hl": "REFUS"
+    },
+    {
+      "tag": "F1",
+      "text": "Leclerc dominé par Hamilton chez Ferrari",
+      "hl": "LECLERC"
+    }
+  ]
+}
