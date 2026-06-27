@@ -1,0 +1,30 @@
+{
+  "date": "27 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Dembélé explose avec un triplé en 32 min",
+      "hl": "TRIPLÉ"
+    },
+    {
+      "tag": "QC",
+      "text": "Dagenais sélectionné 16e au repêchage LNH",
+      "hl": "16e RANG"
+    },
+    {
+      "tag": "LNH",
+      "text": "Robertson refuse Seattle, Pittsburgh fait son move",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "F1",
+      "text": "Antonelli domine les essais libres en Autriche",
+      "hl": "POLE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Repêchage LNH : un pétard mouillé à Buffalo",
+      "hl": "CALME"
+    }
+  ]
+}
