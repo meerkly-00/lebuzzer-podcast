@@ -1,0 +1,30 @@
+{
+  "date": "28 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Argentine parfaite, Messi marque du banc à 38 ans",
+      "hl": "3-0"
+    },
+    {
+      "tag": "F1",
+      "text": "Russell en pole en Autriche, Verstappen crashe",
+      "hl": "POLE"
+    },
+    {
+      "tag": "QC",
+      "text": "Sami Zayn de Laval champion WWE",
+      "hl": "CHAMPION"
+    },
+    {
+      "tag": "LNH",
+      "text": "Robertson refuse Seattle, trade en vue",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Hartenstein signé à Oklahoma pour 75M$",
+      "hl": "75M$"
+    }
+  ]
+}
