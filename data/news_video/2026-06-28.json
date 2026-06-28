@@ -3,27 +3,27 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Argentine parfaite, Messi marque du banc à 38 ans",
-      "hl": "3-0"
+      "text": "Messi marque à 38 ans, l'Argentine parfaite",
+      "hl": "38 ANS"
     },
     {
       "tag": "F1",
-      "text": "Russell en pole en Autriche, Verstappen crashe",
+      "text": "Russell en pole à Autriche, Verstappen crashe",
       "hl": "POLE"
     },
     {
       "tag": "QC",
-      "text": "Sami Zayn de Laval champion WWE",
-      "hl": "CHAMPION"
+      "text": "Canadien déniche une licorne au repêchage",
+      "hl": "LICORNE"
     },
     {
       "tag": "LNH",
-      "text": "Robertson refuse Seattle, trade en vue",
+      "text": "Werenski en demande, Toronto se positionne",
       "hl": "TRADE"
     },
     {
       "tag": "NBA",
-      "text": "Hartenstein signé à Oklahoma pour 75M$",
+      "text": "Hartenstein reste avec OKC, contrat énorme",
       "hl": "75M$"
     }
   ]
