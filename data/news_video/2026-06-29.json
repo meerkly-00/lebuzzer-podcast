@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Canada arrache les seizièmes en dernière seconde",
-      "hl": "HISTORIQUE"
+      "text": "Eustaquio qualifie le Canada en toute fin",
+      "hl": "SEIZIÈMES"
     },
     {
       "tag": "F1",
-      "text": "Russell gagne en Autriche devant Verstappen",
-      "hl": "MERCEDES"
+      "text": "Russell s'impose en Autriche devant Verstappen",
+      "hl": "VICTOIRE"
     },
     {
       "tag": "QC",
-      "text": "Alouettes écrasent Ottawa 37-35, Philpot héros",
+      "text": "Les Alouettes battent Ottawa 37-35",
       "hl": "37-35"
     },
     {
       "tag": "NBA",
-      "text": "Toronto en pourparlers pour ramener Kawhi",
-      "hl": "2019"
+      "text": "Kawhi Leonard vers Toronto? Les pourparlers",
+      "hl": "TRADE"
     },
     {
-      "tag": "FOOT",
-      "text": "PSG recrute Diomande loin de Liverpool",
-      "hl": "MERCATO"
+      "tag": "LNH",
+      "text": "Robertson refuse Seattle, Montréal attend",
+      "hl": "ROBERTSON"
     }
   ]
 }
