@@ -1,0 +1,30 @@
+{
+  "date": "29 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Canada arrache les seizièmes en dernière seconde",
+      "hl": "HISTORIQUE"
+    },
+    {
+      "tag": "F1",
+      "text": "Russell gagne en Autriche devant Verstappen",
+      "hl": "MERCEDES"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes écrasent Ottawa 37-35, Philpot héros",
+      "hl": "37-35"
+    },
+    {
+      "tag": "NBA",
+      "text": "Toronto en pourparlers pour ramener Kawhi",
+      "hl": "2019"
+    },
+    {
+      "tag": "FOOT",
+      "text": "PSG recrute Diomande loin de Liverpool",
+      "hl": "MERCATO"
+    }
+  ]
+}
