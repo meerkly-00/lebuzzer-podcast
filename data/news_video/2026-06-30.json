@@ -1,0 +1,30 @@
+{
+  "date": "30 JUIN 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Paraguay élimine l'Allemagne aux tirs au but",
+      "hl": "SURPRISE"
+    },
+    {
+      "tag": "NBA",
+      "text": "Warriors veulent LeBron, AD et Curry ensemble",
+      "hl": "TRIO"
+    },
+    {
+      "tag": "QC",
+      "text": "Gallagher quitte Montréal après 14 ans",
+      "hl": "14 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Canada affronte le Maroc samedi à Houston",
+      "hl": "SAMEDI"
+    },
+    {
+      "tag": "MMA",
+      "text": "Gaethje rafle 3 prix majeurs en même temps",
+      "hl": "3 PRIX"
+    }
+  ]
+}
