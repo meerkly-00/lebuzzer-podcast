@@ -4,27 +4,27 @@
     {
       "tag": "FOOT",
       "text": "Paraguay élimine l'Allemagne aux tirs au but",
-      "hl": "SURPRISE"
-    },
-    {
-      "tag": "NBA",
-      "text": "Warriors veulent LeBron, AD et Curry ensemble",
-      "hl": "TRIO"
+      "hl": "ALLEMAGNE"
     },
     {
       "tag": "QC",
-      "text": "Gallagher quitte Montréal après 14 ans",
+      "text": "Gallagher échangé aux Canucks après 14 ans",
       "hl": "14 ANS"
     },
     {
+      "tag": "NBA",
+      "text": "Ja Morant trade à Portland, pari massif",
+      "hl": "TRADE"
+    },
+    {
       "tag": "FOOT",
-      "text": "Canada affronte le Maroc samedi à Houston",
+      "text": "Canada-Maroc samedi à Houston, match crucial",
       "hl": "SAMEDI"
     },
     {
-      "tag": "MMA",
-      "text": "Gaethje rafle 3 prix majeurs en même temps",
-      "hl": "3 PRIX"
+      "tag": "QC",
+      "text": "Savoie première finale PGA québécoise en 29 ans",
+      "hl": "29 ANS"
     }
   ]
 }
