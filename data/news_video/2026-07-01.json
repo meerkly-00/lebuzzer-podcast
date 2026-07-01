@@ -4,27 +4,27 @@
     {
       "tag": "NBA",
       "text": "LeBron quitte les Lakers pour les Warriors",
-      "hl": "WARRIORS"
+      "hl": "TRADE"
     },
     {
-      "tag": "QC",
-      "text": "Canadiens ouvrent leur camp de développement",
-      "hl": "1er JUILLET"
+      "tag": "NBA",
+      "text": "Kawhi revient à Toronto pour du lourd",
+      "hl": "KAWHI"
     },
     {
       "tag": "FOOT",
-      "text": "France écrase la Suède, Mbappé à 6 buts",
-      "hl": "6 BUTS"
+      "text": "Mbappé casse le record de la Coupe du monde",
+      "hl": "RECORD"
     },
     {
       "tag": "LNH",
-      "text": "Marché autonome s'ouvre, Laine en jeu",
-      "hl": "FREE AGENCY"
+      "text": "Jeremy Lauzon prolonge 6 ans à Vegas",
+      "hl": "QC"
     },
     {
-      "tag": "F1",
-      "text": "McLaren dévoile livrée spéciale à Silverstone",
-      "hl": "SILVERSTONE"
+      "tag": "LCF",
+      "text": "Philpot et Alexander couronnés de la semaine",
+      "hl": "QC"
     }
   ]
 }
