@@ -1,0 +1,30 @@
+{
+  "date": "1 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "LeBron quitte les Lakers pour les Warriors",
+      "hl": "WARRIORS"
+    },
+    {
+      "tag": "QC",
+      "text": "Canadiens ouvrent leur camp de développement",
+      "hl": "1er JUILLET"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France écrase la Suède, Mbappé à 6 buts",
+      "hl": "6 BUTS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Marché autonome s'ouvre, Laine en jeu",
+      "hl": "FREE AGENCY"
+    },
+    {
+      "tag": "F1",
+      "text": "McLaren dévoile livrée spéciale à Silverstone",
+      "hl": "SILVERSTONE"
+    }
+  ]
+}
