@@ -1,0 +1,30 @@
+{
+  "date": "2 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Jaylen Brown trade à Philly pour Paul George",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Demidov signe 8 ans avec le Canadien",
+      "hl": "8 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "États-Unis gagne en éliminatoire après 24 ans",
+      "hl": "24 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Belgique renverse le Sénégal 3-2 en prolongation",
+      "hl": "3-2"
+    },
+    {
+      "tag": "LNH",
+      "text": "Leafs rate Werenski, sign Bobrovsky au plan B",
+      "hl": "PLAN B"
+    }
+  ]
+}
