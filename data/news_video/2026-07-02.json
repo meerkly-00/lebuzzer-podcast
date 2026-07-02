@@ -3,7 +3,7 @@
   "headlines": [
     {
       "tag": "NBA",
-      "text": "Jaylen Brown trade à Philly pour Paul George",
+      "text": "Jaylen Brown traded aux 76ers, Paul George à Boston",
       "hl": "TRADE"
     },
     {
@@ -13,18 +13,18 @@
     },
     {
       "tag": "FOOT",
-      "text": "États-Unis gagne en éliminatoire après 24 ans",
-      "hl": "24 ANS"
-    },
-    {
-      "tag": "FOOT",
-      "text": "Belgique renverse le Sénégal 3-2 en prolongation",
+      "text": "Belgique se qualifie en prolongation contre Sénégal",
       "hl": "3-2"
     },
     {
       "tag": "LNH",
-      "text": "Leafs rate Werenski, sign Bobrovsky au plan B",
-      "hl": "PLAN B"
+      "text": "Werenski refuse Toronto, reste à Columbus",
+      "hl": "VETO"
+    },
+    {
+      "tag": "F1",
+      "text": "Leclerc critiqué : pilote du samedi, pas du dimanche",
+      "hl": "SAMEDI"
     }
   ]
 }
