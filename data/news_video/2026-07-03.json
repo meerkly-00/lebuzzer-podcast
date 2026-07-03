@@ -2,9 +2,9 @@
   "date": "3 JUILLET 2026",
   "headlines": [
     {
-      "tag": "NBA",
-      "text": "Kyle Lowry prend sa retraite en Raptor",
-      "hl": "RETRAITE"
+      "tag": "FOOT",
+      "text": "Klopp prend la tête de l'Allemagne",
+      "hl": "KLOPP"
     },
     {
       "tag": "QC",
@@ -12,19 +12,19 @@
       "hl": "3 ANS"
     },
     {
-      "tag": "LNH",
-      "text": "Bedard sort sur blessure à l'entraînement",
-      "hl": "BLESSURE"
+      "tag": "NBA",
+      "text": "Les 76ers font la cour à LeBron James",
+      "hl": "LEBRON"
     },
     {
-      "tag": "FOOT",
-      "text": "Espagne domine l'Autriche 3-0 aux 8es",
-      "hl": "3-0"
+      "tag": "NBA",
+      "text": "Kyle Lowry raccroche avec les Raptors",
+      "hl": "RETRAITE"
     },
     {
       "tag": "F1",
-      "text": "Ocon joue gros chez Haas cette saison",
-      "hl": "HAAS"
+      "text": "Hamilton critique les nouvelles F1",
+      "hl": "SILVERSTONE"
     }
   ]
 }
