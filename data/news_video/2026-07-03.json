@@ -1,0 +1,30 @@
+{
+  "date": "3 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Kyle Lowry prend sa retraite en Raptor",
+      "hl": "RETRAITE"
+    },
+    {
+      "tag": "QC",
+      "text": "Dobes prolonge 3 ans avec Montréal",
+      "hl": "3 ANS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Bedard sort sur blessure à l'entraînement",
+      "hl": "BLESSURE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Espagne domine l'Autriche 3-0 aux 8es",
+      "hl": "3-0"
+    },
+    {
+      "tag": "F1",
+      "text": "Ocon joue gros chez Haas cette saison",
+      "hl": "HAAS"
+    }
+  ]
+}
