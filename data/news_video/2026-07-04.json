@@ -1,0 +1,30 @@
+{
+  "date": "4 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Flyers offre hostile de 90M à Carlsson",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Laurent Duvernay-Tardif officiellement médecin",
+      "hl": "DR"
+    },
+    {
+      "tag": "F1",
+      "text": "Hamilton en pole à Silverstone chez Ferrari",
+      "hl": "POLE"
+    },
+    {
+      "tag": "NBA",
+      "text": "LeBron aurait signé aux Knicks sans titre",
+      "hl": "BOMBE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Argentine survit au Cap-Vert en prolongation",
+      "hl": "3-2"
+    }
+  ]
+}
