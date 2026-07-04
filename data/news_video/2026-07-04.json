@@ -3,13 +3,8 @@
   "headlines": [
     {
       "tag": "LNH",
-      "text": "Flyers offre hostile de 90M à Carlsson",
+      "text": "Flyers font offre hostile de 90M à Carlsson",
       "hl": "TRADE"
-    },
-    {
-      "tag": "QC",
-      "text": "Laurent Duvernay-Tardif officiellement médecin",
-      "hl": "DR"
     },
     {
       "tag": "F1",
@@ -17,14 +12,19 @@
       "hl": "POLE"
     },
     {
-      "tag": "NBA",
-      "text": "LeBron aurait signé aux Knicks sans titre",
-      "hl": "BOMBE"
+      "tag": "FOOT",
+      "text": "Tunisie : 8 joueurs positifs au dopage",
+      "hl": "SCANDALE"
     },
     {
-      "tag": "FOOT",
-      "text": "Argentine survit au Cap-Vert en prolongation",
-      "hl": "3-2"
+      "tag": "QC",
+      "text": "Lapierre prolonge avec Pittsburgh",
+      "hl": "QC"
+    },
+    {
+      "tag": "NBA",
+      "text": "Drummond signe aux Knicks pour 3,9M",
+      "hl": "KNICKS"
     }
   ]
 }
