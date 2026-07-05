@@ -3,28 +3,28 @@
   "headlines": [
     {
       "tag": "FOOT",
-      "text": "Canada éliminé sans Davies, zéro à trois",
-      "hl": "SANS DAVIES"
+      "text": "Canada éliminé 0-3 contre le Maroc",
+      "hl": "0-3"
     },
     {
       "tag": "QC",
-      "text": "Mavrik Bourque signe 6 ans, 33M$ à Nashville",
-      "hl": "33M$"
+      "text": "Mavrik Bourque signe 6 ans à Nashville",
+      "hl": "6 ANS"
     },
     {
       "tag": "F1",
-      "text": "Antonelli en pole à Silverstone, Verstappen démotivé",
-      "hl": "POLE"
+      "text": "Antonelli gagne le sprint à Silverstone",
+      "hl": "19 ANS"
     },
     {
       "tag": "LNH",
-      "text": "Bedard blessé juste avant négos de contrat",
-      "hl": "BLESSÉ"
+      "text": "Shane Wright disponible au trade",
+      "hl": "TRADE"
     },
     {
-      "tag": "MMA",
-      "text": "Holloway vs McGregor UFC 329, trilogie en vue",
-      "hl": "TRILOGIE"
+      "tag": "LNH",
+      "text": "Bedard blessé au haut du corps",
+      "hl": "BLESSURE"
     }
   ]
 }

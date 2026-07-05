@@ -1,39 +1,35 @@
 ```xml
 <script>
-  <intro>T'es au Buzzer. Le Canada est éliminé de sa propre Coupe du monde. La France survit de justesse au Paraguay. Antonelli en pole à Silverstone. Et Mavrik Bourque vient de signer le plus gros contrat de sa carrière. On rentre là-dedans.</intro>
+  <intro>T'es au Buzzer. Le Canada est sorti de la Coupe du monde. Zéro à trois contre le Maroc. Mavrik Bourque signe six ans à Nashville. Et à Silverstone, Antonelli gagne le sprint devant Hamilton. On embarque.</intro>
 
   <chapitre titre="Top international">
-    On commence par la Coupe du monde, parce que samedi soir c'était du sport cru.
+    On commence par la Coupe du monde, parce que hier soir c'était une soirée de sport brutal.
 
-    D'abord, la France contre le Paraguay à Philadelphie. Selon La Presse et ESPN Soccer, les Bleus ont gagné un à zéro, sur un penalty de Mbappé, dans une chaleur extrême et une ambiance de combat. Selon L'Equipe Analyses, c'était une soirée irrespirable : provocations, arbitrage douteux, Paraguay en bunker avec un cinq-quatre-un. La France a souffert. Et Mbappé, en conférence d'après-match, a dit, je le cite : "We're ready to play ugly and get our hands dirty." Fin de citation. Mon take : c'est pas le plus beau des football, mais les équipes qui gagnent des Coupes du monde savent se salir les mains. Les Bleus sont en quarts.
+    D'abord, la France contre le Paraguay à Philadelphie. Selon L'Equipe, les Bleus ont gagné un à zéro, sur un penalty de Mbappé. Mais le résultat dit rien sur la soirée. L'Equipe Analyses décrit une ambiance de combat irrespirable, des provocations, un arbitrage douteux. L'arbitre ouzbek Tantachev, déjà au coeur d'un houleux France-Argentine aux JO 2024, a encore fait jaser. La presse paraguayenne, selon L'Equipe, reconnaît la qualité de ses joueurs, mais crie à l'injustice sur le penalty. La France rejoint le Maroc en quarts de finale. Et parlant du Maroc...
 
-    Et ce dimanche, deux huitièmes de plus à surveiller. Selon L'Equipe, le Brésil affronte la Norvège, et le Mexique reçoit l'Angleterre. Thomas Tuchel a demandé à ses joueurs de "ne pas perdre la tête" malgré une préparation compliquée, selon ESPN Soccer.
+    Le Canada est éliminé. Zéro à trois contre le Maroc, selon RDS. Sportsnet rapporte que la rêve canadien se termine malgré une parcours historique. Et là, la question que tout le monde posait pendant le match : pourquoi Alphonso Davies n'a pas joué ? Selon Sportsnet, Davies lui-même a dit qu'il ne se sentait pas bien avant le match. La Presse a posé la question directement. Aucune précision médicale pour l'instant. Mon take : sortir sans Davies en huitième de finale d'une Coupe du monde à domicile, c'est une image qui va rester longtemps.
 
-    Maintenant, la grosse tuile canadienne. Le Canada éliminé par le Maroc, zéro à trois, selon RDS. Fin du rêve à domicile. Et la question que tout le monde posait pendant le match : où était Alphonso Davies ? Selon La Presse et Sportsnet, Davies "ne se sentait pas bien" avant la partie et n'a pas joué. Zéro explication médicale officielle pour l'instant. C'est brutal. Perdre à la maison, sans ton meilleur joueur, sans explication claire. Selon Sportsnet, c'est malgré tout qualifié de "parcours historique" pour le Canada. Honnêtement : ça aurait pu être tellement plus.
+    F1 maintenant. À Silverstone hier, course sprint. Selon L'Equipe, Kimi Antonelli remporte le sprint devant Lewis Hamilton et Lando Norris. En conférence, Antonelli a dit, je le cite : "Les dix premiers tours avec Hamilton étaient amusants." Fin de citation. Dix-neuf ans, vainqueur d'un sprint à Silverstone. La course principale, c'est aujourd'hui. Pour la grille de départ de la grande course, selon L'Equipe, Antonelli est en pole devant Charles Leclerc et Hamilton. Mercedes en tête, Ferrari deuxième et troisième. Norris et McLaren sont en dehors du top trois. Felipe Massa, lui, a dit à L'Equipe qu'il ne voit pas Norris rattraper Mercedes. On va voir ça aujourd'hui.
 
-    F1. Grand Prix de Grande-Bretagne ce dimanche à Silverstone. Selon ESPN Motorsports et L'Equipe F1, c'est Kimi Antonelli qui a décroché la pole position hier, devant les Ferrari de Leclerc et Hamilton. La course sprint de samedi ? Remportée aussi par Antonelli, devant Hamilton et Norris. Selon L'Equipe, Antonelli a dit que "les dix premiers tours avec Hamilton étaient amusants." C'est la cinquième pole de la saison pour le jeune pilote Mercedes. La course principale, c'est aujourd'hui. Ça se passe à Silverstone, le temple du sport automobile britannique. Verstappen est quatrième sur la grille, selon ESPN, et il a admis en point de presse que seuls "la vie et la respiration" le motivent encore en ce moment. C'est... un gars qui n'a pas l'air de s'amuser.
-
-    MMA. UFC 329 le onze juillet. Max Holloway contre Conor McGregor. Selon ESPN MMA, Holloway a dit publiquement qu'il va gagner et que ça ouvre la porte à une trilogie. C'est dans une semaine. On va en reparler.
+    Tour de France en bref. Selon L'Equipe Analyses, Jonas Vingegaard s'est libéré sous la chaleur de Barcelone et a regoûté au bonheur sur le Tour. Pas plus de détails dans le XML sur les positions au classement, mais Vingegaard qui s'exprime, ça veut dire que les jambes répondent.
   </chapitre>
 
   <chapitre titre="Le moment QC">
-    Hockey. Deux nouvelles à retenir ce matin.
+    Hockey. Deux histoires ce matin, les deux importantes.
 
-    Mavrik Bourque signe chez Nashville. Selon La Presse Hockey, ESPN NHL et Sportsnet, les Predators ont donné un contrat de six ans et trente-trois millions US au centre québécois de vingt-quatre ans. Nashville l'avait acquis des Stars de Dallas il y a trois jours. Bourque a terminé la dernière saison avec vingt buts et vingt et un assistants en quatre-vingt-deux matchs. Six ans, trente-trois millions : c'est cinq virgule cinq par année. C'est pas un contrat de superstar, c'est un contrat de joueur fiable qu'une équipe en reconstruction veut ancrer au centre. Pour un gars de Granby qui a gravi les échelons tranquillement, c'est un beau contrat.
+    Première : Mavrik Bourque signe avec Nashville. Six ans, trente-trois millions américains, selon La Presse Hockey et Sportsnet. Le Québécois de Sept-Îles, vingt-quatre ans, était restricted free agent après avoir joué pour les Stars de Dallas. Nashville le sort de là avec un contrat long terme. Cinq millions cinq par saison en moyenne. C'est un beau contrat pour un joueur qui a pas encore explosé au niveau supérieur, mais les Predators font le pari de la progression. À surveiller si Bourque prend la place qui lui revient dans leur top-9 dès le camp.
 
-    Et Shane Wright. Selon TVA Sports, les Kraken de Seattle ont confirmé leur intention de trader le centre canadien. Wright est disponible. C'est une histoire à suivre pour les équipes qui cherchent un centre avec du potentiel pas encore pleinement exploité. Aucun trade annoncé pour l'instant.
-
-    Côté Canadien, selon Marqueur.com, Kent Hughes a fait signer un joueur de centre à l'organisation. Les détails du contrat et le nom complet ne sont pas clairement sourcés dans les articles disponibles ce matin, donc on ne va pas plus loin. Ce qu'on sait : Hughes continue de bouger.
+    Deuxième histoire, et celle-là est plus délicate. L'offre hostile des Flyers sur Leo Carlsson, on en a parlé cette semaine, elle a des répercussions directes sur les Blackhawks et Connor Bedard. Selon The Hockey Writers, Chicago commence à s'inquiéter de ce que le contrat de Carlsson, cinq ans, quatre-vingt-dix millions, va faire à la valeur de Bedard sur le marché des prolongations. Bedard, vingt ans, est encore loin de son admissibilité, mais les chiffres qui circulent dans la ligue ont changé du jour au lendemain. Et par-dessus ça, Pro Hockey Rumors rapporte que Bedard a subi une blessure au haut du corps en entraînement hors-saison. Aucun détail sur la gravité, rien d'officiel côté Blackhawks. Mon take : deux mauvaises nouvelles dans la même semaine pour Chicago, c'est pas idéal. Mais on reste calmes tant que les Blackhawks parlent pas.
   </chapitre>
 
   <chapitre titre="Le buzz du jour">
-    Le buzz du jour : Connor Bedard blessé en entraînement hors-saison.
+    Le buzz du jour : Shane Wright disponible, et le dossier qui implique directement le Canadien de Montréal.
 
-    Selon Pro Hockey Rumors et The Hockey Writers, Bedard a subi une blessure au haut du corps lors d'un entraînement estival. Aucune précision sur la gravité pour l'instant, rien d'officiel côté Blackhawks.
+    Selon TVA Sports et nhltraderumors.me, les Kraken de Seattle ont confirmé leur intention de trader Shane Wright, le quatrième choix au total du repêchage 2022. Wright, vingt-deux ans, n'a jamais percé comme attendu à Seattle. Les Kraken sont vendeurs.
 
-    Mais voici pourquoi ça mérite qu'on s'y arrête. Selon The Hockey Writers, cette blessure tombe exactement au moment où Chicago devait commencer à négocier la prolongation de contrat de Bedard. Et l'offre hostile sur Leo Carlsson, dont on a parlé hier, a déjà changé le marché de référence pour les jeunes centres de premier plan. Selon The Hockey Writers, les Blackhawks regardent les chiffres de Carlsson, cinq ans, dix-huit millions par année, et calculent ce que ça implique pour Bedard, qui est objectivement un cran au-dessus. Aucune négociation publique en cours. Mais une blessure en juillet sur le joueur autour duquel tu es en train de reconstruire toute ta franchise, dans le contexte d'un marché qui vient de s'emballer : c'est le genre de dossier qu'on surveille de près.
+    Maintenant, pourquoi ça touche Montréal. Selon un article de Marqueur.com, Kent Hughes a fait une acquisition en attaque cette semaine, un joueur dont on dit qu'il s'inspire de Josh Anderson. Les détails restent vagues dans le XML, mais Hughes est clairement actif. Wright, premier choix global des Kraken, joueur québécois de Saint-Hyacinthe, serait exactement le type de pari sur le potentiel que Hughes a dit vouloir faire cet été. Rien d'officiel, aucun insider n'a lié Montréal à Wright directement dans ce qu'on a ce matin. Mais le profil colle, le timing colle, et Hughes est en mode construction. À suivre de près dans les prochains jours.
   </chapitre>
 
-  <outro>Demain au Buzzer : résultats du GP de Grande-Bretagne, Brésil et Angleterre en huitièmes, et les suites du mercato LNH. À demain.</outro>
+  <outro>Demain au Buzzer : résultat du GP de Grande-Bretagne et quarts de finale de la Coupe du monde qui se dessinent. À demain.</outro>
 </script>
 ```
