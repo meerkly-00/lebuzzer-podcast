@@ -1,0 +1,30 @@
+{
+  "date": "5 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Canada éliminé sans Davies, zéro à trois",
+      "hl": "SANS DAVIES"
+    },
+    {
+      "tag": "QC",
+      "text": "Mavrik Bourque signe 6 ans, 33M$ à Nashville",
+      "hl": "33M$"
+    },
+    {
+      "tag": "F1",
+      "text": "Antonelli en pole à Silverstone, Verstappen démotivé",
+      "hl": "POLE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Bedard blessé juste avant négos de contrat",
+      "hl": "BLESSÉ"
+    },
+    {
+      "tag": "MMA",
+      "text": "Holloway vs McGregor UFC 329, trilogie en vue",
+      "hl": "TRILOGIE"
+    }
+  ]
+}
