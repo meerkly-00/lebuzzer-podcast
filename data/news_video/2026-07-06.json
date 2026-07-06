@@ -1,0 +1,30 @@
+{
+  "date": "6 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "F1",
+      "text": "Leclerc gagne à Silverstone après 2 ans",
+      "hl": "2 ANS"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Trump appelle la FIFA pour annuler un carton",
+      "hl": "CARTON"
+    },
+    {
+      "tag": "QC",
+      "text": "Dach demande l'arbitrage salarial au CH",
+      "hl": "ARBITRAGE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Norvège élimine le Brésil en 8e finale",
+      "hl": "QUARTS"
+    },
+    {
+      "tag": "QC",
+      "text": "McIntosh bat le record mondial du 200m papillon",
+      "hl": "RECORD"
+    }
+  ]
+}
