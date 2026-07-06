@@ -3,27 +3,27 @@
   "headlines": [
     {
       "tag": "F1",
-      "text": "Leclerc gagne à Silverstone après 2 ans",
+      "text": "Leclerc brise la malédiction à Silverstone",
       "hl": "2 ANS"
     },
     {
       "tag": "FOOT",
-      "text": "Trump appelle la FIFA pour annuler un carton",
-      "hl": "CARTON"
+      "text": "Balogun joue grâce à Trump et la FIFA",
+      "hl": "SCANDALE"
     },
     {
       "tag": "QC",
-      "text": "Dach demande l'arbitrage salarial au CH",
-      "hl": "ARBITRAGE"
+      "text": "Dach demande l'arbitrage salarial",
+      "hl": "BLOQUÉ"
     },
     {
       "tag": "FOOT",
-      "text": "Norvège élimine le Brésil en 8e finale",
-      "hl": "QUARTS"
+      "text": "Angleterre survit au Mexique 3-2",
+      "hl": "3-2"
     },
     {
       "tag": "QC",
-      "text": "McIntosh bat le record mondial du 200m papillon",
+      "text": "McIntosh casse un record mondial à Montréal",
       "hl": "RECORD"
     }
   ]
