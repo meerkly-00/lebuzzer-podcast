@@ -1,0 +1,30 @@
+{
+  "date": "7 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "États-Unis éliminés 4-1 par la Belgique",
+      "hl": "4-1"
+    },
+    {
+      "tag": "NBA",
+      "text": "LeBron James quitte les Lakers après 22 ans",
+      "hl": "22 ANS"
+    },
+    {
+      "tag": "LNH",
+      "text": "Boston trade Jaylen Brown pour la flexibilité",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Summer McIntosh domine le 400 m aux Essais",
+      "hl": "OR"
+    },
+    {
+      "tag": "LNH",
+      "text": "Ovechkin revient pour une 22e saison",
+      "hl": "22e SAISON"
+    }
+  ]
+}
