@@ -1,0 +1,30 @@
+{
+  "date": "9 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Bedard sous le bistouri, 4 mois d'absence",
+      "hl": "4 MOIS"
+    },
+    {
+      "tag": "NBA",
+      "text": "Brown a magouillé pendant le trade de Tatum",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "CF Montréal arrache 2-1 en quarts de finale",
+      "hl": "2-1"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France-Maroc ce soir en quart de Coupe du monde",
+      "hl": "QUART"
+    },
+    {
+      "tag": "LNH",
+      "text": "Alfredsson rejoint les Maple Leafs, Ottawa rage",
+      "hl": "LÉGENDAIRE"
+    }
+  ]
+}
