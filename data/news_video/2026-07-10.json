@@ -1,0 +1,30 @@
+{
+  "date": "10 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Carlsson devient le joueur le mieux payé",
+      "hl": "No 1"
+    },
+    {
+      "tag": "FOOT",
+      "text": "France en demi-finales, Mbappé blesse",
+      "hl": "DEMI-FINALES"
+    },
+    {
+      "tag": "QC",
+      "text": "Brett Berard signe avec le Canadien",
+      "hl": "1 AN"
+    },
+    {
+      "tag": "NBA",
+      "text": "Trade Kawhi Leonard bloqué par enquête",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Larkin ajoute Dallas à sa liste de trade",
+      "hl": "TRADE"
+    }
+  ]
+}
