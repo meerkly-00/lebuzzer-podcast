@@ -1,0 +1,30 @@
+{
+  "date": "11 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "NBA",
+      "text": "Wembanyama signe 252M$ avec San Antonio",
+      "hl": "252M$"
+    },
+    {
+      "tag": "MMA",
+      "text": "McGregor revient ce soir après 5 ans d'absence",
+      "hl": "5 ANS"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes 3-1, favoris dans l'Est de la LCF",
+      "hl": "3-1"
+    },
+    {
+      "tag": "NBA",
+      "text": "Adebayo et Herro se sont pognes à Vegas",
+      "hl": "ALTERCATION"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Adeyemi file à Barcelone depuis Dortmund",
+      "hl": "BARCELONE"
+    }
+  ]
+}
