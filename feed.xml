@@ -22,6 +22,17 @@
       <link>https://www.lebuzzer.com</link>
     </image>
     <item>
+      <title>LE BUZZER — édition du 12 juillet 2026</title>
+      <description>Au menu : Top international, Le moment QC, Le buzz du jour</description>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-12/2026-07-12.mp3</guid>
+      <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-12/2026-07-12.mp3" type="audio/mpeg" length="5499828"/>
+      <itunes:duration>310</itunes:duration>
+      <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
+      <itunes:episode>1</itunes:episode>
+      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
+    </item>
+    <item>
       <title>LE BUZZER — édition du 11 juillet 2026</title>
       <description>Au menu : Top international, Le moment QC, Le buzz du jour</description>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
@@ -94,17 +105,6 @@
       <guid isPermaLink="false">https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-05/2026-07-05.mp3</guid>
       <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-05/2026-07-05.mp3" type="audio/mpeg" length="3305884"/>
       <itunes:duration>334</itunes:duration>
-      <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
-      <itunes:episode>1</itunes:episode>
-      <itunes:image href="https://www.lebuzzer.com/artwork.png"/>
-    </item>
-    <item>
-      <title>LE BUZZER — édition du 4 juillet 2026</title>
-      <description>Au menu : Top international, Le moment QC, Le buzz du jour</description>
-      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-04/2026-07-04.mp3</guid>
-      <enclosure url="https://github.com/meerkly-00/lebuzzer-podcast/releases/download/2026-07-04/2026-07-04.mp3" type="audio/mpeg" length="3112130"/>
-      <itunes:duration>330</itunes:duration>
       <itunes:summary>Au menu : Top international, Le moment QC, Le buzz du jour</itunes:summary>
       <itunes:episode>1</itunes:episode>
       <itunes:image href="https://www.lebuzzer.com/artwork.png"/>

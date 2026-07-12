@@ -1,0 +1,30 @@
+{
+  "date": "12 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "MMA",
+      "text": "McGregor out après 69 secondes, carrière finie?",
+      "hl": "69 SEC"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Messi meilleur passeur de l'histoire, Argentine en demi",
+      "hl": "MEILLEUR"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes gagnent mais Davis Alexander inquiète",
+      "hl": "BLESSURE"
+    },
+    {
+      "tag": "QC",
+      "text": "Patrick Kane veut jouer à Montréal, c'est confirmé",
+      "hl": "KANE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Bellingham 2 buts: Angleterre vs Argentine en demi",
+      "hl": "REVANCHE"
+    }
+  ]
+}
