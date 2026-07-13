@@ -1,0 +1,33 @@
+```xml
+<script>
+  <intro>T'es au Buzzer. La France en demi-finale de Coupe du monde contre l'Espagne mardi. Le CF Montréal qualifié en demi du Championnat canadien. Et Sinner à nouveau champion à Wimbledon. Lundi matin, on embarque.</intro>
+
+  <chapitre titre="Top international">
+    On commence par la Coupe du monde, parce que c'est le sujet du moment. Le dernier carré est confirmé : France, Espagne, Angleterre, Argentine. Demi-finale numéro un, mardi soir à Dallas : la France contre l'Espagne. Selon L'Equipe, c'est un choc attendu, et les Bleus seront en tenue domicile, bleu-blanc-rouge.
+
+    L'Equipe analyse aussi le parcours de l'Argentine pour arriver là, et c'est un angle qui mérite qu'on s'y arrête deux secondes : selon leur analyse, l'Albiceleste s'est qualifiée pour les demi-finales sans avoir affronté une seule équipe du top 15 FIFA en cours de route. Messi et compagnie ont navigué dans la partie douce du tableau. Ça ne veut pas dire qu'ils vont perdre mardi contre l'Angleterre. Mais ça veut dire que leur vraie épreuve commence là.
+
+    Cote Coupe du monde et conditions de jeu, selon ESPN, la FIFA et la FIFPRO auraient entamé des discussions sur les protocoles de chaleur après des inquiétudes soulevées pendant le tournoi. Pas de détails sur les mesures envisagées pour l'instant, mais c'est un signal que la question devient difficile à ignorer.
+
+    Tennis. Wimbledon est bouclé. Jannik Sinner conserve son titre à Londres. Selon La Presse, l'Allemand Alexander Zverev était en finale dimanche, Sinner l'a battu, et l'Italien reste numéro un mondial. Côté féminin, la Tchèque Linda Noskova remporte son premier Grand Chelem et grimpe au septième rang WTA selon le classement publié lundi.
+
+    Tour de France. Selon L'Equipe Analyses, Mathieu Van der Poel s'est réveillé lors d'une étape dans la chaleur pour renouer avec sa course. Pas de victoire d'étape rapportée dans le XML, mais VDP qui retrouve ses jambes à mi-tournoi, c'est une histoire à suivre.
+
+    MLB. Selon Sportsnet, les Blue Jays entrent dans la pause du match des étoiles sur une mauvaise note. Le releveur Hoffman a soufflé une avance en fin de match. Et bonne nouvelle canadienne dans ce même contexte : selon Sportsnet, le lanceur Dylan Cease des Jays a été sélectionné comme partant pour la Ligue américaine au Match des étoiles. Premier partant étoile pour Toronto en plusieurs saisons. C'est un signal que cette rotation a du mordant.
+  </chapitre>
+
+  <chapitre titre="Le moment QC">
+    Le CF Montréal. Victoire dimanche soir au Stade Saputo contre le Vancouver FC, deux à un, en quart de finale du Championnat canadien. Selon La Presse, le club est qualifié pour les demi-finales. Ce qui est savoureux dans ce match, c'est le titre RDS qui résume bien la situation : "dans le trouble, mais qualifié." Le CF Montréal a concédé un but en supériorité numérique, lui qui avait lui-même marqué contre son camp sur un power play plus tôt cette saison. La médecine servie aux autres, reçue en retour. Mais le résultat est là : demi-finale, et c'est ce qui compte.
+
+    Cote Canadiens, une transaction a été conclue entre Montréal et Vegas. Selon Marqueur.com, la transaction entre le Canadien et les Golden Knights aurait un impact sur les règles d'offres hostiles. Les détails de la transaction elle-même ne sont pas précisés dans les sources disponibles ce matin, mais le dossier des offres hostiles est une question qui plane sur l'organisation depuis quelques semaines avec plusieurs jeunes joueurs en fin de contrat d'entrée.
+  </chapitre>
+
+  <chapitre titre="Le buzz du jour">
+    Le buzz du jour : Elias Pettersson et Pittsburgh. Selon TVA Sports, les Penguins auraient le centre des Canucks de Vancouver dans leur mire. Maintenant, attention : TVA Sports pose la question sous forme de point d'interrogation dans le titre, et aucun insider nommé, ni Friedman, ni Dreger, n'est cité dans les informations disponibles. On est dans le territoire de la rumeur non confirmée par une source de premier plan.
+
+    Mais voilà pourquoi c'est quand même pertinent à mentionner : Pettersson a eu une saison difficile à Vancouver, les Canucks ont raté les séries, et la relation entre le joueur et l'organisation est surveillée de près par tous les insiders depuis le printemps. Si Pittsburgh, qui cherche à reconstruire autour de Sidney Crosby pour ses dernières saisons, se positionne sérieusement, ça change la dynamique du marché des centres de premier rang. À surveiller si Friedman ou Dreger sortent quelque chose dans les prochains jours.
+  </chapitre>
+
+  <outro>Demain au Buzzer : France-Espagne en demi-finale. Et on suivra le dossier Pettersson. À demain.</outro>
+</script>
+```
