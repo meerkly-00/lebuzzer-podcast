@@ -1,0 +1,30 @@
+{
+  "date": "14 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "France-Espagne ce soir, meilleure attaque vs défense",
+      "hl": "DEMI-FINALE"
+    },
+    {
+      "tag": "QC",
+      "text": "Shane Wright veut partir à Vancouver, trade en vue",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Daniel Jacob nommé coach du Rocket de Laval",
+      "hl": "NOMINATION"
+    },
+    {
+      "tag": "NBA",
+      "text": "Guerre d'enchères pour champion 4x sacré, 101M$",
+      "hl": "101M$"
+    },
+    {
+      "tag": "QC",
+      "text": "Sherbrookois Deiten Lachance repêché par Cleveland",
+      "hl": "DRAFT MLB"
+    }
+  ]
+}

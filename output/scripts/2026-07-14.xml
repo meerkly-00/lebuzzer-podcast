@@ -1,0 +1,35 @@
+```xml
+<script>
+  <intro>T'es au Buzzer. France-Espagne ce soir à Dallas, demi-finale de Coupe du monde. Shane Wright veut s'en aller à Vancouver. Et les Canadiens nomment Daniel Jacob pour diriger le Rocket. On embarque.</intro>
+
+  <chapitre titre="Top international">
+    On commence par le foot, parce que c'est ce soir et c'est gros. Demi-finale numéro un de la Coupe du monde : France contre Espagne, à Dallas. Selon La Presse, les chroniqueurs résument ça comme la meilleure attaque contre la meilleure défense. L'Equipe Football confirme le match en direct ce soir. Mon take : c'est le vrai choc du tournoi. Les deux demi-finales sur papier, France-Espagne et Angleterre-Argentine demain, c'est exactement ce que tout le monde voulait voir. La Coupe du monde a livré la marchandise dans ce dernier carré.
+
+    Petite touche historique pour la deuxième demie. Selon L'Equipe, le chant des supporters argentins, "Celui qui ne saute pas est un Anglais", vient de la guerre des Malouines en 1982. Scandé dans les rues à l'époque, il est devenu l'hymne des tribunes de l'Albiceleste. Et mercredi soir contre l'Angleterre, ils vont le chanter encore plus fort. Ce genre de contexte, c'est ce qui rend le foot mondial unique.
+
+    Côté NBA, le mercato d'été continue de bouger. Selon Sporting News, une guerre d'enchères serait en cours entre les Warriors, le Heat, les Cavaliers, les 76ers et les Wolves pour un champion quatre fois sacré évalué à 101 millions. La source ne nomme pas le joueur explicitement dans le titre, et aucun insider comme Shams ou Woj n'est cité directement dans le XML. On reste donc prudents. Mais le dossier LeBron, dont on parlait vendredi dans le contexte des Warriors et de Golden State, reste clairement dans l'air.
+
+    En hockey, deux nouvelles rapides. Selon Sportsnet, les Rangers de New York ont signé le défenseur Braden Schneider à un contrat d'un an. Extension courte, ce qui suggère que les deux parties ne se sont pas entendues sur le long terme. A suivre. Et du côté de Buffalo, selon La Presse Hockey, les Sabres ont conclu une entente de quatre saisons avec l'attaquant Peyton Krebs pour 18 millions US. Krebs, 24 ans, s'ancre à Buffalo pour le moyen terme.
+
+    En F1, le Grand Prix de Belgique est en fin de semaine selon Motorsport.com et Ouest-France. Circuit de Spa-Francorchamps, un des classiques du calendrier. On fait le point demain sur les favoris.
+
+    Et pour finir le tour international : au baseball, concours de circuits hier soir à Philadelphie dans le cadre du week-end des étoiles. Selon La Presse et Sportsnet, c'est Jordan Walker des Cardinals de Saint-Louis qui a remporté le titre en finale. Il a, selon La Presse, "ouvert la machine" pour gâcher la fête aux partisans locaux. Belle image.
+  </chapitre>
+
+  <chapitre titre="Le moment QC">
+    Côté Canadiens, la nouvelle de la journée : Daniel Jacob devient l'entraîneur-chef du Rocket de Laval. Selon La Presse Hockey, Jacob espérait ce poste depuis un moment et dit lui-même, je le cite : "J'ai été un bon soldat." Fin de citation. Sportsnet confirme l'embauche. C'est la deuxième nomination majeure derrière le banc selon Marqueur.com, ce qui laisse entendre que l'organisation continue de consolider son encadrement dans le système. Mon take : Jacob a payé sa dette de patience. C'est une bonne histoire pour l'organisation.
+
+    Autre dossier à surveiller, et celui-là a du jus : Shane Wright. Selon TVA Sports, le centre des Kraken de Seattle aimerait se retrouver à Vancouver. Quatrième choix au total en 2022, Wright n'a jamais vraiment explosé à Seattle. Un retour dans l'Ouest, dans sa province d'adoption en quelque sorte, ça ferait du sens sportivement. Aucun insider comme Friedman ou Dreger ne confirme un trade imminent dans le XML, mais TVA rapporte clairement la préférence du joueur.
+
+    CF Montréal : l'adversaire en demi-finale du Championnat canadien est confirmé. Ce sera Vancouver. Selon La Presse, les Whitecaps se sont qualifiés grâce à un match nul un à un contre le Cavalry FC lundi soir. Rappel : le CF avait battu Vancouver FC deux à un en quarts la semaine dernière. Cette fois, c'est l'autre équipe de Vancouver. Les demi-finales s'annoncent intéressantes.
+
+    Et une belle histoire pour finir : selon La Presse Baseball, Deiten Lachance, un Sherbrookois, a été repêché par les Guardians de Cleveland lors du repêchage 2026 du baseball majeur. La Presse dit que son rêve se réalise. Ce genre de parcours, un gars de chez nous qui se fait appeler par une organisation de la Ligue majeure, ça mérite d'être souligné.
+  </chapitre>
+
+  <chapitre titre="Le buzz du jour">
+    Le buzz du jour : Shane Wright, et pourquoi ce dossier mérite qu'on s'y attarde. Selon TVA Sports, Wright aurait exprimé son désir de rejoindre les Canucks de Vancouver. Maintenant, le contexte : Wright a 22 ans, il entre dans la dernière année de son contrat d'entrée selon les données publiques, et il n'a jamais vraiment trouvé sa place dans la top-6 à Seattle. Si Vancouver est vraiment dans le portrait, Ron Francis à Seattle va exiger un retour substantiel pour un ancien top-4 mondial. Aucun insider nommé dans le XML ne confirme des négociations actives entre les deux clubs. Mais la préférence du joueur est maintenant publique, selon TVA, et ça change la dynamique. Quand un joueur signale où il veut aller avant d'être RFA ou UFA, ça donne du levier à l'équipe vendeuse et de la pression à l'équipe acheteuse. A suivre de très près cette semaine.
+  </chapitre>
+
+  <outro>Demain au Buzzer : résultat France-Espagne, GP de Belgique en approche, et la suite du mercato NHL. A demain.</outro>
+</script>
+```
