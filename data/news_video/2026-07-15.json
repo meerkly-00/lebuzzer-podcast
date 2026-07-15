@@ -1,0 +1,30 @@
+{
+  "date": "15 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Espagne écrase la France 2-0 en demi",
+      "hl": "2-0"
+    },
+    {
+      "tag": "NBA",
+      "text": "Enquête Kawhi s'élargit, free agent bloqué",
+      "hl": "ENQUÊTE"
+    },
+    {
+      "tag": "QC",
+      "text": "Nick Suzuki sort publiquement après trade",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Claude Giroux annonce une décision famille",
+      "hl": "FAMILLE"
+    },
+    {
+      "tag": "NFL",
+      "text": "Tyson Philpot joueur de la semaine LCF",
+      "hl": "SEMAINE"
+    }
+  ]
+}

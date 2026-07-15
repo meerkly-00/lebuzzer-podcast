@@ -1,0 +1,41 @@
+```xml
+<script>
+  <intro>T'es au Buzzer. L'Espagne sort la France deux à zéro. Kawhi Leonard sous enquête, et cette fois ça s'étend. Claude Giroux prend une décision de famille. Et Nick Suzuki qui ne mâche pas ses mots sur son échange. On embarque.</intro>
+
+  <chapitre titre="Top international">
+    On commence par Dallas, parce que c'est le résultat qui va dominer les conversations aujourd'hui. L'Espagne élimine la France deux à zéro en demi-finale de la Coupe du monde, et selon L'Equipe, la presse internationale ne prend pas de gants : la Roja qualifiée de "grandiose" et d'"immense", les Bleus de "médiocres" et de "ternes". C'est dur à lire, mais c'est le reflet du match.
+
+    Le chiffre qui résume tout, toujours selon L'Equipe : zéro virgule trois expected goals pour la France en quatre-vingt-dix minutes. La France ne s'était pas créé aussi peu d'occasions en Coupe du monde depuis soixante ans. Mon take : ce n'est pas une défaite sur penalty, ce n'est pas une question de malchance. La France s'est fait complètement étouffer. Digne et Olise, selon les notes de L'Equipe, ont tout raté. Ça va faire mal encore longtemps.
+
+    Les Bleus joueront la petite finale samedi à Miami. La question que L'Equipe pose ce matin : est-ce qu'ils auront la motivation ? Si on se fie au match d'hier, c'est pas évident.
+
+    Ce soir, c'est l'autre demi-finale : Angleterre contre Argentine, à Atlanta. Selon La Presse, les joueurs des deux équipes ont essayé de minimiser le poids historique du duel, mais Thomas Tuchel, lui, a pris la parole et n'a pas esquivé le sujet. Le Journal de Montréal rappelle que le fantôme de la guerre des Malouines de 1982 va planer sur le stade. On a beau dire que c'est juste du soccer, c'est clairement pas juste du soccer.
+
+    NBA, et c'est un dossier qui prend de l'ampleur. Selon NBC Sports, Yahoo Sports, et Sportsnet, la NBA enquête maintenant sur un deuxième contrat d'endossement impliquant Kawhi Leonard, en plus de l'enquête déjà en cours sur le dossier Aspiration. NBC Sports rapporte que l'enquête a élargi sa portée. Sportsnet Insider note que les Raptors attendent toujours des nouvelles claires après la conférence de presse du commissaire Adam Silver. Kawhi Leonard est toujours free agent. Mon take : plus ça dure, plus ça complique son retour sur le marché. Aucune organisation ne va signer un joueur avec une enquête active qui grossit semaine après semaine.
+
+    Match des étoiles de baseball hier soir. Selon La Presse, la Ligue américaine a blanchi la Nationale quatre à zéro. Dylan Cease a ouvert avec trois retraits au bâton. Les onze lanceurs de la Ligue américaine ont limité la Nationale à seulement trois coups sûrs. Victoire propre, nette.
+  </chapitre>
+
+  <chapitre titre="Le moment QC">
+    Deux sujets qui méritent qu'on s'y attarde côté Québec.
+
+    D'abord, Nick Suzuki. Selon Marqueur.com, Suzuki ne mâche pas ses mots après l'échange accepté par Kent Hughes. Le titre parle d'un "échange le 29", et Suzuki réagirait publiquement. On n'a pas les détails complets de sa déclaration dans le XML, mais le simple fait qu'un capitaine sorte publiquement après une transaction, ça dit quelque chose sur le climat dans le vestiaire. À suivre de très près aujourd'hui quand les détails vont sortir.
+
+    Ensuite, Claude Giroux. Selon TVA Sports, Giroux parle d'une "décision de famille". On ne sait pas encore exactement ce que ça implique côté contrat ou retraite, mais Giroux a quarante ans cette année. Quand un vétéran de son calibre mentionne la famille dans ce contexte, ça ressemble à une annonce qui s'en vient. Affaire à suivre.
+
+    Côté Alouettes, bonne nouvelle selon La Presse : l'ailier espacé Tyson Philpot est nommé joueur de la semaine dans la LCF. Une semaine après la victoire à Calgary, c'est le signe que l'offensive de Montréal tourne bien en ce début de saison.
+  </chapitre>
+
+  <chapitre titre="Le buzz du jour">
+    Le buzz du jour : Kawhi Leonard, et pourquoi cette enquête est maintenant un vrai problème pour toute la NBA, pas juste pour lui.
+
+    Voici ce qu'on sait, selon NBC Sports et Yahoo Sports : l'enquête originale portait sur un contrat d'endossement avec la compagnie Aspiration. Elle dure depuis presque un an. Et là, selon NBC Sports, elle s'est élargie à au moins un deuxième contrat d'endossement. Sportsnet Insider rapporte que la NBA espère clore le dossier cet été, mais rien n'est garanti.
+
+    Le problème central : Kawhi Leonard est free agent. Tant que l'enquête est ouverte, les équipes ne savent pas si une suspension potentielle est dans le portrait. Six franchises seraient en lice selon L'Equipe Basket, et selon la même source, "il possède toutes les informations dont il a besoin" pour décider. Mais décider quoi exactement, si la NBA peut encore intervenir ?
+
+    Mon take : c'est un dossier qui traîne trop longtemps et qui force les franchises à jouer aux devinettes pendant tout l'été. Le commissaire Silver a tenu une conférence de presse sans vraiment répondre aux questions selon Sportsnet. Ça ne règle rien. Et pendant ce temps, une des meilleures ailières de la ligue reste dans les limbes.
+  </chapitre>
+
+  <outro>Demain au Buzzer : Angleterre-Argentine, les réactions de Suzuki, et les détails sur Giroux. À demain.</outro>
+</script>
+```
