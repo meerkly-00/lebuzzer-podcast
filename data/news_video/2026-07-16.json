@@ -1,0 +1,30 @@
+{
+  "date": "16 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Argentine en finale, Messi écrit l'histoire",
+      "hl": "FINALE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Yzerman quitte Detroit après des années",
+      "hl": "DG"
+    },
+    {
+      "tag": "QC",
+      "text": "Canadien: embauche majeure annoncée",
+      "hl": "MAJOR"
+    },
+    {
+      "tag": "LNH",
+      "text": "Gauthier veut gros, Anaheim sous pression",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "QC",
+      "text": "Mantha signe avec New Jersey, 2 ans",
+      "hl": "2 ANS"
+    }
+  ]
+}
