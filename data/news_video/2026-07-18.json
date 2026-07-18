@@ -1,0 +1,30 @@
+{
+  "date": "18 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "Espagne-Argentine: la finale demain à 21h",
+      "hl": "FINALE"
+    },
+    {
+      "tag": "NBA",
+      "text": "NBA enquête sur le contrat de 64M de Trent",
+      "hl": "64M"
+    },
+    {
+      "tag": "F1",
+      "text": "Gasly accidenté à Spa, qualifs aujourd'hui",
+      "hl": "SPA"
+    },
+    {
+      "tag": "QC",
+      "text": "Hughes trade un jeune aux Blues de St-Louis",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Dach: entente à 3,6M avec le Canadien",
+      "hl": "3,6M"
+    }
+  ]
+}
