@@ -221,6 +221,7 @@ def render_episode_page(content, meta):
 {player}
 {chapters_html}<div class="listen">Écouter : <a href="{SPOTIFY_URL}">Spotify</a><a href="{APPLE_URL}">Apple Podcasts</a></div>
 </div>
+<script src="https://www.meerkly.ca/chat-widget.js" data-business="boost" async></script>
 </body></html>
 """
 
