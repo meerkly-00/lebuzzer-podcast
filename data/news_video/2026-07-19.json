@@ -1,0 +1,30 @@
+{
+  "date": "19 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "LNH",
+      "text": "Bedard signe 75M$ avec Chicago",
+      "hl": "75M$"
+    },
+    {
+      "tag": "FOOT",
+      "text": "Angleterre élimine France 6-4",
+      "hl": "6-4"
+    },
+    {
+      "tag": "F1",
+      "text": "Antonelli en pole à Spa, Mercedes domine",
+      "hl": "POLE"
+    },
+    {
+      "tag": "QC",
+      "text": "Alouettes survivent 38-32 à Calgary",
+      "hl": "38-32"
+    },
+    {
+      "tag": "QC",
+      "text": "Bolduc toujours sans contrat au CH",
+      "hl": "BOLDUC"
+    }
+  ]
+}
