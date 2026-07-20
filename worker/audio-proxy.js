@@ -73,6 +73,14 @@ export default {
       return proxyTo(request, `${RAW}/site/index.html`, "text/html; charset=utf-8", 300);
     }
 
+    // Pages légales (requises pour l'audit TikTok + Meta) : /privacy et /terms
+    if (url.pathname === "/privacy" || url.pathname === "/privacy.html") {
+      return proxyTo(request, `${RAW}/site/privacy.html`, "text/html; charset=utf-8", 3600);
+    }
+    if (url.pathname === "/terms" || url.pathname === "/terms.html") {
+      return proxyTo(request, `${RAW}/site/terms.html`, "text/html; charset=utf-8", 3600);
+    }
+
     // Pages par épisode (archive) : /episodes/YYYY-MM-DD[/ | /index.html]
     const ep = url.pathname.match(/^\/episodes\/(\d{4}-\d{2}-\d{2})(?:\/(?:index\.html)?)?$/);
     if (ep) {
@@ -117,7 +125,7 @@ async function proxyTo(request, target, contentType = null, maxAge = 86400, forc
         "style-src 'unsafe-inline' https://fonts.googleapis.com; " +
         "font-src 'self' data: https://fonts.gstatic.com; " +
         "img-src 'self' data: https:; " +
-        "script-src 'unsafe-inline'; " +
+        "script-src 'unsafe-inline' https://www.meerkly.ca; " +
         "connect-src 'self' https:; " +
         "media-src 'self' https:; " +
         "frame-ancestors 'none'; " +
