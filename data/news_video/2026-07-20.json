@@ -1,0 +1,30 @@
+{
+  "date": "20 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "FOOT",
+      "text": "L'Espagne championne du monde, Messi muselé",
+      "hl": "CHAMPION"
+    },
+    {
+      "tag": "F1",
+      "text": "Antonelli gagne à Spa à 19 ans, champion en vue",
+      "hl": "19 ANS"
+    },
+    {
+      "tag": "NBA",
+      "text": "Lu Dort échangé aux Hawks dans un trade à 3",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "LNH",
+      "text": "Jack Campbell prend sa retraite du hockey",
+      "hl": "RETRAITE"
+    },
+    {
+      "tag": "QC",
+      "text": "Rumeur : changement majeur à la diffusion du CH",
+      "hl": "RDS"
+    }
+  ]
+}
