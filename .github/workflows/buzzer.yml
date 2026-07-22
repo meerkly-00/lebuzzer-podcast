@@ -1,9 +1,12 @@
 name: LE BUZZER — épisode quotidien
 
 on:
-  schedule:
-    - cron: '0 8 * * *'   #vise ~7h EDT : 8h UTC + retard habituel de GitHub Actions (3-4h)
-  workflow_dispatch:        # bouton Run manuel dans GitHub
+  # ⏸️ Génération quotidienne EN PAUSE (2026-07-22) — le podcast est mis sur la glace.
+  # Le cron continuait de tourner tous les matins ; on le désactive ici pour de bon.
+  # Pour relancer les éditions automatiques : décommenter le bloc `schedule:` ci-dessous.
+  # schedule:
+  #   - cron: '0 8 * * *'   #vise ~7h EDT : 8h UTC + retard habituel de GitHub Actions (3-4h)
+  workflow_dispatch:        # bouton Run manuel dans GitHub (génération à la demande)
 
 permissions:
   contents: write
