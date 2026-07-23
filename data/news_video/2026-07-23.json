@@ -1,0 +1,30 @@
+{
+  "date": "23 JUILLET 2026",
+  "headlines": [
+    {
+      "tag": "F1",
+      "text": "Antonelli vise un record historique à Budapest",
+      "hl": "HISTORIQUE"
+    },
+    {
+      "tag": "QC",
+      "text": "Hughes s'active pour Jake DeBrusk",
+      "hl": "TRADE"
+    },
+    {
+      "tag": "FOOT",
+      "text": "CF Montréal tombe sur un penalty à Nashville",
+      "hl": "1-0"
+    },
+    {
+      "tag": "MMA",
+      "text": "Mbilli vs Canelo : le combat du siècle québécois",
+      "hl": "QUÉBÉCOIS"
+    },
+    {
+      "tag": "MLB",
+      "text": "Boston égale son record avec 15 victoires d'affilée",
+      "hl": "15"
+    }
+  ]
+}
